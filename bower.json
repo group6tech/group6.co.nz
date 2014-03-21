@@ -2,6 +2,7 @@
   "name": "group6conz",
   "version": "0.0.0",
   "dependencies": {
+    "jquery": "~1.9",
     "bootstrap-sass-official": "~3.0"
   }
 }

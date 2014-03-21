@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ site.description }} - end to end television, post production and broadcast facility solutions</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,27 +17,14 @@
 
   </head>
   <body>
-    <!--[if lt IE 8]>
+    <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    {% include header.html %}
+
     <div class="container">
 
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="/" class="navbar-brand">Home</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="/diva/">DIVA</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/clients/">Clients</a></li>
-                <li><a href="/news/">News</a></li>
-                <li><a href="/company/">Company</a></li>
-                <li><a href="/support/">Support</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <div class="page-header">
         <h1>{{ page.title }}</h1>
