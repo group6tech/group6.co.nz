@@ -1,10 +1,10 @@
 ---
-title: Product
-layout: default
-category: product
+title: DIVA
+layout: base
+category: diva
 ---
 
-{% for post in site.categories['product'] limit: 1 %}
+{% for post in site.categories['diva'] limit: 1 %}
 	<article>
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="muted">{{ post.date | date_to_string}}</p>
@@ -13,6 +13,6 @@ category: product
 {% endfor %}
 
 <h2>Archive</h2>
-{% for post in site.categories['product'] %}
+{% for post in site.categories['diva'] %}
 	<article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
 {% endfor %}
