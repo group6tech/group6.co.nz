@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ol class="breadcrumb">
+          {% for p in page.ancestors %}
+            <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+          <li class="active">{{ page.title }}</li>
+        </ol>
+
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} Group 6 Technologies Ltd.</p>
+        <p>All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p><a href="#">Back to top</a></p>
+        <p>
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

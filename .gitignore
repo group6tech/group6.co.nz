@@ -37,3 +37,13 @@ app/_bower_components
 dist
 node_modules
 .tmp
+
+app/fonts/FontAwesome.otf
+
+app/fonts/fontawesome-webfont.eot
+
+app/fonts/fontawesome-webfont.svg
+
+app/fonts/fontawesome-webfont.ttf
+
+app/fonts/fontawesome-webfont.woff

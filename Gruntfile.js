@@ -257,6 +257,11 @@ module.exports = function (grunt) {
             //'apple-touch*.png'
           ],
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/_bower_components/font-awesome/fonts',
+          src: '**/*',
+          dest: '<%= yeoman.dist %>/fonts'
         }]
       },
       // Copy CSS into .tmp directory for Autoprefixer processing
@@ -267,6 +272,11 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/css',
           src: '**/*.css',
           dest: '.tmp/css'
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/_bower_components/font-awesome/fonts',
+          src: '**/*.{eot*,otf,svg,ttf,woff}',
+          dest: '<%= yeoman.app %>/fonts'
         }]
       }
     },
