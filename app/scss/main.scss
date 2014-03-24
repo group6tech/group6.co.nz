@@ -4,8 +4,21 @@
 
 
 
+// Variables
+// ----------------------------------------------------------------------------
+
+$body-bg:        #222;
+$text-color:     #999;
+
+$brand-primary:  #08c;
+
+
+
 // Imports
 // ----------------------------------------------------------------------------
 
 @import "../_bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 @import "../_bower_components/font-awesome/scss/font-awesome.scss";
+@import 'scaffolding';
+@import 'nav';
+@import 'footer';

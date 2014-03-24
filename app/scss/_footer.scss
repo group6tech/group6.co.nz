@@ -1,0 +1,29 @@
+//
+// Footer
+// ============================================================================
+
+footer.footer {
+  margin-top: 5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
+
+  background-color: #111;
+
+  .breadcrumb {
+    padding: 0;
+    margin-bottom: 10px;
+
+    background-color: transparent;
+  }
+
+  .social {
+    font-size: 3em;
+  }
+
+  @media only screen and (min-width: $screen-sm) {
+    .social,
+    .top {
+      text-align: right;
+    }
+  }
+}
