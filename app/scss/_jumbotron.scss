@@ -1,0 +1,20 @@
+//
+// Jumbotron
+// ============================================================================
+
+.jumbotron {
+  background: linear-gradient(45deg, $blue-light ,$blue-dark);
+  color: #fff;
+
+  h1 {
+    $col: transparentize($brand-primary, 0.25);
+
+    font-family: BellGothic, Arial, sans-serif;
+    text-shadow: 0 0 10px $col;
+    text-transform: lowercase;
+  }
+
+  p {
+    @extend .lead;
+  }
+}

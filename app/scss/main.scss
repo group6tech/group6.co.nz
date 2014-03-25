@@ -7,12 +7,29 @@
 // Variables
 // ----------------------------------------------------------------------------
 
-$body-bg:            #222;
-$text-color:         #999;
+$body-bg:                #222;
+$text-color:             #999;
 
-$brand-primary:      #08c;
+$brand-primary:          #08c;
+$blue-light:             #97e4fe;
+$blue-dark:              #0073b2;
 
-$navbar-inverse-bg:  #111;
+$font-size-base:         16px;
+
+$headings-font-weight:   200;
+$headings-color:         #fff;
+
+$navbar-inverse-bg:      #111;
+
+
+
+// Fonts
+// ----------------------------------------------------------------------------
+
+@font-face {
+  font-family: BellGothic;
+  src: url("../fonts/BellGothicStd-Bold.otf") format("opentype");
+}
 
 
 
@@ -23,4 +40,6 @@ $navbar-inverse-bg:  #111;
 @import "../_bower_components/font-awesome/scss/font-awesome.scss";
 @import 'scaffolding';
 @import 'nav';
+@import 'jumbotron';
 @import 'footer';
+@import 'index';

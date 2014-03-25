@@ -1,0 +1,19 @@
+//
+// Index
+// ============================================================================
+
+.index {
+  .intro,
+  .diva,
+  .services,
+  .clients {
+    text-align: center;
+  }
+
+  .intro,
+  .clients {
+    p {
+      @extend .lead;
+    }
+  }
+}
