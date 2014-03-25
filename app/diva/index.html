@@ -5,9 +5,124 @@ bodyClass: diva
 category: diva
 ---
 
+<div class="jumbotron">
+	<div class="container">
+		<h1>DIVA Media System</h1>
+		<p>By editors for editors.</p>
+		<p>The most cost effective media management tool available today.</p>
+	</div>
+</div>
+
 <div class="container">
-	<h1>DIVA</h1>
-	
+	<div class="row">
+		<div class="col-sm-6">
+			<p class="lead">Spend more time editing, less time setting up, and collaborate on projects with ease.</p>
+			<p class="lead">DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.</p>
+		</div>
+		<div class="col-sm-6">
+			<img src="http://placehold.it/1024x400">
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-sm-6 col-sm-push-6">
+			<h2>Why DIVA is right for you</h2>
+			<ul>
+				<li>Allows multiple users to work simultaneously across multiple servers and drives</li>
+				<li>Improves workflow with an environment optimised for editors</li>
+				<li>Scalability is limited only by network speed and connectivity</li>
+				<li>Favourites can be setup to access projects with a click and get cutting</li>
+				<li>Customisable configuration of storage drives</li>
+				<li>Comprehensive affordable backups to protect your work</li>
+				<li>24/7 international remote support</li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-sm-pull-6">
+			<img src="http://placehold.it/1024x400">
+		</div>
+	</div>
+
+	<hr>
+
+	<h2>Technical Specifications</h2>
+
+	<div class="row">
+		<div class="col-md-3">
+			<h3>DIVA Server</h3>
+			<p>Central management server</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Form Factor</h4>
+			<p>1RU Chassis</p>
+			<h4>Power</h4>
+			<p>Dual redundant power supplies</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Operating System</h4>
+			<p>Microsoft Windows Server 2008 SQL Server Express 2012</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Networking</h4>
+			<p>1Gb Ethernet</p>
+			<h4>Storage</h4>
+			<p>RAID 1 SDD</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<h3>DIVA Node</h3>
+			<p>Storage Server</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Form Factor</h4>
+			<p>24bay 4RU Storage Chassis</p>
+			<h4>Storage</h4>
+			<p>Up to 96TB per node</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Operating System</h4>
+			<p>Microsoft Windows Server 2008</p>
+			<h4>Power</h4>
+			<p>Tripple redundant power supplies</p>
+		</div>
+		<div class="col-md-3">
+			<h4>Networking</h4>
+			<p>10Gb Ethernet</p>
+			<h4>RAID Controller</h4>
+			<p>LSI MegaRAID SAS 9280-4i4e</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<h3>Supported Applications</h3>
+		</div>
+		<div class="col-md-9">
+			<img src="http://placehold.it/128x128" alt="Avid Media Composer" width="128" height="128">
+			<br>
+			Avid Media Composer 6 or later.
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<h3>Operating Systems</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="http://placehold.it/128x128" alt="Avid Media Composer" width="128" height="128">
+			<br>
+			Microsoft Windows 7 or later.
+		</div>
+		<div class="col-md-3">
+			<img src="http://placehold.it/128x128" alt="Avid Media Composer" width="128" height="128">
+			<br>
+			Mac OS X 10.7 or later.
+		</div>
+	</div>
+
 	{% for post in site.categories['diva'] limit: 1 %}
 		<article>
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
