@@ -2,13 +2,27 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
+        <ol class="breadcrumb">
+          <li><a href="/"><i class="fa fa-home"></i> Group 6 Technologies</a></li>
+          {% for p in page.ancestors %}
+            {% if p.title != 'Welcome' %}
+              <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if page.title != 'Welcome' %}
+            <li class="active">{{ page.title }}</li>
+          {% endif %}
+        </ol>
+
         <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.description }} Ltd.</p>
         <p>All Rights Reserved.</p>
       </div>
+
       <div class="col-md-6">
         <p class="top">
           <a href="#"><i class="fa fa-chevron-up"></i> Top</a>
         </p>
+
         <p class="social">
           <a href="https://www.facebook.com/group6technologies" title="Facebook" target="_blank">
             <i class="fa fa-facebook-square"></i></a>
