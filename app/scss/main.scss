@@ -36,8 +36,10 @@ $navbar-inverse-bg:      #111;
 // Imports
 // ----------------------------------------------------------------------------
 
-@import "../_bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-@import "../_bower_components/font-awesome/scss/font-awesome.scss";
+@import '../_bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import '../_bower_components/font-awesome/scss/font-awesome.scss';
+@import 'mixins/retina';
+@import 'sprites';
 @import 'scaffolding';
 @import 'nav';
 @import 'jumbotron';

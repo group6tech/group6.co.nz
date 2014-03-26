@@ -1,0 +1,9 @@
+//
+// Sprites
+// ============================================================================
+
+@include retina-sprite-add('sprites', 'template/sprites/*.png', 'template/sprites-retina/*.png');
+
+.sprite-group6tech {
+	//@include retina-sprite(group6tech);
+}
