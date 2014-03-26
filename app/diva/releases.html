@@ -1,0 +1,10 @@
+---
+title: DIVA Release Notes
+layout: default
+---
+
+{% for post in site.categories['diva'] %}
+	<article>
+		<a href="{{ post.url }}">v{{ post.version }} - {{ post.date | date_to_string }}</a>
+	</article>
+{% endfor %}
