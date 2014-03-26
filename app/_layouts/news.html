@@ -1,0 +1,18 @@
+---
+layout: base
+bodyClass: inner
+---
+
+<div class="jumbotron">
+<div class="container">
+	<h1>News</h1>
+</div>
+</div>
+
+<div class="container">
+	<article>
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.date | date_to_string }}</p>
+		{{ content }}
+	</article>
+</div>
