@@ -1,0 +1,21 @@
+//
+// Clients
+// ============================================================================
+
+.client-details {
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.client-logo {
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+
+	@media only screen and (min-width: $screen-sm) {
+		float: left;
+		max-width: 200px;
+		margin-right: 20px;
+	}
+}

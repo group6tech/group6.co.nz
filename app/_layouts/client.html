@@ -1,0 +1,62 @@
+---
+layout: base
+bodyClass: inner
+---
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Clients</h1>
+	</div>
+</div>
+
+<div class="container content client">
+	<h1>{{ page.title }}</h1>
+
+	<p class="lead">{{ page.tagLine }}
+
+	<div class="row">
+		<div class="col-sm-8 col-md-9">
+			<a href="{{ page.clientUrl }}" target="_blank" class="client-logo">
+				<img src="{{ page.clientLogo }}" alt="{{ page.client }}">
+			</a>
+
+			{{ content }}
+
+			<hr class="white visible-xs">
+		</div>
+		<div class="col-sm-4 col-md-3 client-details">
+			<h3>Client</h3>
+			<a href="{{ page.clientUrl }}" target="_blank">{{ page.client }}</a>
+
+			{% if page.roles %}
+				<h4>Role</h4>
+				<ul class="list-unstyled">
+					{% for role in page.roles %}
+						<li>{{ role }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
+			{% if page.order %}
+				<h4>Order</h4>
+				<ul class="list-unstyled">
+					{% for order in page.order %}
+						<li>{{ order }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+
+	<hr>
+
+	{% for image in page.images %}
+		{{ image.image }} {{ image.title }}<br/>
+	{% endfor %}
+
+	<hr>
+
+	<h2>
+		<a href="/clients/"><i class="fa fa-chevron-left"></i> Clients</a>
+	</h2>
+</div>

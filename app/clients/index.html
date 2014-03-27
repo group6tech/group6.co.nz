@@ -6,7 +6,7 @@ layout: default
 {% sorted_for page in site.pages reversed sort_by:date %}
 	{% if page.category == 'client' %}
 		<article>
-			<img src="http://placehold.it/{{ page.images[0] }}">
+			<img src="{{ page.clientLogo }}">
 			<a href="{{ page.url }}">{{ page.title }}</a>
 			<p>{{ page.date }}</p>
 			<ul>
