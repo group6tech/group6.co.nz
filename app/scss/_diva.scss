@@ -1,0 +1,22 @@
+//
+// DIVA
+// ============================================================================
+
+.diva {
+	.jumbotron {
+		p {
+			margin-bottom: 10px;
+			font-size: 20px;
+
+			@media only screen and (min-width: $screen-sm) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.tech-specs {
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
