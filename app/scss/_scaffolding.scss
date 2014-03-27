@@ -20,6 +20,14 @@ body {
   }
 }
 
+a {
+    transition: color linear 0.1s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 hr {
   height: 1px;
   border: 0;

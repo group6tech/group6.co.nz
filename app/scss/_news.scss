@@ -2,12 +2,25 @@
 // News
 // ============================================================================
 
-#news.index {
+.news {
 	article {
-		h3 {
+		h3,
+		h4 {
 			a {
 				color: #fff;
+
+				&:hover {
+					color: $brand-primary;
+				}
 			}
+		}
+
+		time {
+			display: inline-block;
+
+			margin-bottom: $padding-base-vertical;
+
+			font-size: $font-size-small;
 		}
 	}
 }

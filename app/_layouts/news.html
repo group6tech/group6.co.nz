@@ -9,10 +9,16 @@ bodyClass: inner
 </div>
 </div>
 
-<div class="container">
+<div class="container content news">
 	<article>
 		<h1>{{ page.title }}</h1>
-		<p>{{ page.date | date_to_string }}</p>
+		<time>{{ page.date | date_to_string }}</time>
 		{{ content }}
 	</article>
+
+	<hr>
+
+	<h2>
+		<a href="/news/"><i class="fa fa-chevron-left"></i> News</a>
+	</h2>
 </div>
