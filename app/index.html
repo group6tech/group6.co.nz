@@ -58,6 +58,17 @@ bodyClass: index
   <section class="clients">
     <h1>Built with Group 6 Technologies</h1>
     <p>Our clients are always pushing the boundaries. Find out how we've helped them find their way.</p>
+
+    {% assign clientNo = 1 %}
+    {% sorted_for page in site.pages reversed sort_by:date %}
+        {% if clientNo <= 4 and page.category == 'client' %}
+            <article>
+                <img src="http://placehold.it/{{ page.images[0] }}">
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </article>
+            {% assign clientNo = clientNo | plus: 1 %}
+        {% endif %}
+    {% endsorted_for %}
   </section>
 
 </div>

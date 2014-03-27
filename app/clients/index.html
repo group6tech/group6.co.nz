@@ -5,15 +5,15 @@ layout: default
 
 {% sorted_for page in site.pages reversed sort_by:date %}
 	{% if page.category == 'client' %}
-	<article>
-		<img src="http://placehold.it/{{ page.images[0] }}">
-		<a href="{{ page.url }}">{{ page.title }}</a>
-		<p>{{ page.date }}</p>
-		<ul>
-			{% for tag in page.tags %}
-			<li>{{ tag }}</li>
-			{% endfor %}
-		</ul>
-	</article>
+		<article>
+			<img src="http://placehold.it/{{ page.images[0] }}">
+			<a href="{{ page.url }}">{{ page.title }}</a>
+			<p>{{ page.date }}</p>
+			<ul>
+				{% for tag in page.tags %}
+				<li>{{ tag }}</li>
+				{% endfor %}
+			</ul>
+		</article>
 	{% endif %}
 {% endsorted_for %}
