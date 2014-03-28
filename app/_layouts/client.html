@@ -50,9 +50,11 @@ bodyClass: inner
 
 	<hr>
 
-	{% for image in page.images %}
-		{{ image.image }} {{ image.title }}<br/>
-	{% endfor %}
+	<div class="client-images">
+		{% for image in page.images %}
+			<img src="{{ image.image }}" alt="{{ image.title }}">
+		{% endfor %}
+	</div>
 
 	<hr>
 
