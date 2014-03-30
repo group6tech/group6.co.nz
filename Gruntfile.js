@@ -20,6 +20,7 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
+
     watch: {
       compass: {
         files: ['<%= yeoman.app %>/scss/**/*.{scss,sass}'],
@@ -48,6 +49,7 @@ module.exports = function (grunt) {
         ]
       }
     },
+
     connect: {
       options: {
         port: 9000,
@@ -84,6 +86,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     clean: {
       dist: {
         files: [{
@@ -102,6 +105,7 @@ module.exports = function (grunt) {
         '.jekyll'
       ]
     },
+
     compass: {
       options: {
         // If you're using global Sass gems, require them here.
@@ -129,6 +133,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     autoprefixer: {
       options: {
         browsers: ['last 2 versions']
@@ -150,6 +155,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     jekyll: {
       options: {
         bundleExec: true,
@@ -173,12 +179,14 @@ module.exports = function (grunt) {
         }
       }
     },
+
     useminPrepare: {
       options: {
         dest: '<%= yeoman.dist %>'
       },
       html: '<%= yeoman.dist %>/index.html'
     },
+
     usemin: {
       options: {
         assetsDirs: '<%= yeoman.dist %>',
@@ -186,6 +194,7 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/css/**/*.css']
     },
+
     htmlmin: {
       dist: {
         options: {
@@ -202,10 +211,13 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     // Usemin adds files to concat
     concat: {},
+
     // Usemin adds files to uglify
     uglify: {},
+
     // Usemin adds files to cssmin
     cssmin: {
       dist: {
@@ -214,6 +226,37 @@ module.exports = function (grunt) {
         }
       }
     },
+
+    image_resize: {
+      clients: {
+        options: {
+          width: 285,
+          height: 205,
+          crop: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/images/clients',
+          src: '**/*.jpg',
+          dest: '.tmp/images/thumbs/clients'
+        }]
+      },
+      clients_2x: {
+        options: {
+          width: 570,
+          height: 410,
+          crop: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/images/clients',
+          src: '**/*.jpg',
+          dest: '.tmp/images/thumbs/clients',
+          ext: '@2x.jpg'
+        }]
+      }
+    },
+
     imagemin: {
       dist: {
         options: {
@@ -227,6 +270,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     svgmin: {
       dist: {
         files: [{
@@ -237,6 +281,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     copy: {
       dist: {
         files: [{
@@ -264,6 +309,7 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/fonts'
         }]
       },
+
       // Copy CSS into .tmp directory for Autoprefixer processing
       stageCss: {
         files: [{
@@ -280,6 +326,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     filerev: {
       options: {
         length: 4
@@ -295,6 +342,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
     buildcontrol: {
       dist: {
         options: {
@@ -305,6 +353,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -316,6 +365,7 @@ module.exports = function (grunt) {
         'test/spec/**/*.js'
       ]
     },
+
     csslint: {
       options: {
         csslintrc: '.csslintrc'
@@ -327,9 +377,11 @@ module.exports = function (grunt) {
         ]
       }
     },
+
     concurrent: {
       server: [
         'compass:server',
+        'image_resize',
         'copy:stageCss',
         'jekyll:server'
       ],

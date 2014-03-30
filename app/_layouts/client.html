@@ -50,9 +50,13 @@ bodyClass: inner
 
 	<hr>
 
-	<div class="client-images">
+	<div class="row client-images">
 		{% for image in page.images %}
-			<img src="{{ image.image }}" alt="{{ image.title }}">
+			<div class="col-xs-6 col-md-3">
+				<a href="/images/clients/{{ image.image }}.jpg" data-gallery title="{{ image.title }}">
+					<img src="/images/thumbs/clients/{{ image.image }}.jpg" alt="{{ image.title }}">
+				</a>
+			</div>
 		{% endfor %}
 	</div>
 
@@ -61,4 +65,14 @@ bodyClass: inner
 	<h2>
 		<a href="/clients/"><i class="fa fa-chevron-left"></i> Clients</a>
 	</h2>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
 </div>

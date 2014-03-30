@@ -10,13 +10,13 @@ clientLogo: /images/clients/shortland-street/south-pacific-pictures.jpg
 roles:
 - Studio and Post Integrators
 images:
-- image: /images/clients/shortland-street/shortland-street-acr.jpg
+- image: shortland-street/shortland-street-acr
   title: Audio Control Room
-- image: /images/clients/shortland-street/shortland-street-control-room.jpg
+- image: shortland-street/shortland-street-control-room
   title: Production Control Room
-- image: /images/clients/shortland-street/shortland-street-rack-front.jpg
+- image: shortland-street/shortland-street-rack-front
   title: CAR and VT Racks
-- image: /images/clients/shortland-street/shortland-street-rack-rear.jpg
+- image: shortland-street/shortland-street-rack-rear
   title: CAR Router Cabling
 ---
 

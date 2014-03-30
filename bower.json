@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~1.9",
     "bootstrap-sass-official": "~3.0",
-    "font-awesome": "~4.0"
+    "font-awesome": "~4.0",
+    "blueimp-gallery": "*"
   }
 }
