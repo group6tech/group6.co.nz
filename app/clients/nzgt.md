@@ -4,15 +4,22 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Technical advice and management for ratings smash television show
+banner: /images/clients/nzgt/nzgt.jpg
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
-clientLogo: /images/clients/nzgt/nzgt.png
+clientLogo: /images/clients/imagination/imagination.jpg
 roles:
 - Technical Producer
 - Media Management
 order:
 - Media Management Software
 images:
+- image: nzgt/media-manager
+  title: Media Manager
+- image: nzgt/osb-vt
+  title: OSB VT
+- image: nzgt/storage
+  title: NZGT RAIDs
 ---
 
 Television talent quest sensation New Zealand’s Got Talent is filmed without the luxury of time, but has to achieve glossy polished production standards.

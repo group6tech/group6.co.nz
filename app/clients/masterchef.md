@@ -4,15 +4,22 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Full studio to post solution for cooking sensation
+banner: /images/clients/masterchef/judges.jpg
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
-clientLogo: /images/clients/masterchef/masterchef.png
+clientLogo: /images/clients/imagination/imagination.jpg
 roles:
 - Technical Producer
 - Studio Integration
 order:
 - EDL Generation Software
 images:
+- image: masterchef/cables
+  title: Cables ready for install
+- image: masterchef/studio
+  title: Studio under construction
+- image: masterchef/switchscribe
+  title: SwitchScribe EDL software
 ---
 
 New Zealand’s version of the international reality television hit MasterChef has completed another successful season.

@@ -4,13 +4,20 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Custom software for life saving helicopter service
+banner: /images/clients/arht/flight.jpg
 client: Great Southern Television
 clientUrl: http://www.greatsoutherntv.com/
-clientLogo: /images/clients/arht/arht.png
+clientLogo: /images/clients/gstv/gstv.png
 roles:
 order:
 - Media Ingest and Management Application
 images:
+- image: arht/hangar
+  title: Helicopters in Hangar
+- image: arht/recorders
+  title: Minicam Recorders
+- image: arht/winch-camera
+  title: Winch Camera
 ---
 
 Great Southern Television and Oxygen Post contacted Group 6 about improving their workflows for the hit series, Rescue One. Great Southern purchased a set of minicams and footage storage facility for the Auckland Rescue Helicopter Trust.

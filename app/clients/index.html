@@ -6,7 +6,7 @@ layout: default
 {% sorted_for page in site.pages reversed sort_by:date %}
 	{% if page.category == 'client' %}
 		<a href="{{ page.url }}" title="{{ page.title }}">
-			<img src="{{ page.clientLogo }}">
+			<img src="{{ page.banner }}" alt="{{ page.title }}">
 		</a>
 	{% endif %}
 {% endsorted_for %}

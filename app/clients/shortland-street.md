@@ -4,19 +4,20 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: HD upgrade for New Zealand's best loved soap
+banner: /images/clients/shortland-street/cast-2013.jpg
 client: South Pacific Pictures
 clientUrl: http://www.southpacificpictures.com/
 clientLogo: /images/clients/shortland-street/south-pacific-pictures.jpg
 roles:
 - Studio and Post Integrators
 images:
-- image: shortland-street/shortland-street-acr
+- image: shortland-street/acr
   title: Audio Control Room
-- image: shortland-street/shortland-street-control-room
+- image: shortland-street/control-room
   title: Production Control Room
-- image: shortland-street/shortland-street-rack-front
+- image: shortland-street/rack-front
   title: CAR and VT Racks
-- image: shortland-street/shortland-street-rack-rear
+- image: shortland-street/rack-rear
   title: CAR Router Cabling
 ---
 
