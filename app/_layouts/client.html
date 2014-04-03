@@ -48,17 +48,19 @@ bodyClass: inner
 		</div>
 	</div>
 
-	<hr>
+	{% if page.images %}
+		<hr>
 
-	<div class="row client-images">
-		{% for image in page.images %}
-			<div class="col-xs-6 col-md-3">
-				<a href="/images/clients/{{ image.image }}.jpg" data-gallery title="{{ image.title }}">
-					<img src="/images/thumbs/clients/{{ image.image }}.jpg" alt="{{ image.title }}">
-				</a>
-			</div>
-		{% endfor %}
-	</div>
+		<div class="row client-images">
+			{% for image in page.images %}
+				<div class="col-xs-6 col-md-3">
+					<a href="/images/clients/{{ image.image }}.jpg" data-gallery title="{{ image.title }}">
+						<img src="/images/thumbs/clients/{{ image.image }}.jpg" alt="{{ image.title }}">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
 
 	<hr>
 

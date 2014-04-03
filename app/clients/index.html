@@ -5,15 +5,8 @@ layout: default
 
 {% sorted_for page in site.pages reversed sort_by:date %}
 	{% if page.category == 'client' %}
-		<article>
+		<a href="{{ page.url }}" title="{{ page.title }}">
 			<img src="{{ page.clientLogo }}">
-			<a href="{{ page.url }}">{{ page.title }}</a>
-			<p>{{ page.date }}</p>
-			<ul>
-				{% for tag in page.tags %}
-				<li>{{ tag }}</li>
-				{% endfor %}
-			</ul>
-		</article>
+		</a>
 	{% endif %}
 {% endsorted_for %}

@@ -2,7 +2,7 @@
 title: Shortland Street
 layout: client
 category: client
-date: 2014-03-22
+date: 2013-06-07
 tagLine: HD upgrade for New Zealand's best loved soap
 client: South Pacific Pictures
 clientUrl: http://www.southpacificpictures.com/
