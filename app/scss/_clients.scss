@@ -22,8 +22,52 @@
 
 .packery {
 	.item {
+		position: relative;
 		width: 48%;
 		box-sizing: border-box;
+
+		.details {
+			padding: $padding-base-vertical $padding-base-horizontal;
+
+			background-color: rgba(0,0,0,0.3);
+			text-align: center;
+
+			@media only screen and (min-width: $screen-sm) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+
+				padding: $padding-large-vertical $padding-large-horizontal;
+
+				background-color: rgba(0,0,0,0.8);
+				opacity: 0;
+				transition: opacity 0.3s linear;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+
+			font-size: 16px;
+
+			@media only screen and (min-width: $screen-sm) {
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #fff;
+				font-size: 30px;
+			}
+		}
+
+		span {
+			color: #fff;
+		}
 
 		@media only screen and (min-width: $screen-sm) {
 			width: 355px;

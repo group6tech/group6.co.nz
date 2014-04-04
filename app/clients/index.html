@@ -8,6 +8,10 @@ layout: default
 		{% if page.category == 'client' %}
 			<a class="item" href="{{ page.url }}" title="{{ page.title }}">
 				<img src="{{ page.banner }}" alt="{{ page.title }}">
+				<div class="details">
+					<h2>{{ page.title }}</h2>
+					<span class="hidden-xs">{{ page.tagLine }}</span>
+				</div>
 			</a>
 		{% endif %}
 	{% endsorted_for %}
