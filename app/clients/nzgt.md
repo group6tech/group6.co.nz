@@ -4,10 +4,10 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Technical advice and management for ratings smash television show
-banner: /images/clients/nzgt/nzgt.jpg
+banner: nzgt/nzgt
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
-clientLogo: /images/clients/imagination/imagination.jpg
+clientLogo: imagination/imagination
 roles:
 - Technical Producer
 - Media Management

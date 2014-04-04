@@ -4,10 +4,10 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: HD upgrade for New Zealand's best loved soap
-banner: /images/clients/shortland-street/cast-2013.jpg
+banner: shortland-street/cast-2013
 client: South Pacific Pictures
 clientUrl: http://www.southpacificpictures.com/
-clientLogo: /images/clients/shortland-street/south-pacific-pictures.jpg
+clientLogo: shortland-street/south-pacific-pictures
 roles:
 - Studio and Post Integrators
 images:

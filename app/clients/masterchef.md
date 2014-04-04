@@ -4,10 +4,10 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Full studio to post solution for cooking sensation
-banner: /images/clients/masterchef/judges.jpg
+banner: masterchef/judges
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
-clientLogo: /images/clients/imagination/imagination.jpg
+clientLogo: imagination/imagination
 roles:
 - Technical Producer
 - Studio Integration

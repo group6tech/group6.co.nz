@@ -4,10 +4,10 @@ layout: client
 category: client
 date: 2013-10-07
 tagLine: Full facility support for digital Auckland agency
-banner: /images/clients/augusto/augusto.png
+banner: augusto/augusto
 client: Augusto
 clientUrl: http://augusto.co.nz/
-clientLogo: /images/clients/augusto/augusto.png
+clientLogo: augusto/augusto
 roles:
 - Facility Integration
 - Building Fitout

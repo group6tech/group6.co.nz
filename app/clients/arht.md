@@ -4,10 +4,10 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Custom software for life saving helicopter service
-banner: /images/clients/arht/flight.jpg
+banner: arht/flight
 client: Great Southern Television
 clientUrl: http://www.greatsoutherntv.com/
-clientLogo: /images/clients/gstv/gstv.png
+clientLogo: gstv/gstv
 roles:
 order:
 - Media Ingest and Management Application

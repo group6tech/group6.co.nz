@@ -7,7 +7,7 @@ layout: default
 	{% sorted_for page in site.pages reversed sort_by:date %}
 		{% if page.category == 'client' %}
 			<a class="item" href="{{ page.url }}" title="{{ page.title }}">
-				<img src="{{ page.banner }}" alt="{{ page.title }}">
+				<img src="/images/clients/{{ page.banner }}.jpg" alt="{{ page.title }}">
 				<div class="details">
 					<h2>{{ page.title }}</h2>
 					<span class="hidden-xs">{{ page.tagLine }}</span>
