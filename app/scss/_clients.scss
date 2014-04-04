@@ -20,6 +20,21 @@
 	}
 }
 
-.client-images {
-	
+.packery {
+	.item {
+		width: 48%;
+		box-sizing: border-box;
+
+		@media only screen and (min-width: $screen-sm) {
+			width: 355px;
+		}
+
+		@media only screen and (min-width: $screen-md) {
+			width: 305px;
+		}
+
+		@media only screen and (min-width: $screen-lg) {
+			width: 373px;
+		}
+	}
 }

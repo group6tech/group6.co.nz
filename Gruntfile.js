@@ -106,6 +106,14 @@ module.exports = function (grunt) {
       ]
     },
 
+    bowerInstall: {
+      main: {
+        src: [
+          '<%= yeoman.app %>/_includes/*.html'
+        ]
+      }
+    },
+
     compass: {
       options: {
         // If you're using global Sass gems, require them here.
@@ -380,6 +388,7 @@ module.exports = function (grunt) {
 
     concurrent: {
       server: [
+        'bowerInstall',
         'compass:server',
         'image_resize',
         'copy:stageCss',
@@ -400,24 +409,13 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'bowerInstall',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
       'watch'
     ]);
   });
-
-  grunt.registerTask('server', function () {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve']);
-  });
-
-  // No real tests yet. Add your own.
-  grunt.registerTask('test', [
-  //   'clean:server',
-  //   'concurrent:test',
-  //   'connect:test'
-  ]);
 
   grunt.registerTask('check', [
     'clean:server',
