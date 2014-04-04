@@ -33,16 +33,18 @@
 		box-sizing: border-box;
 
 		.details {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+
 			padding: $padding-base-vertical $padding-base-horizontal;
 
 			background-color: rgba(0,0,0,0.3);
 			text-align: center;
 
 			@media only screen and (min-width: $screen-sm) {
-				position: absolute;
 				top: 0;
-				left: 0;
-				right: 0;
 				bottom: 0;
 
 				padding: $padding-large-vertical $padding-large-horizontal;
