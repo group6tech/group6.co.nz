@@ -10,10 +10,15 @@
     text-align: center;
   }
 
-  .intro,
-  .clients {
+  .intro {
     p {
       @extend .lead;
+    }
+  }
+
+  .clients {
+    img {
+      margin-bottom: $padding-large-vertical;
     }
   }
 }
