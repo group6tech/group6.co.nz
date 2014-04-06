@@ -2,6 +2,14 @@
 // Nav
 // ============================================================================
 
+.navbar {
+  .sprites-group6tech {
+    position: absolute;
+    left: 0;
+    top: -3px;
+  }
+}
+
 .navbar-inverse {
   @include gradient-vertical(#222, #111);
 }
