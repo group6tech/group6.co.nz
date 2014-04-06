@@ -109,7 +109,7 @@ module.exports = function (grunt) {
     bowerInstall: {
       main: {
         src: [
-          '<%= yeoman.app %>/_includes/*.html'
+          '<%= yeoman.app %>/_includes/scripts.html'
         ]
       }
     },
@@ -408,7 +408,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      //'bowerInstall:main',
+      'bowerInstall',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
