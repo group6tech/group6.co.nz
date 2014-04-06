@@ -388,7 +388,6 @@ module.exports = function (grunt) {
 
     concurrent: {
       server: [
-        'bowerInstall',
         'compass:server',
         'image_resize',
         'copy:stageCss',
@@ -409,7 +408,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'bowerInstall',
+      //'bowerInstall:main',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
