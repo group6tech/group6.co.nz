@@ -12,10 +12,16 @@ bodyClass: inner
 </div>
 
 <div class="container content news">
-	<article>
-		<h1>{{ page.title }}</h1>
-		<time>{{ page.date | date_to_string }}</time>
-		{{ content }}
+	<article itemscope itemtype="http://schema.org/NewsArticle">
+		<h1 itemprop="name">{{ page.title }}</h1>
+		<div class="details">
+			<time itemprop="dateCreated">{{ page.date | date_to_string }}</time>
+			&nbsp;|&nbsp;
+			<a href="{{ page.url }}" itemprop="url">Permalink</a>
+		</div>
+		<div itemprop="articleBody">
+			{{ content }}
+		</div>
 	</article>
 
 	<hr>
