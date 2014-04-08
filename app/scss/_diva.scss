@@ -4,12 +4,42 @@
 
 .diva {
 	.jumbotron {
-		p {
-			margin-bottom: 10px;
-			font-size: 20px;
+		.container {
+			position: relative;
 
-			@media only screen and (min-width: $screen-sm) {
-				font-size: 30px;
+			h1 {
+				@media only screen and (min-width: $screen-sm) {
+					display: none;
+				}
+			}
+
+			p {
+				margin-bottom: 10px;
+				font-size: 20px;
+
+				@media only screen and (min-width: $screen-sm) {
+					font-size: 30px;
+				}
+			}
+
+			.sprites-diva-media-manangement {
+				display: none;
+
+				@media only screen and (min-width: $screen-sm) {
+					display: block;
+					margin-bottom: $padding-large-vertical;
+				}
+			}
+
+			.sprites-diva {
+				display: none;
+
+				@media only screen and (min-width: $screen-sm) {
+					display: block;
+					position: absolute;
+					right: 5%;
+					top: 0;
+				}
 			}
 		}
 	}
