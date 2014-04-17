@@ -315,6 +315,11 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/_bower_components/font-awesome/fonts',
           src: '**/*',
           dest: '<%= yeoman.dist %>/fonts'
+        }, {
+          expand: true,
+          cwd: '.tmp/images/thumbs',
+          src: '**/*.*',
+          dest: '<%= yeoman.dist %>/images/thumbs'
         }]
       },
 
@@ -386,6 +391,23 @@ module.exports = function (grunt) {
       }
     },
 
+    replace: {
+      bower: {
+        options: {
+          patterns: [{
+            match: '/="../_bower_components//g',
+            replacement: '="/_bower_components/',
+            expression: true
+          }]
+        },
+        files: [{
+          expand: true,
+          src: '<%= yeoman.dist %>/**/*.html',
+          dest: ''
+        }]
+      }
+    },
+
     concurrent: {
       server: [
         'compass:server',
@@ -395,6 +417,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
+        'image_resize',
         'copy:dist'
       ]
     }
@@ -427,7 +450,9 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean',
     // Jekyll cleans files from the target directory, so must run first
+    'bowerInstall',
     'jekyll:dist',
+    'replace:bower',
     'concurrent:dist',
     'useminPrepare',
     'concat',

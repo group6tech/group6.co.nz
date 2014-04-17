@@ -21,6 +21,9 @@ $headings-color:         #fff;
 
 $navbar-inverse-bg:      #111;
 
+//$fa-font-path: '/fonts';
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts";
+
 
 
 // Fonts
@@ -28,7 +31,7 @@ $navbar-inverse-bg:      #111;
 
 @font-face {
   font-family: BellGothic;
-  src: url("../fonts/BellGothicStd-Bold.otf") format("opentype");
+  src: url("/fonts/BellGothicStd-Bold.otf") format("opentype");
 }
 
 
