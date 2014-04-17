@@ -5,6 +5,7 @@
 
 name: group6.co.nz
 description: Group 6 Technologies
+url: http://www.group6.co.nz
 author:
   name: Matt Dwen
   email: matt@group6.co.nz
@@ -24,3 +25,10 @@ markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
 pygments: true
+
+# Sitemap Generator
+sitemap:
+  include_posts:
+    - "/diva/releases.html"
+    - "/news/archive.html"
+    - "/news/index.html"
