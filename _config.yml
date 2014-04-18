@@ -28,6 +28,8 @@ pygments: true
 
 # Sitemap Generator
 sitemap:
+  exclude:
+    - "/rss/diva.xml"
   include_posts:
     - "/diva/releases.html"
     - "/news/archive.html"
