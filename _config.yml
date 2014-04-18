@@ -30,6 +30,7 @@ pygments: true
 sitemap:
   exclude:
     - "/rss/diva.xml"
+    - "/rss/news.xml"
   include_posts:
     - "/diva/releases.html"
     - "/news/archive.html"
