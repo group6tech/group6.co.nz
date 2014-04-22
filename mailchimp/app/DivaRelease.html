@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>*|RSSITEM:TITLE|*</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css?__inline=true"/>
 </head>
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 <center>
@@ -36,14 +36,8 @@
                   <td class="bodyContent">
                     *|RSSITEMS:|*
                     <h2 class="mc-toc-title"><a href="*|RSSITEM:URL|*" target="_blank">*|RSSITEM:TITLE|*</a></h2>
-                    <em>*|RSSITEM:DATE|*</em><br />
                     *|RSSITEM:CONTENT_FULL|*<br />
-                    <a href="*|RSSITEM:URL|*" target="_blank">View in browser &raquo;</a><br />
-                    *|RSSITEM:TWITTER|* *|RSSITEM:LIKE|*<br />
-                    <br />
-                    *|END:RSSITEMS|*<br />
-                    <br />
-                    <br />
+                    *|END:RSSITEMS|*
                     <h3 class="h3">Recent Releases:</h3>
                     *|RSS:RECENT|*
                   </td>
@@ -59,11 +53,9 @@
           <tr>
             <td class="footerContent">
               <p>Copyright &copy; *|CURRENT_YEAR|* Group 6 Technologies Ltd. All rights reserved.</p>
-              <p>*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*</p>
               <p>
                 <a href="*|UNSUB|*">unsubscribe from this list</a>
-                &nbsp;|&nbsp;
-                <a href="*|UPDATE_PROFILE">update subscription preferences</a>
+              </p>
               <p>*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*</p>
             </td>
           </tr>
