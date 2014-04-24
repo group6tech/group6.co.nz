@@ -50,3 +50,13 @@
 		}
 	}
 }
+
+form.diva {
+	@extend .well;
+
+	margin-top: $padding-large-vertical;
+
+	input[type="email"] {
+		width: 300px;
+	}
+}
