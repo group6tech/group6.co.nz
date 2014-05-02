@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }} - {{ site.description }} - end to end television, post production and broadcast facility solutions</title>
-    <meta name="description" content="">
+    {% if page.metaDesc %}
+      <meta name="description" content="{{ page.metaDesc }}">
+    {% else %}
+      <meta name="description" content="{{ page.excerpt | strip_html }}">
+    {% endif %}
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="alternate" type="application/rss+xml" title="DIVA Release News" href="{{ site.url }}/rss/diva.xml">

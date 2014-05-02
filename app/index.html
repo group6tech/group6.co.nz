@@ -2,12 +2,14 @@
 layout: base
 title: Welcome
 bodyClass: index
+metaDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
+socialDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
 ---
 
-<div class="jumbotron">
+<div class="jumbotron" itemscope itemtype="http://schema.org/Organization">
   <div class="container">
-    <h1>Group 6 Technologies</h1>
-    <p>End to end television, post production, and broadcast facility solutions.</p>
+    <h1 itemprop="name">Group 6 Technologies</h1>
+    <p itemeprop="description">End to end television, post production, and broadcast facility solutions.</p>
     <div class="sprites-group6logo-small"></div>
     <div class="sprites-group6logo"></div>
   </div>
@@ -22,13 +24,17 @@ bodyClass: index
 
   <hr>
 
-  <section class="diva">
+  <section class="diva" itemscope itemtype="http://schema.org/Product">
     <div class="row">
       <div class="col-sm-6">
-        <h2>DIVA Media System</h2>
-        <p>DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
-        <p>Simplify setup, share files, and get cutting with a click.</p>
-        <p class="lead"><a href="/diva/">Learn about DIVA</a></p>
+        <h2 itemprop="name">DIVA Media System</h2>
+        <div itemprop="description">
+          <p>DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
+          <p>Simplify setup, share files, and get cutting with a click.</p>
+        </div>
+        <p class="lead">
+          <a href="/diva/" itemprop="url">Learn about DIVA</a>
+        </p>
       </div>
       <div class="col-sm-6">
         <a href="/diva/">
