@@ -7,7 +7,12 @@ socialImage: logos/diva.png
 
 {% for post in site.categories['diva'] %}
 	<article>
-		<a href="{{ post.url }}">v{{ post.version }} - {{ post.date | date_to_string }}</a>
+		<h3>
+			<a href="{{ post.url }}">v{{ post.version }}</a>
+			<small>{{ post.date | date_to_string }}</small>
+		</h3>
+		<p>{{ post.excerpt | strip_html }}</p>
+		<p><a href="{{ post.url }}">Full release notes &raquo;</a></p>
 	</article>
 {% endfor %}
 
