@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }} - {{ site.description }} - end to end television, post production and broadcast facility solutions</title>
+    <title>
+      {{ page.title }} - {{ site.description }} - end to end television, post production and broadcast facility solutions
+    </title>
     {% if page.metaDesc %}
       <meta name="description" content="{{ page.metaDesc }}">
     {% else %}
@@ -14,31 +16,48 @@
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@group6tech">
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:title" property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="Group 6 Technologies">
+    <meta property="og:url" content="http://www.group6.co.nz/{{ page.url }}">
 
     {% if page.socialDesc %}
-      <meta name="twitter:description" content="{{ page.socialDesc }}">
+      <meta name="twitter:description"
+            property="og:description"
+            content="{{ page.socialDesc }}">
     {% elsif page.metaDesc %}
-      <meta name="twitter:description" content="{{ page.metaDesc }}">
+      <meta name="twitter:description"
+            property="og:description"
+            content="{{ page.metaDesc }}">
     {% else %}
-      <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+      <meta name="twitter:description"
+            property="og:description"
+            content="{{ page.excerpt | strip_html }}">
     {% endif %}
 
     {% if page.socialImage %}
       <meta name="twitter:image"
+            property="og:image"
             content="http://www.group6.co.nz/images/{{ page.socialImage }}">
     {% else %}
       <meta name="twitter:image"
+            property="og:image"
             content="http://www.group6.co.nz/images/logos/group6.png">
     {% endif %}
 
-    <link rel="alternate" type="application/rss+xml" title="DIVA Release News" href="{{ site.url }}/rss/diva.xml">
-    <link rel="alternate" type="application/rss+xml" title="Group 6 Technology News" href="{{ site.url }}/rss/news.xml">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="DIVA Release News"
+          href="{{ site.url }}/rss/diva.xml">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="Group 6 Technology News"
+          href="{{ site.url }}/rss/news.xml">
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/_bower_components/blueimp-gallery/css/blueimp-gallery.css">
+    <link rel="stylesheet"
+          href="/_bower_components/blueimp-gallery/css/blueimp-gallery.css">
     <!-- endbuild -->
     <!-- endbuild -->
   </head>
