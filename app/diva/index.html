@@ -8,17 +8,23 @@ socialDesc: "Spend more time editing, less time setting up, and collaborate on p
 socialImage: logos/diva.png
 ---
 
+<section itemscope itemtype="http://schema.org/Product">
 <div class="jumbotron">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h1>DIVA Media System</h1>
+				<h1 itemprop="name">DIVA Media System</h1>
 				<div class="sprites-diva-media-manangement"></div>
 				<p>By editors for editors.</p>
 				<p>The most cost effective media management tool available today.</p>
 			</div>
 			<div class="col-sm-6">
-				<div class="sprites-diva"></div>
+				<div class="sprites-diva">
+					<img class="hidden"
+							 src="/images/logos/diva.png"
+							 width="256" height="256"
+							 itemprop="logo">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -29,10 +35,10 @@ socialImage: logos/diva.png
 		<div class="row">
 			<div class="col-sm-6">
 				<p class="lead">Spend more time editing, less time setting up, and collaborate on projects with ease.</p>
-				<p class="lead">DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.</p>
+				<p class="lead" itemprop="description">DIVA is a media server designed and built for editors to streamline, store, share and simplify your Avid Media Composer environment.</p>
 			</div>
 			<div class="col-sm-6">
-				<img src="/images/diva/volume-pool.png" alt="DIVA Volume Pool">
+				<img itemprop="image" src="/images/diva/volume-pool.png" alt="DIVA Volume Pool">
 			</div>
 		</div>
 	</section>
@@ -54,7 +60,7 @@ socialImage: logos/diva.png
 				</ul>
 			</div>
 			<div class="col-sm-6 col-sm-pull-6">
-				<img src="/images/diva/client-drives.png" alt="DIVA Client">
+				<img itemprop="image" src="/images/diva/client-drives.png" alt="DIVA Client">
 			</div>
 		</div>
 	</section>
@@ -152,11 +158,18 @@ socialImage: logos/diva.png
 		<h2><a href="/diva/releases.html">Release Notes <i class="fa fa-bullhorn"></i></a></h2>
 
 		{% for post in site.categories['diva'] limit: 1 %}
-			<article>
-				<h4><a href="{{ post.url }}">
-					v{{ post.version }} - {{ post.date | date_to_string}}
-				</a></h4>
-				{{ post.content }}
+			<article itemscope itemtype="http://schema.org/Article">
+				<h4>
+					<a href="{{ post.url }}" itemprop="url">
+						<span itemprop="headline">DIVA v{{ post.version }}</span>
+					</a>
+					<small>
+						<time itemprop="dateCreated">{{ post.date | date_to_string}}</time>
+					</small>
+				</h4>
+				<div itemprop="articleBody">
+					{{ post.content }}
+				</div>
 			</article>
 		{% endfor %}
 	</section>
@@ -164,3 +177,4 @@ socialImage: logos/diva.png
 	{% include diva-subscribe.html %}
 
 </div>
+</section>

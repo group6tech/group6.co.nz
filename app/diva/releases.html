@@ -1,19 +1,42 @@
 ---
 title: DIVA Release Notes
-layout: default
+layout: base
+bodyClass: diva-release
 metaDesc: "DIVA version and release notes. Subscribe via email or RSS."
 socialImage: logos/diva.png
 ---
 
-{% for post in site.categories['diva'] %}
-	<article>
-		<h3>
-			<a href="{{ post.url }}">v{{ post.version }}</a>
-			<small>{{ post.date | date_to_string }}</small>
-		</h3>
-		<p>{{ post.excerpt | strip_html }}</p>
-		<p><a href="{{ post.url }}">Full release notes &raquo;</a></p>
-	</article>
-{% endfor %}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1 itemprop="name">DIVA Release Notes</h1>
+			</div>
+			<div class="col-sm-6">
+				<div class="sprites-diva-small">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-{% include diva-subscribe.html %}
+<div class="container">
+	{% for post in site.categories['diva'] %}
+		<article itemscope itemtype="http://schema.org/Article">
+			<h3>
+				<a href="{{ post.url }}" itemprop="url">
+					<span itemprop="headline">v{{ post.version }}</span>
+				</a>
+				<small>
+					<time itemprop="dateCreated">{{ post.date | date_to_string }}</time>
+				</small>
+			</h3>
+			<p itemprop="description">{{ post.excerpt | strip_html }}</p>
+			<p><a href="{{ post.url }}">Full release notes &raquo;</a></p>
+		</article>
+	{% endfor %}
+
+	<hr>
+
+	{% include diva-subscribe.html %}
+</div>

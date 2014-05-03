@@ -51,10 +51,29 @@
 	}
 }
 
+.diva-release {
+	.jumbotron {
+		.sprites-diva-small {
+			display: none;
+
+			@media only screen and (min-width: $screen-sm) {
+				display: block;
+				position: absolute;
+				right: 5%;
+				top: 0;
+			}
+		}
+	}
+}
+
 form.diva {
 	@extend .well;
 
-	margin-top: $padding-large-vertical;
+	margin-top: ($padding-large-vertical * 2);
+
+	h4 {
+		margin-top: 0;
+	}
 
 	input[type="email"] {
 		width: 300px;
