@@ -12,7 +12,9 @@ metaDesc: "All the latest news from Group 6 Technologies."
 			<a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
 		</h3>
 		<time itemprop="dateCreated">{{ post.date | date_to_string}}</time>
-		{{ post.content }}
+		<div itemprop="articleBody">
+			{{ post.content }}
+		</div>
 	</article>
 
 	<hr>

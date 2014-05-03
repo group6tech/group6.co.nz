@@ -5,16 +5,25 @@ contentClass: news
 ---
 
 {% for post in site.categories['news'] %}
-	<article>
+	<article itemscope itemtype="http://schema.org/NewsArticle">
 		<h4>
-			<a href="{{ post.url }}">{{ post.title }}</a>
+			<a href="{{ post.url }}" itemprop="url">
+				<span itemprop="name">{{ post.title }}</a>
+			</a>
 			<small>
-				<time>{{ post.date | date_to_string }}</time>
+				<time itemprop="dateCreated">{{ post.date | date_to_string }}</time>
 			</small>
 		</h4>
+		<p itemprop="description">
+			{{ post.excerpt | strip_html }}
+		</p>
 	</article>
 {% endfor %}
 
 <hr>
 
-<h2><a href="/news/"><i class="fa fa-chevron-left"></i> News</a></h2>
+<h2>
+	<a href="/news/">
+		<i class="fa fa-chevron-left"></i> Latest News
+	</a>
+</h2>
