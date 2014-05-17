@@ -36,7 +36,7 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/rss/*.xml',
           '!<%= yeoman.app %>/_bower_components/**/*'
         ],
-        tasks: ['jekyll:server']
+        tasks: ['jekyll:server', 'replace:bower']
       },
       livereload: {
         options: {
@@ -405,7 +405,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: '<%= yeoman.dist %>/**/*.html',
+          src: ['.jekyll/**/*.html', '<%= yeoman.dist %>/**/*.html'],
           dest: ''
         }]
       }
@@ -436,6 +436,7 @@ module.exports = function (grunt) {
       'clean:server',
       'bowerInstall',
       'concurrent:server',
+      'replace:bower',
       'autoprefixer:server',
       'connect:livereload',
       'watch'
