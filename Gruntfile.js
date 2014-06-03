@@ -411,6 +411,16 @@ module.exports = function (grunt) {
       }
     },
 
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        clone: '.gh-pages',
+        repo: 'git@github.com:group6tech/group6tech.github.io.git',
+        branch: 'master'
+      },
+      src: ['**']
+    },
+
     concurrent: {
       server: [
         'compass:server',
@@ -471,10 +481,9 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('deploy', [
-    'check',
-    'test',
+    //'check',
     'build',
-    'buildcontrol'
+    'gh-pages'
     ]);
 
   grunt.registerTask('default', [
