@@ -69,7 +69,7 @@ socialDesc: "Group 6 is your technology partner for television, broadcast and po
 
     <div class="row">
       {% assign clientNo = 1 %}
-      {% sorted_for page in site.pages reversed sort_by:date %}
+      {% for page in site.pages reversed %}
         {% if clientNo <= 4 and page.category == 'client' %}
           <div class="col-xs-6 col-sm-3">
             <a href="{{ page.url }}" title="{{ page.Title }}">
@@ -78,7 +78,7 @@ socialDesc: "Group 6 is your technology partner for television, broadcast and po
             {% assign clientNo = clientNo | plus: 1 %}
           </div>
         {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
     </div>
   </section>
 

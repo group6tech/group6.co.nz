@@ -19,8 +19,16 @@ include: ['.htaccess']
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
 show_drafts: true
+highlighter: true
 
-pygments: true
+# Defaults
+defaults:
+  -
+    scope:
+      path: "diva"
+      type: "post"
+    values:
+      layout: "release"
 
 # Sitemap Generator
 sitemap:

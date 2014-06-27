@@ -157,22 +157,24 @@ socialImage: logos/diva.png
 	<section class="release-notes">
 		<h2><a href="/diva/releases.html">Release Notes <i class="fa fa-bullhorn"></i></a></h2>
 
-		{% for post in site.categories['diva'] limit: 1 %}
+		{% for release in site.categories['diva'] limit: 1 %}
 			<article itemscope itemtype="http://schema.org/Article">
 				<h4>
-					<a href="{{ post.url }}" itemprop="url">
-						<span itemprop="headline">DIVA v{{ post.version }}</span>
+					<a href="{{ release.url }}" itemprop="url">
+						<span itemprop="headline">DIVA v{{ release.version }}</span>
 					</a>
 					<small>
-						<time itemprop="dateCreated">{{ post.date | date_to_string}}</time>
+						<time itemprop="dateCreated">{{ release.date | date_to_string}}</time>
 					</small>
 				</h4>
 				<div itemprop="articleBody">
-					{{ post.content }}
+					{{ release.content }}
 				</div>
 			</article>
 		{% endfor %}
 	</section>
+
+	<hr>
 
 	{% include diva-subscribe.html %}
 

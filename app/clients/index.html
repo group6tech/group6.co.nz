@@ -5,7 +5,7 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 ---
 
 <div class="packery">
-	{% sorted_for page in site.pages reversed sort_by:date %}
+	{% for page in site.pages reversed sort_by:date %}
 		{% if page.category == 'client' %}
 			<a class="item" href="{{ page.url }}" title="{{ page.title }}">
 				<img src="/images/clients/{{ page.banner }}.jpg" alt="{{ page.title }}">
@@ -15,5 +15,5 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 				</div>
 			</a>
 		{% endif %}
-	{% endsorted_for %}
+	{% endfor %}
 </div>
