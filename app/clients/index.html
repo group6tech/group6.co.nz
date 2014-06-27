@@ -4,16 +4,18 @@ layout: default
 metaDesc: "Our clients - built with Group 6 Technologies."
 ---
 
-<div class="packery">
+<div id="client-list">
 	{% for page in site.pages reversed sort_by:date %}
 		{% if page.category == 'client' %}
-			<a class="item" href="{{ page.url }}" title="{{ page.title }}">
-				<img src="/images/clients/{{ page.banner }}.jpg" alt="{{ page.title }}">
-				<div class="details">
-					<h2>{{ page.title }}</h2>
-					<span class="hidden-xs">{{ page.tagLine }}</span>
-				</div>
-			</a>
+			<div class="item">
+				<a href="{{ page.url }}" title="{{ page.title }}">
+					<img src="/images/clients/{{ page.banner }}.jpg" alt="{{ page.title }}">
+					<div class="details">
+						<h2>{{ page.title }}</h2>
+						<span class="hidden-xs">{{ page.tagLine }}</span>
+					</div>
+				</a>
+			</div>
 		{% endif %}
 	{% endfor %}
 </div>
