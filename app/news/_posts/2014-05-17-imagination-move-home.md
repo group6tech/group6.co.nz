@@ -1,5 +1,5 @@
 ---
-title: Imagination Television Move To A New Home
+title: Imagination Television move to a new home
 layout: news
 date: 2014-05-17 15:13
 alias: /news/2014/05/17/imagination-move-home.html
