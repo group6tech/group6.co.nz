@@ -2,6 +2,7 @@
 title: Advanced archiving and backup solution in development with Oracle
 layout: news
 date: 2013-07-12
+alias: /news/2013/07/12/oracle-partnership.html
 ---
 
 We’re proud to announce we’re working with [Oracle](http://www.oracle.com/) to

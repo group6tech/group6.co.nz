@@ -20,6 +20,7 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 highlighter: true
+permalink: none
 
 # Defaults
 defaults:

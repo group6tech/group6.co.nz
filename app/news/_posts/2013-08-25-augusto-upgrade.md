@@ -2,6 +2,7 @@
 title: DIVA and Infrastructure Upgrade for Augusto
 layout: news
 date: 2013-08-25
+alias: /news/2013/08/25/augusto-upgrade.html
 ---
 
 [Augusto](http://augusto.co.nz/) are one of New Zealand's most up and coming

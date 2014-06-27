@@ -2,6 +2,7 @@
 title: Imagination Television Move To A New Home
 layout: news
 date: 2014-05-17 15:13
+alias: /news/2014/05/17/imagination-move-home.html
 flickrSet: 72157644530806753
 ---
 
