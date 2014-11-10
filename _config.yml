@@ -40,3 +40,7 @@ sitemap:
     - "/diva/releases.html"
     - "/news/archive.html"
     - "/news/index.html"
+
+# Gems
+gems:
+  - jekyll-redirect-from
