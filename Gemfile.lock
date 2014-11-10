@@ -19,6 +19,7 @@ GEM
     execjs (2.2.1)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
+    ffi (1.9.3-x64-mingw32)
     fssm (0.2.10)
     jekyll (2.0.3)
       classifier (~> 1.3)
@@ -63,6 +64,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   compass (>= 0.12)
