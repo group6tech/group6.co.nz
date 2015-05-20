@@ -41,8 +41,10 @@ $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts";
 // Imports
 // ----------------------------------------------------------------------------
 
-@import '../_bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import '../_bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
 @import '../_bower_components/font-awesome/scss/font-awesome.scss';
+
+
 @import 'mixins/retina';
 @import 'sprites';
 @import 'scaffolding';

@@ -1,13 +1,6 @@
 // Generated on 2014-03-20 using generator-jekyllrb 1.2.1
 'use strict';
 
-// Directory reference:
-//   css: css
-//   compass: scss
-//   javascript: scripts
-//   images: images
-//   fonts: fonts
-
 module.exports = function (grunt) {
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
@@ -22,9 +15,9 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      compass: {
+      sass: {
         files: ['<%= yeoman.app %>/scss/**/*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer:server']
+        tasks: ['sass:server', 'autoprefixer:server']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/css/**/*.css'],
@@ -457,7 +450,7 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'compass:server',
+    'compass:dist',
     'jshint:all',
     'csslint:check'
   ]);
@@ -474,7 +467,6 @@ module.exports = function (grunt) {
     'cssmin',
     'autoprefixer:dist',
     'uglify',
-    //'imagemin',
     'svgmin',
     'filerev',
     'usemin',
@@ -482,14 +474,13 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('deploy', [
-    //'check',
+    'check',
     'build',
     'gh-pages'
     ]);
 
   grunt.registerTask('default', [
     'check',
-    'test',
     'build'
   ]);
 };

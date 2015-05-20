@@ -2,6 +2,6 @@
 // Sprites
 // ============================================================================
 
-@import "compass/utilities/sprites";
-@import "../images/template/sprites/*.png";
+@import 'compass/utilities/sprites';
+@import '../images/template/sprites/*.png';
 @include all-sprites-sprites(true);
