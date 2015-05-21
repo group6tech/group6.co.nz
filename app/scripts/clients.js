@@ -1,5 +1,8 @@
 $(function () {
   'use strict';
 
-  $('#client-list').masonry();
+  var $clientList = $('#client-list');
+  $clientList.imagesLoaded(function() {
+    $clientList.masonry();
+  });
 });
