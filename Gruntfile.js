@@ -424,8 +424,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
-        'image_resize',
-        'copy:dist'
+        'image_resize'
       ]
     }
   });
@@ -462,6 +461,7 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'replace:bower',
     'concurrent:dist',
+    'copy:dist',
     'useminPrepare',
     'concat',
     'cssmin',
@@ -474,7 +474,6 @@ module.exports = function (grunt) {
     ]);
 
   grunt.registerTask('deploy', [
-    'check',
     'build',
     'gh-pages'
     ]);
