@@ -168,7 +168,7 @@ socialImage: logos/diva.png
 					</small>
 				</h4>
 				<div itemprop="articleBody">
-					{{ release.content }}
+					{{ release.content | truncatewords:75 }}
 				</div>
 			</article>
 		{% endfor %}
