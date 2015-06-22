@@ -4,7 +4,7 @@ layout: client
 category: client
 date: 2003-08-21
 tagLine: Custom solutions for New Zealand’s first automated digital broadcaster
-banner: juice-tv/juice-tv
+banner: juice-tv/juice-tv.jpg
 client: Juice TV
 clientUrl: http://www.juicetv.co.nz/
 clientLogo: juice-tv/juice-tv

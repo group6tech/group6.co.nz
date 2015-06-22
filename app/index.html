@@ -70,10 +70,10 @@ socialDesc: "Group 6 is your technology partner for television, broadcast and po
     <div class="row">
       {% assign clientNo = 1 %}
       {% for page in site.pages reversed %}
-        {% if clientNo <= 4 and page.category == 'client' %}
+        {% if clientNo <= 4 and page.category == 'client' and page.article != false %}
           <div class="col-xs-6 col-sm-3">
             <a href="{{ page.url }}" title="{{ page.Title }}">
-              <img src="images/thumbs/clients/{{ page.banner }}.jpg" alt="{{ page.Title }}">
+              <img src="images/thumbs/clients/{{ page.banner }}" alt="{{ page.Title }}">
             </a>
             {% assign clientNo = clientNo | plus: 1 %}
           </div>

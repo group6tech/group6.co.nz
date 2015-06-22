@@ -4,7 +4,7 @@ layout: client
 category: client
 date: 2013-07-01
 tagLine: Building a digital storage solution for reality TV project
-banner: eyeworks/eyeworks
+banner: eyeworks/eyeworks.png
 client: Eyeworks
 clientUrl: http://www.touchdowntv.com/
 clientLogo: eyeworks/eyeworks

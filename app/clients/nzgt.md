@@ -4,7 +4,7 @@ layout: client
 category: client
 date: 2013-06-07
 tagLine: Technical advice and management for ratings smash television show
-banner: nzgt/nzgt
+banner: nzgt/nzgt.jpg
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
 clientLogo: imagination/imagination

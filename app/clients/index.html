@@ -8,8 +8,12 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 	{% for page in site.pages reversed sort_by:date %}
 		{% if page.category == 'client' %}
 			<div class="item">
+				{% if page.article == false %}
+				<a href="{{ page.clientUrl }}" target="_blank" title="{{ page.title }}">
+				{% else %}
 				<a href="{{ page.url }}" title="{{ page.title }}">
-					<img src="/images/clients/{{ page.banner }}.jpg" alt="{{ page.title }}">
+				{% endif %}
+					<img src="/images/clients/{{ page.banner }}" alt="{{ page.title }}">
 					<div class="details">
 						<h2>{{ page.title }}</h2>
 						<span class="hidden-xs">{{ page.tagLine }}</span>
