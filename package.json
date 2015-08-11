@@ -1,0 +1,18 @@
+{
+  "name": "group6.co.nz",
+  "version": "2.0.0",
+  "description": "Jekyll site for group6.co.nz",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/group6tech/group6.co.nz.git"
+  },
+
+  "author": "Matt Dwen",
+  "license": "MIT",
+
+  "bugs": {
+    "url": "https://github.com/group6tech/group6.co.nz/issues"
+  },
+  "homepage": "https://github.com/group6tech/group6.co.nz#readme"
+}
