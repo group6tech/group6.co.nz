@@ -16,7 +16,8 @@ module.exports = function(grunt) {
   var config = {
     src: 'app',
     dest: 'dist',
-    temp: '.tmp'
+    temp: '.tmp',
+    jekyll: '.jekyll'
   };
 
   // Tasks Configuration
@@ -32,6 +33,7 @@ module.exports = function(grunt) {
     //
     clean: {
       server: [
+        '<%= config.jekyll %>',
         '<%= config.temp %>'
       ]
     },
@@ -41,12 +43,18 @@ module.exports = function(grunt) {
     browserSync: {
       bsFiles: {
         src : [
-          '<%= config.temp %>/*.html'
+          '<%= config.temp %>/styles/*.css',
+          '<%= config.jekyll %>/*.html'
         ]
       },
       options: {
         watchTask: true,
-        server: '<%= config.temp %>'
+        server: {
+          baseDir: ['<%= config.jekyll %>', '<%= config.temp %>'],
+          routes: {
+            '/bower_components': './bower_components'
+          }
+        }
       }
     },
 
@@ -65,7 +73,7 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       sass: {
-        files: ['<%= config.src %>/styles/{,*/}*.scss'],
+        files: ['<%= config.src %>/_styles/{,*/}*.scss'],
         tasks: ['sass:server']
       }
     },
@@ -90,7 +98,7 @@ module.exports = function(grunt) {
       },
       server: {
         options: {
-          dest: '<%= config.temp %>'
+          dest: '<%= config.jekyll %>'
         }
       }
     },
@@ -104,7 +112,7 @@ module.exports = function(grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '<%= config.src %>/styles',
+          cwd: '<%= config.src %>/_styles',
           src: '*.scss',
           dest: '<%= config.temp %>/styles',
           ext: '.css'

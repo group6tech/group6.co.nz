@@ -1,0 +1,27 @@
+//
+// group6.co.nz - main stylesheet
+// ============================================================================
+
+
+
+// Core variables and mixins
+// ----------------------------------------------------------------------------
+
+@import 'variables';
+@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/mixins';
+
+
+
+// Reset and dependencies
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/_normalize';
+@import 'bootstrap/scss/_print';
+
+
+
+// Core css
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/_reboot'

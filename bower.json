@@ -14,5 +14,8 @@
     "_bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0"
+  }
 }
