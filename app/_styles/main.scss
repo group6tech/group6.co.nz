@@ -9,6 +9,8 @@
 
 @import 'variables';
 @import 'bootstrap/scss/_variables';
+
+@import 'mixins';
 @import 'bootstrap/scss/mixins';
 
 
@@ -24,4 +26,19 @@
 // Core css
 // ----------------------------------------------------------------------------
 
-@import 'bootstrap/scss/_reboot'
+@import 'bootstrap/scss/_reboot';
+@import 'bootstrap/scss/_type';
+@import 'bootstrap/scss/_images';
+@import 'bootstrap/scss/_grid';
+
+
+
+// Components
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/animation';
+@import 'bootstrap/scss/nav';
+
+@import 'header';
+@import 'navbar';
+@import 'page-header';

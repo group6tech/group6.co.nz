@@ -1,3 +1,38 @@
 //
 // Variables
 // ============================================================================
+
+
+
+// Colors
+// ----------------------------------------------------------------------------
+
+$black:                       #000;
+$white:                       #fff;
+
+$grey-dark:                   #222222;  // Page background
+$grey-light:                  #b0b0b0;  // Footer text
+$grey-lighter:                #dee2e3;  // Footer background
+
+$brand-primary:               #0088cc;
+
+$brand-gradient-dark:         #1080bb;
+$brand-gradient-light:        #79cdef;
+
+
+
+// Body
+// ----------------------------------------------------------------------------
+
+$body-bg:                     $grey-lighter; // Use the footer color
+$body-color:                  $white;
+
+
+
+// Typography
+// ----------------------------------------------------------------------------
+
+$font-family-sans-serif:      "tenso",sans-serif;
+
+$headings-font-family:        "facit",sans-serif;
+$headings-font-weight:        400;

@@ -52,6 +52,7 @@ module.exports = function(grunt) {
         server: {
           baseDir: ['<%= config.jekyll %>', '<%= config.temp %>'],
           routes: {
+            '/images': './<%= config.src %>/images',
             '/bower_components': './bower_components'
           }
         }
