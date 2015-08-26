@@ -15,9 +15,10 @@ $grey-light:                  #b0b0b0;  // Footer text
 $grey-lighter:                #dee2e3;  // Footer background
 
 $brand-primary:               #0088cc;
+$brand-light:									#79cdef;
 
 $brand-gradient-dark:         #1080bb;
-$brand-gradient-light:        #79cdef;
+$brand-gradient-light:        $brand-light;
 
 
 
@@ -36,3 +37,5 @@ $font-family-sans-serif:      "tenso",sans-serif;
 
 $headings-font-family:        "facit",sans-serif;
 $headings-font-weight:        400;
+
+$footer-font-family:					"facit",sans-serif;

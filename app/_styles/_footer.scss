@@ -1,0 +1,99 @@
+//
+// Components - Footer
+// ============================================================================
+
+.footer {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+
+	color: $grey-light;
+	font-family: $footer-font-family;
+	text-align: center;
+
+	a {
+		color: $grey-light;
+
+		transition: color .2s;
+
+		&:hover {
+			color: darken($grey-light, 10%);
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin-bottom: ($spacer / 2);
+
+		font-size: (.8rem / 1.6);
+
+		&:last-child {
+			margin-top: $spacer;
+		}
+	}
+
+	.fa-circle {
+		position: relative;
+		bottom: .05rem;
+
+		margin-left: ($spacer / 2);
+		margin-right: ($spacer / 2);
+		padding-bottom: .2rem;
+
+		font-size: (.5rem / 1.6);
+	}
+}
+
+.footer-menu {
+	font-size: (1.2rem / 1.6);
+
+	li {
+		@include media-breakpoint-up(md) {
+			display: inline-block;
+		}
+	}
+
+	a {
+		display: block;
+		padding: ($spacer / 2) $spacer;
+	}
+}
+
+.footer-social {
+	margin-top: ($spacer / 2);
+	margin-bottom: ($spacer / 2);
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: block;
+		padding: ($spacer / 2);
+
+		font-size: (3rem / 1.6);
+	}
+}
+
+.call-to-help {
+	padding: $spacer;
+
+	color: $brand-light;
+	font-size: (1.4rem / 1.6);
+	text-align: center;
+
+	background-color: $white;
+
+	a {
+		color: $brand-light;
+		transition: color .2s;
+
+		&:hover {
+			color: darken($brand-light, 10%);
+			text-decoration: none;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		font-size: (1.6rem / 1.6);
+	}
+}
