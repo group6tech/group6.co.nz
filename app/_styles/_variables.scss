@@ -34,8 +34,9 @@ $body-color:                  $white;
 // ----------------------------------------------------------------------------
 
 $font-family-sans-serif:      "tenso",sans-serif;
+$font-family-alt:							"facit",sans-serif;
 
-$headings-font-family:        "facit",sans-serif;
-$headings-font-weight:        400;
+//$headings-font-family:        "facit",sans-serif;
+//$headings-font-weight:        200;
 
-$footer-font-family:					"facit",sans-serif;
+$footer-font-family:					$font-family-alt;

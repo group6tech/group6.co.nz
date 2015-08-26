@@ -5,7 +5,7 @@
 .navbar-nav {
   margin-top: $spacer;
 
-  font-size: (1rem / 1.6);
+  font-size: (.9rem / 1.6);
   text-transform: uppercase;
   text-align: left;
 
@@ -14,10 +14,12 @@
 
   @include media-breakpoint-up(md) {
     background-color: transparent;
+
+    font-size: (1.2rem / 1.6);
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: (1.2rem / 1.6);
+    font-size: (1.8rem / 1.6);
   }
 
   a {

@@ -3,5 +3,8 @@
 // ============================================================================
 
 .content-wrapper {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+	
 	background-color: $grey-dark;
 }

@@ -8,7 +8,9 @@
   padding-top: $spacer;
 
   h1 {
+    font-family: $font-family-alt;
     font-size: (2rem / 1.6);
+    font-weight: 200;
     line-height: (2.4rem / 1.6);
 
     @include media-breakpoint-up(md) {
