@@ -5,20 +5,27 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 ---
 
 <div id="client-list">
+
+	<div class="card card-light">
+		<img class="card-img-left"  src="/images/clients/shortland-street/cast-2013.jpg" alt="Shortland Street"/>
+		<div class="card-block">
+			<h4 class="card-title">Shortland Street</h4>
+			<p class="card-text">HD upgrade for New Zealand's best loved soap</p>
+			<a class="btn" href="/clients/shortland-street.html">More details</a>
+		</div>
+	</div>
+
 	{% for page in site.pages reversed sort_by:date %}
 		{% if page.category == 'client' %}
-			<div class="item">
-				{% if page.article == false %}
-				<a href="{{ page.clientUrl }}" target="_blank" title="{{ page.title }}">
-				{% else %}
-				<a href="{{ page.url }}" title="{{ page.title }}">
-				{% endif %}
-					<img src="/images/clients/{{ page.banner }}" alt="{{ page.title }}">
-					<div class="details">
-						<h2>{{ page.title }}</h2>
-						<span class="hidden-xs">{{ page.tagLine }}</span>
-					</div>
-				</a>
+			<div class="card">
+				<img class="card-img"  src="/images/clients/{{ page.banner }}" alt="{{ page.title }}"/>
+				<div class="card-block">
+					<h4 class="card-title">{{ page.title }}</h4>
+					<p class="card-text">{{ page.tagLine }}</p>
+					{% if page.article == true %}
+					<a class="btn" href="{{ page.url }}">More details</a>
+					{% endif %}
+				</div>
 			</div>
 		{% endif %}
 	{% endfor %}

@@ -10,8 +10,9 @@
 
 	color: $white;
 	font-family: $font-family-alt;
-	font-size: (.5rem / 1.6);
-	line-height: (1.4rem / 1.6);
+	font-size: 5pt;
+	letter-spacing: 0.76pt;
+	line-height: 2.1;
 	text-transform: uppercase;
 
 	border: 1px solid $white;
@@ -22,7 +23,8 @@
 		padding-left: (1.5rem / 1.6);
 		padding-right: (1.5rem / 1.6);
 
-		font-size: (.7rem / 1.6);
+		font-size: 6pt;
+		letter-spacing: 0.92pt;
 	}
 
 	@include media-breakpoint-up(md) {
@@ -30,18 +32,21 @@
 		padding-right: (2rem / 1.6);
 		height: (2.2rem / 1.6);
 
-		font-size: (.9rem / 1.6);
+		font-size: 9pt;
+		letter-spacing: 1.07pt;
 		line-height: (2rem / 1.6);
 	}
 
 	@include media-breakpoint-up(lg) {
 		height: (3.3rem / 1.6);
 
-		font-size: (1.4rem / 1.6);
-		line-height: (3rem / 1.6);
+		font-size: 14pt;
+		letter-spacing: 0.88pt;
+		line-height: 24pt;
 	}
 
 	&:hover {
+		color: $brand-primary;
 		text-decoration: none;
 
 		background-color: $white;
