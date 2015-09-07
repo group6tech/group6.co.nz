@@ -2,12 +2,15 @@
 title: Clients
 layout: default
 metaDesc: "Our clients - built with Group 6 Technologies."
+scripts:
+ - client-list.js
 ---
 
-<div id="client-list">
+<div class="client-list">
 
-	<div class="card card-light">
-		<img class="card-img-left"  src="/images/clients/shortland-street/cast-2013.jpg" alt="Shortland Street"/>
+	<!-- SHORTLAND STREET -->
+	<div class="card card-light card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/shortland-street/cast.jpg"></div>
 		<div class="card-block">
 			<h4 class="card-title">Shortland Street</h4>
 			<p class="card-text">HD upgrade for New Zealand's best loved soap</p>
@@ -15,18 +18,162 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 		</div>
 	</div>
 
-	{% for page in site.pages reversed sort_by:date %}
-		{% if page.category == 'client' %}
-			<div class="card">
-				<img class="card-img"  src="/images/clients/{{ page.banner }}" alt="{{ page.title }}"/>
-				<div class="card-block">
-					<h4 class="card-title">{{ page.title }}</h4>
-					<p class="card-text">{{ page.tagLine }}</p>
-					{% if page.article == true %}
-					<a class="btn" href="{{ page.url }}">More details</a>
-					{% endif %}
-				</div>
-			</div>
-		{% endif %}
-	{% endfor %}
+	<!-- AUGUSTO -->
+	<div class="card card-dark card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/augusto/super8.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Augusto</h4>
+			<p class="card-text">Full facility support for digital Auckland agency.</p>
+			<a class="btn" href="/clients/augusto.html">More details</a>
+		</div>
+	</div>
+
+	<!-- ARHT -->
+	<div class="card card-light card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/arht/winch.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Auckland Rescue Helicopter Trust</h4>
+			<p class="card-text">Custom software for life saving helicopter service.</p>
+			<a class="btn" href="/clients/arht.html">More details</a>
+		</div>
+	</div>
+
+  <!-- DOP -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/dop/lto.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Department of Post</h4>
+			<p class="card-text">DIVA Media System and Facility Fitout.</p>
+		</div>
+	</div>
+
+  <!-- Eyeworks -->
+	<div class="card card-dark card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/eyeworks/the-block-s2.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Eyeworks</h4>
+			<p class="card-text">Building a digital storage solution for reality TV project.</p>
+      <a class="btn" href="/clients/eyeworks.html">More details</a>
+		</div>
+	</div>
+
+  <!-- Greenstone -->
+  <div class="card">
+    <div class="card-img card-img-left" data-src="/images/clients/greenstone/motorway-patrol.jpg"></div>
+    <div class="card-block">
+      <h4 class="card-title">Greenstone TV</h4>
+      <p class="card-text">DIVA Media System and Facility Fitout.</p>
+    </div>
+  </div>
+
+  <!-- GSTV -->
+  <div class="card">
+    <div class="card-img card-img-left" data-src="/images/clients/gstv/the-kick.jpg"></div>
+    <div class="card-block">
+      <h4 class="card-title">Great Southern Film &amp; Television</h4>
+      <p class="card-text">DIVA Media System.</p>
+    </div>
+  </div>
+
+  <!-- Imagination -->
+  <div class="card">
+    <div class="card-img card-img-left" data-src="/images/clients/imagination/grand-designs.jpg"></div>
+    <div class="card-block">
+      <h4 class="card-title">Imagination Television</h4>
+      <p class="card-text">DIVA Media System and Facility Fitout.</p>
+    </div>
+  </div>
+
+  <!-- Juice -->
+	<div class="card card-light card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/juice-tv/build01.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Juice TV</h4>
+			<p class="card-text">Custom solutions for New Zealand’s first automated digital broadcaster.</p>
+      <a class="btn" href="/clients/juice-tv.html">More details</a>
+		</div>
+	</div>
+
+  <!-- Masterchef -->
+	<div class="card card-dark card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/imagination/master-chef-judges-2015.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Masterchef</h4>
+			<p class="card-text">Full studio to post solution for cooking sensation.</p>
+      <a class="btn" href="/clients/masterchef.html">More details</a>
+		</div>
+	</div>
+
+  <!-- NZGT -->
+	<div class="card card-light card-with-button">
+		<div class="card-img card-img-left" data-src="/images/clients/imagination/nzgt-judges.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">New Zealand's Got Talent</h4>
+			<p class="card-text">Technical advice and management for ratings smash television show.</p>
+      <a class="btn" href="/clients/nzgt.html">More details</a>
+		</div>
+	</div>
+
+  <!-- Pango -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/pango/the-game-chef.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Pango</h4>
+			<p class="card-text">DIVA Media System.</p>
+		</div>
+	</div>
+
+  <!-- Reel Factory -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/reel-factory/drone-weapon.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Reel Factory</h4>
+			<p class="card-text">DIVA Media System.</p>
+		</div>
+	</div>
+
+  <!-- Screentime -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/screentime/police-ten7.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Screentime</h4>
+			<p class="card-text">DIVA Media System.</p>
+		</div>
+	</div>
+
+  <!-- Showdown -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/showdown/.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Showdown</h4>
+			<p class="card-text">DIVA Media System.</p>
+		</div>
+	</div>
+
+  <!-- South Seas -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/southseas/.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">South Seas Film &amp; Televsion School</h4>
+			<p class="card-text">DIVA Media System and Studio Fitout.</p>
+		</div>
+	</div>
+
+  <!-- Tomorrowland -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/tomorrowland/website.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Tomorrowland</h4>
+			<p class="card-text">DIVA Media System.</p>
+		</div>
+	</div>
+
+  <!-- Top Shelf -->
+	<div class="card">
+		<div class="card-img card-img-left" data-src="/images/clients/top-shelf/cook-the-books.jpg"></div>
+		<div class="card-block">
+			<h4 class="card-title">Top Shelf</h4>
+			<p class="card-text">DIVA Media System and Facility Fitout.</p>
+		</div>
+	</div>
 </div>

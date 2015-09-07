@@ -4,11 +4,41 @@
 
 
 
+// Card
+// ----------------------------------------------------------------------------
+
+.card {
+	position: relative;
+	margin-bottom: $spacer;
+}
+
+
+
 // Image
 // ----------------------------------------------------------------------------
 
-.card > img {
-	max-width: 100%;
+.card-img {
+	position: relative;
+	height: (16rem / 1.6);
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-breakpoint-up(sm) {
+		//height: (20rem / 1.6);
+	}
+
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		background-color: transparentize($brand-primary, .7);
+		content: " ";
+	}
 }
 
 
@@ -17,13 +47,40 @@
 // ----------------------------------------------------------------------------
 
 .card-block {
-	padding: $spacer ($spacer / 2);
+	position: relative;
+
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+	padding-left: ($spacer / 2);
+	padding-right: ($spacer / 2);
 
 	background-color: $brand-primary;
 
 	p {
 		margin-bottom: 0;
 	}
+
+	.btn {
+		position: absolute;
+		right: ($spacer / 2);
+		top: ($spacer * 1.5);
+	}
+}
+
+// With button
+//
+.card-with-button .card-block {
+	padding-right: ($spacer * 6);
+}
+
+// Colour variations
+//
+.card-light .card-block {
+	background-color: $brand-light;
+}
+
+.card-dark .card-block {
+	background-color: $brand-dark;
 }
 
 

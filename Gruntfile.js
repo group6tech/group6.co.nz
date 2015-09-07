@@ -44,13 +44,14 @@ module.exports = function(grunt) {
       bsFiles: {
         src : [
           '<%= config.temp %>/styles/*.css',
-          '<%= config.jekyll %>/*.html'
+          '<%= config.jekyll %>/*.html',
+          '<%= config.src %>/scripts/*.js',
         ]
       },
       options: {
         watchTask: true,
         server: {
-          baseDir: ['<%= config.jekyll %>', '<%= config.temp %>'],
+          baseDir: ['<%= config.jekyll %>', '<%= config.temp %>', '<%= config.src %>'],
           routes: {
             '/images': './<%= config.src %>/images',
             '/bower_components': './bower_components'

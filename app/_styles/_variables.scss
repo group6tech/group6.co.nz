@@ -16,8 +16,9 @@ $grey-lighter:                #dee2e3;  // Footer background
 
 $brand-primary:               #0088cc;
 $brand-light:									#79cdef;
+$brand-dark:									#1080bb;
 
-$brand-gradient-dark:         #1080bb;
+$brand-gradient-dark:         $brand-dark;
 $brand-gradient-light:        $brand-light;
 
 

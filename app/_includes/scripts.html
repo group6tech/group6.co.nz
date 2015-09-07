@@ -3,3 +3,7 @@
 <script src="/bower_components/bootstrap/js/dist/util.js"></script>
 <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
 <!-- endbuild -->
+
+{% for script in page.scripts %}
+	<script src="/scripts/{{ script }}"></script>
+{% endfor %}
