@@ -25,6 +25,10 @@
 			padding-right: ($spacer / 2);
 			width: 50%;
 		}
+
+		@include media-breakpoint-up(lg) {
+			width: (100% / 3);
+		}
 	}
 
 	.card.card-hero {
