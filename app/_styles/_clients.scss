@@ -1,0 +1,35 @@
+//
+// Layouts - Clients
+// ============================================================================
+
+
+
+// Client List
+// ----------------------------------------------------------------------------
+
+.client-list {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		align-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -($spacer / 2);
+		margin-right: -($spacer / 2);
+	}
+
+	.card {
+		@include media-breakpoint-up(md) {
+			flex-grow: 0;
+			flex-shrink: 0;
+			padding-left: ($spacer / 2);
+			padding-right: ($spacer / 2);
+			width: 50%;
+		}
+	}
+
+	.card.card-hero {
+		@include media-breakpoint-up(md) {
+			width: 100%;
+		}
+	}
+}

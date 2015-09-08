@@ -4,37 +4,29 @@
 
 .btn {
 	display: inline-block;
-	padding-left: (1rem / 1.6);
-	padding-right: (1rem / 1.6);
-	padding-top: 6px;
+	padding-left: (.5rem / 1.6);
+	padding-right: (.5rem / 1.6);
+	padding-top: 5pt;
 	height: 17pt;
 
 	color: $white;
 	font-family: $font-family-alt;
 	font-size: 5pt;
 	letter-spacing: 0.76pt;
+	line-height: 1;
 	text-transform: uppercase;
 
 	border: 1px solid $white;
 	border-radius: $border-radius-sm;
 	transition: background-color .2s, color .2s;
 
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		padding-left: (1.5rem / 1.6);
 		padding-right: (1.5rem / 1.6);
+		height: 18pt;
 
 		font-size: 6pt;
-		letter-spacing: 0.92pt;
-	}
-
-	@include media-breakpoint-up(md) {
-		padding-left: (2rem / 1.6);
-		padding-right: (2rem / 1.6);
-		height: (2.2rem / 1.6);
-
-		font-size: 9pt;
 		letter-spacing: 1.07pt;
-		line-height: (2rem / 1.6);
 	}
 
 	@include media-breakpoint-up(lg) {
@@ -42,7 +34,6 @@
 
 		font-size: 14pt;
 		letter-spacing: 0.88pt;
-		line-height: 24pt;
 	}
 
 	&:hover {

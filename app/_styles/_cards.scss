@@ -25,8 +25,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	@include media-breakpoint-up(sm) {
-		//height: (20rem / 1.6);
+	@include media-breakpoint-up(md) {
+		height: (20rem / 1.6);
 	}
 
 	&:after {
@@ -38,6 +38,14 @@
 
 		background-color: transparentize($brand-primary, .7);
 		content: " ";
+	}
+}
+
+// Hero
+//
+.card-hero .card-img {
+	@include media-breakpoint-up(md) {
+		height: (25rem / 1.6);
 	}
 }
 
@@ -56,21 +64,28 @@
 
 	background-color: $brand-primary;
 
-	p {
-		margin-bottom: 0;
-	}
-
 	.btn {
 		position: absolute;
 		right: ($spacer / 2);
-		top: ($spacer * 1.5);
+		top: ($spacer * 1.4);
+
+		@include media-breakpoint-up(md) {
+			position: relative;
+			right: auto;
+			top: auto;
+		}
 	}
 }
 
-// With button
+// Hero
 //
-.card-with-button .card-block {
+.card-hero .card-block {
 	padding-right: ($spacer * 6);
+
+	@include media-breakpoint-up(md) {
+		padding-left: ($spacer * 3);
+		padding-right: ($spacer * 3);
+	}
 }
 
 // Colour variations
@@ -90,22 +105,38 @@
 // ----------------------------------------------------------------------------
 
 .card-title {
+	margin-bottom: 0;
+
 	font-size: 10pt;
 	font-weight: 700;
 	letter-spacing: 1.05pt;
 	line-height: 13pt;
 	text-transform: uppercase;
 
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
+		margin-bottom: ($spacer / 2);
+
+		font-size: 11pt;
+		letter-spacing: 1.16pt;
+		line-height: 14pt;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 25pt;
+		letter-spacing: 1.22pt;
+		line-height: 31pt;
+	}
+}
+
+// Hero
+//
+.card-hero .card-title {
+	@include media-breakpoint-up(md) {
+		margin-bottom: 0;
+
 		font-size: 20pt;
 		letter-spacing: 1.86pt;
 		line-height: 26pt;
-	}
-
-	@include media-breakpoint-up(md) {
-		font-size: 23pt;
-		letter-spacing: 1.67pt;
-		line-height: 28pt;
 	}
 
 	@include media-breakpoint-up(lg) {
@@ -121,20 +152,33 @@
 // ----------------------------------------------------------------------------
 
 .card-text {
+	margin-bottom: 0;
+
 	font-family: $font-family-alt;
 	font-size: 8pt;
 	letter-spacing: 1.05;
 	line-height: 11pt;
 
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		font-size: 10pt;
 		letter-spacing: normal;
 		line-height: 14pt;
 	}
 
-	@include media-breakpoint-up(md) {
-		font-size: 12pt;
+	@include media-breakpoint-up(lg) {
+		font-size: 18pt;
 		line-height: 19pt;
+	}
+}
+
+// Hero
+//
+.card-hero .card-text {
+	@include media-breakpoint-up(md) {
+		margin-bottom: ($spacer / 2);
+
+		font-size: 10pt;
+		line-height: 14pt;
 	}
 
 	@include media-breakpoint-up(lg) {
