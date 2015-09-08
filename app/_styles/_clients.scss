@@ -17,6 +17,11 @@
 		margin-right: -($spacer / 2);
 	}
 
+	@include media-breakpoint-up(xl) {
+		margin-left: -($spacer);
+		margin-right: -($spacer);
+	}
+
 	.card {
 		@include media-breakpoint-up(md) {
 			flex-grow: 0;
@@ -29,11 +34,101 @@
 		@include media-breakpoint-up(lg) {
 			width: (100% / 3);
 		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: ($spacer);
+			padding-right: ($spacer);
+		}
 	}
 
 	.card.card-hero {
 		@include media-breakpoint-up(md) {
 			width: 100%;
 		}
+	}
+
+	.client-augusto,
+	.client-topshelf {
+		.card-img {
+			background-position: top center;
+		}
+	}
+
+	.client-gstv,
+	.client-masterchef,
+	.client-nzgt,
+	.client-screentime,
+	.client-tomorrowland {
+		.card-img {
+			background-position: top center;
+
+			@include media-breakpoint-up(lg) {
+				background-position: center center;
+			}
+		}
+	}
+
+	.client-pango,
+	.client-showdown,
+	.client-topshelf {
+		@include media-breakpoint-up(md) {
+			width: (100% / 3);
+		}
+	}
+
+	.client-showdown,
+	.client-topshelf {
+		@include media-breakpoint-up(lg) {
+			width: (100% / 2);
+		}
+	}
+}
+
+
+// Flex order
+//
+@include media-breakpoint-up(lg) {
+	.client-list {
+		.client-shortland-street { order: 1; }
+		.client-masterchef { order: 2; }
+		.client-reel-factory { order: 3; }
+		.client-greenstone { order: 4; }
+		.client-dop { order: 5; }
+		.client-eyeworks { order: 6; }
+		.client-imagination { order: 7; }
+		.client-southseas { order: 8; }
+		.client-screentime { order: 9; }
+		.client-augusto { order: 10; }
+		.client-arht { order: 11; }
+		.client-tomorrowland { order: 12; }
+		.client-gstv { order: 13; }
+		.client-pango { order: 14; }
+		.client-juice { order: 15; }
+		.client-nzgt { order: 16; }
+		.client-showdown { order: 17; }
+		.client-topshelf { order: 18; }
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.client-list {
+		.client-shortland-street { order: 1; }
+		.client-masterchef { order: 2; }
+		.client-reel-factory { order: 3; }
+		.client-greenstone { order: 4; }
+		.client-dop { order: 5; }
+		.client-eyeworks { order: 6; }
+		.client-imagination { order: 7; }
+		.client-southseas { order: 8; }
+		.client-screentime { order: 9; }
+		.client-augusto { order: 10; }
+		.client-arht { order: 11; }
+		.client-tomorrowland { order: 12; }
+		.client-gstv { order: 13; }
+		.client-pango { order: 14; }
+		.client-juice { order: 15; }
+		.client-nzgt { order: 16; }
+		.client-showdown { order: 17; }
+		.client-topshelf { order: 18; }
 	}
 }

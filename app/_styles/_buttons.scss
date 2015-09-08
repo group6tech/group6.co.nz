@@ -37,6 +37,14 @@
 		letter-spacing: 1.07;
 	}
 
+	@include media-breakpoint-up(xl) {
+		padding-top: 8pt;
+		height: 30pt;
+
+		font-size: 12pt;
+		letter-spacing: 1.11;
+	}
+
 	&:hover {
 		color: $brand-primary;
 		text-decoration: none;

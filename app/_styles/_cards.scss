@@ -10,6 +10,10 @@
 .card {
 	position: relative;
 	margin-bottom: $spacer;
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: ($spacer * 2);
+	}
 }
 
 
@@ -31,6 +35,10 @@
 
 	@include media-breakpoint-up(lg) {
 		height: (21.5rem / 1.6);
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: (24rem / 1.6);
 	}
 
 	&:after {
@@ -55,6 +63,10 @@
 	@include media-breakpoint-up(lg) {
 		height: (30rem / 1.6);
 	}
+
+	@include media-breakpoint-up(xl) {
+		height: (35rem / 1.6);
+	}
 }
 
 
@@ -76,6 +88,7 @@
 		position: absolute;
 		right: ($spacer / 2);
 		top: ($spacer * 1.4);
+
 
 		@include media-breakpoint-up(md) {
 			position: relative;
@@ -139,6 +152,10 @@
 		letter-spacing: 0.89;
 		line-height: 15pt;
 	}
+
+	@include media-breakpoint-up(xl) {
+		font-size: 14pt;
+	}
 }
 
 // Hero
@@ -155,6 +172,14 @@
 	@include media-breakpoint-up(lg) {
 		font-size: 20pt;
 		letter-spacing: 1.67;
+		line-height: 28pt;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: $spacer;
+
+		font-size: 24pt;
+		letter-spacing: 1.71;
 		line-height: 28pt;
 	}
 }
@@ -182,6 +207,10 @@
 		font-size: 10pt;
 		line-height: 19pt;
 	}
+
+	@include media-breakpoint-up(xl) {
+		font-size: 12pt;
+	}
 }
 
 // Hero
@@ -198,6 +227,13 @@
 	@include media-breakpoint-up(lg) {
 		font-size: 11pt;
 		line-height: 19pt;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: $spacer;
+
+		font-size: 15pt;
+		line-height: 18pt;
 	}
 }
 
@@ -232,6 +268,10 @@
 			> * {
 				display: block;
 			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: (37.5rem + $spacer) / 1.6;
 		}
 	}
 
