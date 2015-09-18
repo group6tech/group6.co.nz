@@ -1,0 +1,9 @@
+//
+// Core CSS - Reboot
+// ============================================================================
+
+body {
+	@include media-breakpoint-up(md) {
+		font-size: 1.6rem;
+	}
+}

@@ -7,50 +7,70 @@ bodyClass: inner no-page-header
 
 	<div class="jumbotron">
 		<div class="jumbotron-image" data-src="/images/clients/{{ page.banner }}"></div>
-		<div class="container jumbotron-block">
+		<div class="jumbotron-block">
 			<h1>{{ page.title }}</h1>
 			<p>{{ page.tagLine }}</p>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="client-roles">
-			<div>
-				<h3>Client:</h3>
-				<a href="{{ page.clientUrl }}" target="_blank">{{ page.client }}</a>
+		<div class="client-row">
+			<div class="client-col-main">
+				<div class="client-roles">
+					<div>
+						<h3>Client:</h3>
+						<a href="{{ page.clientUrl }}" target="_blank">{{ page.client }}</a>
+					</div>
+
+					{% if page.roles %}
+						<div>
+							<h3>Role:</h3>
+							<ul>
+								{% for role in page.roles %}
+									<li>{{ role }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+
+					{% if page.order %}
+						<div>
+							<h3>Order:</h3>
+							<ul>
+								{% for order in page.order %}
+									<li>{{ order }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+				</div>
+
+				{{ content }}
+
+				{% if page.images %}
+					<div class="client-images">
+						{% for image in page.images %}
+							<div class="client-image">
+								<div class="image" data-src="/images/clients/{{ image.image }}.jpg" alt="{{ image.title }}"></div>
+							</div>
+						{% endfor %}
+					</div>
+				{% endif %}
 			</div>
 
-			{% if page.roles %}
-				<div>
-					<h3>Role:</h3>
+			<div class="client-col-aside">
+				<div class="other-clients">
+					<h4>Other Clients</h4>
 					<ul>
-						{% for role in page.roles %}
-							<li>{{ role }}</li>
-						{% endfor %}
+						{% assign clientNo = 1 %}
+			      {% for page in site.pages reversed %}
+			        {% if clientNo <= 4 and page.category == 'client' and page.article != false %}
+								<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+			        {% endif %}
+			      {% endfor %}
 					</ul>
 				</div>
-			{% endif %}
-
-			{% if page.order %}
-				<div>
-					<h3>Order:</h3>
-					<ul>
-						{% for order in page.order %}
-							<li>{{ order }}</li>
-						{% endfor %}
-					</ul>
-				</div>
-			{% endif %}
+			</div>
 		</div>
-
-		{{ content }}
 	</div>
-
-	{% if page.images %}
-		<div class="client-images">
-			{% for image in page.images %}
-				<img src="/images/clients/{{ image.image }}.jpg" alt="{{ image.title }}">
-			{% endfor %}
-		</div>
-	{% endif %}
 </div>

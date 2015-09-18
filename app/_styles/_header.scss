@@ -21,3 +21,10 @@
     color: $white;
   }
 }
+
+.no-page-header .header {
+  @include media-breakpoint-up(md) {
+    background-image: none;
+    background-color: $grey-dark;
+  }
+}

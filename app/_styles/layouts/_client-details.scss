@@ -8,10 +8,53 @@
 
 
 
+// Rows and columns
+// ----------------------------------------------------------------------------
+
+.client-row {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		align-items: stretch;
+	}
+}
+
+.client-col-main {
+
+}
+
+.client-col-aside {
+	flex-shrink: 0;
+
+	background-color: $grey-darkish;
+
+	@include media-breakpoint-up(md) {
+		width: 25rem;
+		margin-left: $spacer;
+		padding: ($spacer * 1.5) $spacer;
+	}
+
+	a {
+		color: $white;
+	}
+}
+
+
+
 // Jumbotron
 // ----------------------------------------------------------------------------
 
 .client-details .jumbotron {
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		width: map-get($container-max-widths, md);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: ($spacer * 2);
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	// Image
 	//
 	.jumbotron-image {
@@ -33,13 +76,35 @@
 			background-color: transparentize($brand-primary, .7);
 			content: " ";
 		}
+
+		@include media-breakpoint-up(md) {
+			height: 46rem;
+		}
 	}
 
 	// Block
 	//
 	.jumbotron-block {
-		padding-top: $spacer;
-		padding-bottom: $spacer;
+		padding: $spacer ($spacer * 2);
+
+		@include media-breakpoint-up(sm) {
+			width: map-get($container-max-widths, sm);
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			left: $spacer;
+			bottom: $spacer;
+
+			width: 50%;
+			padding: $spacer;
+
+			background-color: transparentize($brand-primary, .5);
+		}
 
 		h1 {
 			margin-bottom: 0;
@@ -49,6 +114,15 @@
 			font-size: 2rem;
 			letter-spacing: 1.2pt;
 			text-transform: uppercase;
+
+			@include media-breakpoint-up(md) {
+				font-size: 2.5rem;
+				letter-spacing: 1.5pt;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
 		}
 	}
 }
@@ -61,11 +135,17 @@
 .client-roles {
 	font-size: 1.2rem;
 
+	@include media-breakpoint-up(md) {
+		font-size: 1.4rem;
+	}
+
 	h3 {
 		display: inline-block;
+		width: 5rem;
 
 		font-size: 1.2rem;
 		font-weight: 700;
+		vertical-align: baseline;
 	}
 
 	ul {
@@ -74,6 +154,7 @@
 		padding-left: 0;
 
 		list-style: none;
+		vertical-align: top;
 	}
 }
 
@@ -84,16 +165,86 @@
 
 .client-images {
 	@include media-breakpoint-up(sm) {
-		@include make-container();
-
 		width: map-get($container-max-widths, sm);
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	img {
-		max-width: 100%;
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-wrap: wrap;
 
-		 + img {
-			 margin-top: $spacer;
-		 }
+		width: 100%;
+		margin: -($spacer / 2);
+	}
+}
+
+.client-image {
+	+ .client-image {
+		margin-top: $spacer;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 0;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		flex: 0 0 50%;
+
+		padding: ($spacer / 2);
+	}
+}
+
+.client-image .image {
+	height: 40vw;
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-breakpoint-up(md) {
+		height: 20vw;
+	}
+}
+
+
+
+// Other clients
+// ----------------------------------------------------------------------------
+
+.other-clients {
+	display: none;
+
+	font-size: 1.4rem;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+
+	h4 {
+		margin-bottom: ($spacer * 1.5);
+
+		font-family: $font-family-alt;
+		font-weight: 700;
+		letter-spacing: 1.68pt;
+		text-transform: uppercase;
+	}
+
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+
+		list-style: none;
+	}
+
+	li {
+		border-top: 1px solid $white;
+	}
+
+	a {
+		display: block;
+
+		padding-top: ($spacer * 1.5);
+		padding-bottom: ($spacer * 1.5);
 	}
 }
