@@ -51,6 +51,8 @@ $font-size-root:              10px;
 
 $font-size-base:              1.4rem;
 
+$line-height:                 1.5;
+
 
 
 // Grid breakpoints
@@ -61,7 +63,7 @@ $grid-breakpoints: (
   sm: 544px,
   md: 992px,
   lg: 1400px,
-  xl: 2000px
+  xl: 1800px
 );
 
 $container-max-widths: (
