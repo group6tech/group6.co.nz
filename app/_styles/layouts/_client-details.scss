@@ -55,6 +55,14 @@
 		padding-right: 0;
 	}
 
+	@include media-breakpoint-up(lg) {
+		width: map-get($container-max-widths, lg);
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: map-get($container-max-widths, xl);
+	}
+
 	// Image
 	//
 	.jumbotron-image {
@@ -106,6 +114,13 @@
 			background-color: transparentize($brand-primary, .5);
 		}
 
+		@include media-breakpoint-up(lg) {
+			left: ($spacer * 2);
+			bottom: ($spacer * 2);
+
+			width: 37rem;
+		}
+
 		h1 {
 			margin-bottom: 0;
 
@@ -118,6 +133,10 @@
 			@include media-breakpoint-up(md) {
 				font-size: 2.5rem;
 				letter-spacing: 1.5pt;
+			}
+
+			@include media-breakpoint-up(lg) {
+				font-size: 3rem;
 			}
 		}
 
@@ -139,6 +158,10 @@
 		font-size: 1.4rem;
 	}
 
+	@include media-breakpoint-up(lg) {
+		font-size: 1.6rem;
+	}
+
 	h3 {
 		display: inline-block;
 		width: 5rem;
@@ -146,6 +169,16 @@
 		font-size: 1.2rem;
 		font-weight: 700;
 		vertical-align: baseline;
+
+		@include media-breakpoint-up(md) {
+			font-size: 1.4rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 6rem;
+
+			font-size: 1.6rem;
+		}
 	}
 
 	ul {
@@ -215,19 +248,30 @@
 .other-clients {
 	display: none;
 
+	margin-top: -($spacer * 1.5);
+
 	font-size: 1.4rem;
 
 	@include media-breakpoint-up(md) {
 		display: block;
 	}
 
+	@include media-breakpoint-up(lg) {
+		font-size: 1.6rem;
+	}
+
 	h4 {
-		margin-bottom: ($spacer * 1.5);
+		margin-bottom: 0;
 
 		font-family: $font-family-alt;
+		font-size: 1.4rem;
 		font-weight: 700;
 		letter-spacing: 1.68pt;
 		text-transform: uppercase;
+
+		@include media-breakpoint-up(lg) {
+			font-size: 1.6rem;
+		}
 	}
 
 	ul {
