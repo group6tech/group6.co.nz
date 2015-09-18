@@ -42,10 +42,10 @@ $body-color:                  $white;
 // Typography
 // ----------------------------------------------------------------------------
 
-$font-family-sans-serif:      "tenso",sans-serif;
-$font-family-alt:							"jaf-facitweb",sans-serif;
+$font-family-sans-serif:      "jaf-facitweb",sans-serif;
+$font-family-alt:             "tenso",sans-serif;
 
-$footer-font-family:					$font-family-alt;
+$footer-font-family:					$font-family-sans-serif;
 
 $font-size-root:              10px;
 
