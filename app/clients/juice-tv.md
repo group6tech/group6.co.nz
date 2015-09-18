@@ -4,17 +4,16 @@ layout: client
 category: client
 date: 2003-08-21
 tagLine: Custom solutions for New Zealand’s first automated digital broadcaster
-banner: juice-tv/juice-tv.jpg
+banner: juice-tv/car01.jpg
 client: Juice TV
 clientUrl: http://www.juicetv.co.nz/
-clientLogo: juice-tv/juice-tv
 roles:
 - Broadcast Platform Integration
 - IT Upgrade and Support
 - Post Production Support
 order:
 - Dekocast Automation Software
-- Omneon File Mangement Software
+- Omneon File Management Software
 images:
 ---
 

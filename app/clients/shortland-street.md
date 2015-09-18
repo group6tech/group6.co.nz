@@ -7,7 +7,6 @@ tagLine: HD upgrade for New Zealand's best loved soap
 banner: shortland-street/cast.jpg
 client: South Pacific Pictures
 clientUrl: http://www.southpacificpictures.com/
-clientLogo: shortland-street/south-pacific-pictures
 roles:
 - Studio and Post Integrators
 images:
