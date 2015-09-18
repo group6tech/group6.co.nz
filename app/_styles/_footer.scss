@@ -24,30 +24,43 @@
 	p {
 		margin-bottom: ($spacer / 2);
 
-		font-size: (.8rem / 1.6);
+		font-size: .8rem;
+		letter-spacing: 0.33pt;
 
 		&:last-child {
 			margin-top: $spacer;
 		}
 
 		@include media-breakpoint-up(md) {
-			font-size: (.9rem / 1.6);
+			font-size: .9rem;
 		}
 
 		@include media-breakpoint-up(lg) {
-			font-size: (1.4rem / 1.6);
+			font-size: 1.1rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+			font-size: 1.4rem;
+			letter-spacing: .4pt;
+			line-height: 1.7;
 		}
 	}
 
 	.fa-circle {
 		position: relative;
-		bottom: .05rem;
+		bottom: .2rem;
 
 		margin-left: ($spacer / 2);
 		margin-right: ($spacer / 2);
 		padding-bottom: .2rem;
 
-		font-size: (.5rem / 1.6);
+		font-size: .3rem;
+
+		@include media-breakpoint-up(lg) {
+			bottom: .3rem;
+
+			font-size: .4rem;
+		}
 	}
 }
 
@@ -57,14 +70,16 @@
 // ----------------------------------------------------------------------------
 
 .footer-menu {
-	font-size: (1.2rem / 1.6);
+	font-size: 1.2rem;
+	letter-spacing: 0.39pt;
 
-	@include media-breakpoint-up(lg) {
-		font-size: (1.8rem / 1.6);
+	@include media-breakpoint-up(xl) {
+		font-size: 1.8rem;
+		letter-spacing: .4pt;
 	}
 
 	li {
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			display: inline-block;
 		}
 	}
@@ -84,6 +99,10 @@
 	margin-top: ($spacer / 2);
 	margin-bottom: ($spacer / 2);
 
+	@include media-breakpoint-up(lg) {
+		margin-bottom: $spacer;
+	}
+
 	li {
 		display: inline-block;
 	}
@@ -92,11 +111,7 @@
 		display: block;
 		padding: ($spacer / 2);
 
-		font-size: (3rem / 1.6);
-
-		@include media-breakpoint-up(lg) {
-			font-size: (4rem / 1.6);
-		}
+		font-size: 3rem;
 	}
 }
 
@@ -109,10 +124,23 @@
 	padding: $spacer;
 
 	color: $brand-light;
-	font-size: (1.4rem / 1.6);
+	font-size: 1.4rem;
+	letter-spacing: 0.76pt;
 	text-align: center;
 
 	background-color: $white;
+
+	@include media-breakpoint-up(lg) {
+		padding: ($spacer * 1.5);
+
+		font-size: 1.6rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: ($spacer * 2);
+
+		font-size: 2.4rem;
+	}
 
 	a {
 		color: $brand-light;
@@ -122,15 +150,5 @@
 			color: darken($brand-light, 10%);
 			text-decoration: none;
 		}
-	}
-
-	@include media-breakpoint-up(md) {
-		font-size: (1.6rem / 1.6);
-	}
-
-	@include media-breakpoint-up(lg) {
-		padding: ($spacer * 2);
-
-		font-size: (2.4rem / 1.6);
 	}
 }

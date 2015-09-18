@@ -4,6 +4,12 @@
 
 
 
+// Options
+// ----------------------------------------------------------------------------
+
+
+
+
 // Colors
 // ----------------------------------------------------------------------------
 
@@ -21,6 +27,8 @@ $brand-dark:									#1080bb;
 $brand-gradient-dark:         $brand-dark;
 $brand-gradient-light:        $brand-light;
 
+$spacer:                      1.6rem;
+
 
 
 // Body
@@ -37,10 +45,11 @@ $body-color:                  $white;
 $font-family-sans-serif:      "tenso",sans-serif;
 $font-family-alt:							"jaf-facitweb",sans-serif;
 
-//$headings-font-family:        "facit",sans-serif;
-//$headings-font-weight:        200;
-
 $footer-font-family:					$font-family-alt;
+
+$font-size-root:              10px;
+
+$font-size-base:              1.4rem;
 
 
 
@@ -49,15 +58,15 @@ $footer-font-family:					$font-family-alt;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 34em,
-  md: 48em,
-  lg: 62em,
-  xl: 75em
+  sm: 544px,
+  md: 992px,
+  lg: 1400px,
+  xl: 2000px
 );
 
 $container-max-widths: (
-  sm: 34rem,    // 480
-  md: 45rem,    // 720
-  lg: 60rem,    // 960
-  xl: 72.25rem  // 1140
+  sm: 48rem,
+  md: 76.8rem,
+  lg: 99.2rem,
+  xl: 114rem
 );

@@ -5,22 +5,25 @@
 .page-header {
   clear: left;
 
-  padding-top: $spacer;
+  padding-top: ($spacer * 1.5);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: ($spacer * 2);
+  }
 
   h1 {
+    margin-bottom: 0;
+
     font-family: $font-family-alt;
-    font-size: (2rem / 1.6);
+    font-size: 2rem;
     font-weight: 200;
-    line-height: (2.4rem / 1.6);
 
     @include media-breakpoint-up(md) {
-      font-size: (4rem / 1.6);
-      line-height: (4.8rem / 1.6);
+      font-size: 4rem;
     }
 
     @include media-breakpoint-up(lg) {
-      font-size: (6rem / 1.6);
-      line-height: (7.2rem / 1.6);
+      font-size: 6rem;
     }
   }
 }
