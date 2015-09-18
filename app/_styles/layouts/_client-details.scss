@@ -1,0 +1,99 @@
+//
+// Layouts - Client Details
+// ============================================================================
+
+.client-details {
+	margin-top: -($spacer);
+}
+
+
+
+// Jumbotron
+// ----------------------------------------------------------------------------
+
+.client-details .jumbotron {
+	// Image
+	//
+	.jumbotron-image {
+		position: relative;
+
+		height: 50vw;
+
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			background-color: transparentize($brand-primary, .7);
+			content: " ";
+		}
+	}
+
+	// Block
+	//
+	.jumbotron-block {
+		padding-top: $spacer;
+		padding-bottom: $spacer;
+
+		h1 {
+			margin-bottom: 0;
+
+			font-family: $font-family-alt;
+			font-weight: 700;
+			font-size: 2rem;
+			letter-spacing: 1.2pt;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+// Roles and Order
+// ----------------------------------------------------------------------------
+
+.client-roles {
+	font-size: 1.2rem;
+
+	h3 {
+		display: inline-block;
+
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	ul {
+		display: inline-block;
+
+		padding-left: 0;
+
+		list-style: none;
+	}
+}
+
+
+
+// Images
+// ----------------------------------------------------------------------------
+
+.client-images {
+	@include media-breakpoint-up(sm) {
+		@include make-container();
+
+		width: map-get($container-max-widths, sm);
+	}
+
+	img {
+		max-width: 100%;
+
+		 + img {
+			 margin-top: $spacer;
+		 }
+	}
+}

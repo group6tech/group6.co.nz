@@ -9,10 +9,10 @@
 
 .card {
 	position: relative;
-	margin-bottom: $spacer;
+	margin-bottom: $spacer * 2;
 
 	@include media-breakpoint-up(xl) {
-		margin-bottom: ($spacer * 2);
+		margin-bottom: ($spacer * 3);
 	}
 }
 
