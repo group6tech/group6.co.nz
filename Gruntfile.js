@@ -14,10 +14,10 @@ module.exports = function(grunt) {
   // ---------------------------------------------------------------------------
 
   var config = {
-    src: 'app',
-    dest: 'dist',
-    temp: '.tmp',
-    jekyll: '.jekyll'
+    src: './app',
+    dest: './dist',
+    temp: './.tmp',
+    jekyll: './.jekyll'
   };
 
   // Tasks Configuration
@@ -41,31 +41,47 @@ module.exports = function(grunt) {
     // Run a local server
     //
     browserSync: {
-      bsFiles: {
-        src : [
-          '<%= config.temp %>/styles/*.css',
-          '<%= config.jekyll %>/*.html',
-          '<%= config.src %>/scripts/*.js',
-        ]
-      },
-      options: {
-        watchTask: true,
-        server: {
-          baseDir: ['<%= config.jekyll %>', '<%= config.temp %>', '<%= config.src %>'],
-          routes: {
-            '/images': './<%= config.src %>/images',
-            '/bower_components': './bower_components'
+      server: {
+        bsFiles: {
+          src: [
+            '<%= config.src %>/scripts/**/*.js'
+          ]
+        },
+        options: {
+          background: true,
+          server: {
+            baseDir: [
+              '<%= config.jekyll %>',
+              '<%= config.temp %>',
+              '<%= config.src %>'
+            ],
+            routes: {
+              '/bower_components': './bower_components'
+            }
           }
         }
+      }
+    },
+
+    // BrowserSync reload tasks
+    bsReload: {
+      all: {
+        reload: '*.html'
+      },
+      css: {
+        reload: '*.css'
       }
     },
 
     // Watch file for changes
     //
     watch: {
+      options: {
+        spawn: false
+      },
       jekyll: {
         files: ['<%= config.src %>/**/*.{html,md}', '<%= config.src %>/*.yml'],
-        tasks: ['jekyll:server']
+        tasks: ['jekyll:server', 'bsReload:all']
       },
       js: {
         files: [
@@ -76,7 +92,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['<%= config.src %>/_styles/{,*/}*.scss'],
-        tasks: ['sass:server']
+        tasks: ['sass:server', 'bsReload:css']
       }
     },
 
@@ -150,7 +166,7 @@ module.exports = function(grunt) {
   //
   grunt.registerTask('build', [
     'clean:server',
-    'concurrent:build',
+    'concurrent:build'
   ]);
 
   // Serve
