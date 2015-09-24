@@ -9,11 +9,15 @@
 
 .card {
 	position: relative;
+	overflow: hidden;
 
 	display: block;
 	margin-bottom: $spacer;
 
+	color: $white;
+
 	&:hover {
+		color: $white;
 		text-decoration: none;
 	}
 
@@ -34,6 +38,12 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: transform 1s;
+	transform: scale(1,1);
+
+	&:hover {
+		transform: scale(1.05, 1.05);
+	}
 
 	@include media-breakpoint-up(md) {
 		height: 20rem;
@@ -139,7 +149,6 @@
 .card-title {
 	margin-bottom: 0;
 
-	color: $white;
 	font-family: $font-family-alt;
 	font-size: 1rem;
 	font-weight: 700;

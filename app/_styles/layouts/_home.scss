@@ -85,7 +85,9 @@
 .home .intro {
 	margin-bottom: $spacer;
 
-	text-align: center;
+	@include media-breakpoint-up(md) {
+		margin-bottom: ($spacer * 2);
+	}
 
 	h1 {
 		font-size: 3rem;
@@ -94,6 +96,8 @@
 
 
 // DIVA and Services
+// ----------------------------------------------------------------------------
+
 .home .diva,
 .home .services {
 	.card-block {
@@ -112,6 +116,10 @@
 // ----------------------------------------------------------------------------
 
 .home .clients {
+	@include media-breakpoint-up(md) {
+		margin-top: ($spacer * 2);
+	}
+
 	.card-img {
 		background-position: top center;
 	}

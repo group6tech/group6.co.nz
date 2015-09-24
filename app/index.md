@@ -15,7 +15,7 @@ headerIncludes:
     <p>Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
   </section>
 
-  <div class="card card-hero diva" itemscope itemtype="http://schema.org/Product">
+  <a class="card card-hero diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
     <div class="card-img card-img-right" data-src="/images/index/diva.jpg" title="DIVA Media System"></div>
     <div class="card-block">
       <h2 class="card-title" itemprop="name">DIVA Media System</h2>
@@ -23,18 +23,18 @@ headerIncludes:
         <p class="card-text">DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
         <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
       </span>
-      <a class="btn" href="/diva/" itemprop="url">Learn about DIVA</a>
+      <div class="btn" itemprop="url">Learn about DIVA</div>
     </div>
-  </div>
+  </a>
 
-  <div class="card card-hero services">
+  <a class="card card-hero services" href="/services/">
     <div class="card-img" data-src="/images/index/cables.jpg"></div>
     <div class="card-block">
       <h2 class="card-title">From Post to Broadcast</h2>
       <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
-      <a class="btn" href="/services/">Tailor a solution to your needs</a>
+      <div class="btn">Tailor a solution to your needs</div>
     </div>
-  </div>
+  </a>
 
   <section class="clients">
     <h1>Built with Group 6 Technologies</h1>
