@@ -6,7 +6,7 @@ date: 2014-09-28
 displayOrder: 1
 article: false
 tagLine: DIVA Media System
-banner: topshelf/cook-the-books.jpg
+banner: topshelf/cook-the-books
 client: Topshelf Productions
 clientUrl: http://www.topshelfproductions.co.nz/
 clientLogo: topshelf/topshelf.png

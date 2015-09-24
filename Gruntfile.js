@@ -144,20 +144,16 @@ module.exports = function(grunt) {
         engine: 'im',
         newFilesOnly: true
       },
-      build: {
+      clients: {
         options: {
           sizes: [{
-            name: 'sm',
-            width: 480,
+            name: 'thumb',
+            quality: 70,
+            width: 440,
           }, {
-            name: 'md',
-            width: 768,
-          }, {
-            name: 'lg',
-            width: 992
-          }, {
-            name: 'xl',
-            width: 1140
+            name: 'full',
+            quality: 70,
+            width: 1440
           }]
         },
         files: [{
@@ -183,7 +179,7 @@ module.exports = function(grunt) {
       build: [
         'copy:build',
         'jekyll:server',
-        'responsive_images:build',
+        'responsive_images',
         'sass:server'
       ]
     }

@@ -72,7 +72,7 @@ socialDesc: "Group 6 is your technology partner for television, broadcast and po
         {% if clientNo <= 4 and page.article %}
           <div class="col-sm-6 col-lg-3">
             <a class="card" href="{{ page.url }}" title="{{ page.title }}">
-              <div class="card-img" data-src="/images/clients/{{ page.banner }}-md.jpg"></div>
+              <div class="card-img" data-src="/images/clients/{{ page.banner }}-thumb.jpg"></div>
               <div class="card-block">
                 <h4 class="card-title">{{ page.title }}</h4>
               </div>

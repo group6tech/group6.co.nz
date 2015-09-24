@@ -6,7 +6,7 @@ displayOrder: 5
 date: 2003-08-21
 article: true
 tagLine: Custom solutions for New Zealand’s first automated digital broadcaster
-banner: juice-tv/build01.jpg
+banner: juice-tv/build01
 cardImageSize: right
 client: Juice TV
 clientUrl: http://www.juicetv.co.nz/

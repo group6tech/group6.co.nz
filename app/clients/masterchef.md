@@ -1,5 +1,5 @@
 ---
-title: Masterchef New Zealand
+title: Masterchef NZ
 layout: client
 category: client
 date: 2013-06-07
