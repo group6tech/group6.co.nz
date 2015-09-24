@@ -1,0 +1,26 @@
+//
+// Layouts - News Archive
+// ============================================================================
+
+.news-archive {
+	article {
+		h4 {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $white;
+		}
+
+		time {
+			color: $grey-light;
+		}
+
+		+ article {
+			margin-top: $spacer;
+			padding-top: $spacer;
+
+			border-top: 1px solid transparentize($white, .8);
+		}
+	}
+}

@@ -1,7 +1,7 @@
 ---
 title: News Archive
 layout: default
-contentClass: news
+contentClass: news-archive
 ---
 
 {% for post in site.categories['news'] %}
@@ -10,20 +10,7 @@ contentClass: news
 			<a href="{{ post.url }}" itemprop="url">
 				<span itemprop="name">{{ post.title }}</a>
 			</a>
-			<small>
-				<time itemprop="dateCreated">{{ post.date | date_to_string }}</time>
-			</small>
 		</h4>
-		<p itemprop="description">
-			{{ post.excerpt | strip_html }}
-		</p>
+		<time itemprop="dateCreated">{{ post.date | date_to_string }}</time>
 	</article>
 {% endfor %}
-
-<hr>
-
-<h2>
-	<a href="/news/">
-		<i class="fa fa-chevron-left"></i> Latest News
-	</a>
-</h2>
