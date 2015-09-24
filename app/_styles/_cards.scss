@@ -240,7 +240,7 @@
 
 			flex-grow: 0;
 			flex-shrink: 0;
-			width: (29.8rem + $spacer);
+			width: (32rem + $spacer);
 
 			> * {
 				display: block;
@@ -248,7 +248,7 @@
 		}
 
 		@include media-breakpoint-up(xl) {
-			width: (33.7rem + ($spacer * 2));
+			width: (35.8rem + ($spacer * 2));
 		}
 	}
 
