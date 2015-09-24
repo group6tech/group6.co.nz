@@ -138,6 +138,37 @@ module.exports = function(grunt) {
       }
     },
 
+    // Generate responsive images
+    responsive_images: {
+      options: {
+        engine: 'im',
+        newFilesOnly: true
+      },
+      build: {
+        options: {
+          sizes: [{
+            name: 'sm',
+            width: 480,
+          }, {
+            name: 'md',
+            width: 768,
+          }, {
+            name: 'lg',
+            width: 992
+          }, {
+            name: 'xl',
+            width: 1140
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/images/clients',
+          src: '**/*.{jpg,png}',
+          dest: '<%= config.temp %>/images/clients'
+        }]
+      }
+    },
+
     // Check js files for issues
     jshint: {
       all: [
@@ -150,9 +181,10 @@ module.exports = function(grunt) {
     //
     concurrent: {
       build: [
+        'copy:build',
         'jekyll:server',
-        'sass:server',
-        'copy:build'
+        'responsive_images:build',
+        'sass:server'
       ]
     }
   });

@@ -6,7 +6,7 @@ displayOrder: 18
 date: 2013-06-07
 article: true
 tagLine: HD upgrade for New Zealand's best loved soap
-banner: shortland-street/cast.jpg
+banner: shortland-street/cast
 client: South Pacific Pictures
 clientUrl: http://www.southpacificpictures.com/
 roles:

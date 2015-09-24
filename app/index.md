@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Welcome
-bodyClass: index
+bodyClass: home
 metaDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
 socialDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
 ---
@@ -61,22 +61,24 @@ socialDesc: "Group 6 is your technology partner for television, broadcast and po
     </div>
   </section>
 
-  <hr>
-
   <section class="clients">
     <h1>Built with Group 6 Technologies</h1>
     <p>Our clients are always pushing the boundaries. Find out how we've helped them find their way.</p>
 
     <div class="row">
       {% assign clientNo = 1 %}
-      {% for page in site.pages reversed %}
-        {% if clientNo <= 4 and page.category == 'client' and page.article != false %}
-          <div class="col-xs-6 col-sm-3">
-            <a href="{{ page.url }}" title="{{ page.Title }}">
-              <img src="images/thumbs/clients/{{ page.banner }}" alt="{{ page.Title }}">
+      {% assign client_pages = (site.pages | sort:'displayOrder' | where: "category", "client") %}
+    	{% for page in client_pages reversed %}
+        {% if clientNo <= 4 and page.article %}
+          <div class="col-sm-6 col-lg-3">
+            <a class="card" href="{{ page.url }}" title="{{ page.title }}">
+              <div class="card-img" data-src="/images/clients/{{ page.banner }}-md.jpg"></div>
+              <div class="card-block">
+                <h4 class="card-title">{{ page.title }}</h4>
+              </div>
             </a>
-            {% assign clientNo = clientNo | plus: 1 %}
           </div>
+          {% assign clientNo = clientNo | plus: 1 %}
         {% endif %}
       {% endfor %}
     </div>

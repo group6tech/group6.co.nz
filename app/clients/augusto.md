@@ -6,7 +6,7 @@ displayOrder: 11
 article: true
 date: 2013-10-07
 tagLine: Full facility support for digital Auckland agency
-banner: augusto/super8.jpg
+banner: augusto/super8
 cardImageSize: right
 client: Augusto
 clientUrl: http://augusto.co.nz/

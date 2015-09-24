@@ -6,7 +6,7 @@ date: 2013-06-07
 displayOrder: 17
 article: true
 tagLine: Full studio to post solution for cooking sensation
-banner: imagination/masterchef-judges-2015.jpg
+banner: imagination/masterchef-judges-2015
 cardImageSize: right
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/

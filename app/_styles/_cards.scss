@@ -9,7 +9,13 @@
 
 .card {
 	position: relative;
+
+	display: block;
 	margin-bottom: $spacer;
+
+	&:hover {
+		text-decoration: none;
+	}
 
 	@include media-breakpoint-up(xl) {
 		margin-bottom: ($spacer * 2);
@@ -133,11 +139,16 @@
 .card-title {
 	margin-bottom: 0;
 
+	color: $white;
 	font-family: $font-family-alt;
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 1.05pt;
 	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: none;
+	}
 
 	@include media-breakpoint-up(md) {
 		font-size: 1.1rem;
