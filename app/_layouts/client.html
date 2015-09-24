@@ -3,7 +3,7 @@ layout: base
 bodyClass: inner no-page-header
 ---
 
-<div class="client-details">
+<div class="client-details client-{{ page.title | slugify }}">
 
 	<div class="jumbotron">
 		<div class="jumbotron-image" data-src="/images/clients/{{ page.banner }}"></div>

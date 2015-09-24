@@ -292,3 +292,15 @@
 		padding-bottom: ($spacer * 1.5);
 	}
 }
+
+
+// Specific clients
+
+.client-details {
+	&.client-masterchef-new-zealand,
+	&.client-new-zealand-s-got-talent {
+		.jumbotron-image {
+			background-position: top center;
+		}
+	}
+}
