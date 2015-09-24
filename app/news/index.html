@@ -1,23 +1,23 @@
 ---
 title: News
 layout: default
-contentClass: news
+contentClass: news-index
 category: news
 metaDesc: "All the latest news from Group 6 Technologies."
 ---
 
 {% for post in site.categories['news'] limit: 5 %}
 	<article itemscope itemtype="http://schema.org/NewsArticle">
-		<h3 itemprop="name">
+		<h2 itemprop="name">
 			<a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
-		</h3>
-		<time itemprop="dateCreated">{{ post.date | date_to_string}}</time>
+		</h2>
+		<time itemprop="dateCreated">{{ post.date | date_to_long_string}}</time>
 		<div itemprop="articleBody">
 			{{ post.content }}
 		</div>
 	</article>
-
-	<hr>
 {% endfor %}
 
-<h2><a href="/news/archive.html"><i class="fa fa-archive"></i> Archive</a></h2>
+<div class="text-center">
+	<a class="btn" href="/news/archive.html">More articles</a>
+</div>

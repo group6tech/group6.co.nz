@@ -1,0 +1,37 @@
+//
+// Layouts - News Index
+// ============================================================================
+
+.news-index {
+	article {
+		h2 {
+			text-align: center;
+
+			a {
+				color: $white;
+			}
+		}
+
+		time {
+			display: block;
+			margin-bottom: ($spacer / 2);
+
+			color: $grey-light;
+			text-align: center;
+		}
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 75%;
+		}
+
+		+ article {
+			margin-top: ($spacer);
+			padding-top: ($spacer * 3);
+
+			border-top: 1px solid transparentize($white, .8);
+		}
+	}
+}
