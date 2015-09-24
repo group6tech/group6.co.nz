@@ -4,16 +4,10 @@ title: Welcome
 bodyClass: home
 metaDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
 socialDesc: "Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters."
+hidePageHeader: true
+headerIncludes:
+- home-jumbotron.html
 ---
-
-<div class="jumbotron" itemscope itemtype="http://schema.org/Organization">
-  <div class="container">
-    <h1 itemprop="name">Group 6 Technologies!</h1>
-    <p itemeprop="description">End to end television, post production, and broadcast facility solutions.</p>
-    <div class="sprites-group6logo-small"></div>
-    <div class="sprites-group6logo"></div>
-  </div>
-</div>
 
 <div class="container">
   <section class="intro">
