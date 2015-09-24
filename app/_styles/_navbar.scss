@@ -11,10 +11,12 @@
   text-transform: uppercase;
   text-align: left;
 
-  background-color: #4AABD7;
+  background-color: transparentize($white, .8);
   border-radius: $border-radius-lg;
 
   @include media-breakpoint-up(md) {
+    height: 3.5rem;
+
     background-color: transparent;
   }
 

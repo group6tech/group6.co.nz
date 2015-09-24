@@ -11,49 +11,30 @@ headerIncludes:
 
 <div class="container">
   <section class="intro">
-    <h1>Introducing Group 6</h1>
     <p>Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters.</p>
     <p>Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
   </section>
 
-  <hr>
-
-  <section class="diva" itemscope itemtype="http://schema.org/Product">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 itemprop="name">DIVA Media System</h2>
-        <div itemprop="description">
-          <p>DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
-          <p>Simplify setup, share files, and get cutting with a click.</p>
-        </div>
-        <p class="lead">
-          <a href="/diva/" itemprop="url">Learn about DIVA</a>
-        </p>
-      </div>
-      <div class="col-sm-6">
-        <a href="/diva/">
-            <img src="/images/index/diva.png" alt="DIVA Media System">
-        </a>
-      </div>
+  <div class="card card-hero diva" itemscope itemtype="http://schema.org/Product">
+    <div class="card-img card-img-right" data-src="/images/index/diva.jpg" title="DIVA Media System"></div>
+    <div class="card-block">
+      <h2 class="card-title" itemprop="name">DIVA Media System</h2>
+      <span itemprop="description">
+        <p class="card-text">DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
+        <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
+      </span>
+      <a class="btn" href="/diva/" itemprop="url">Learn about DIVA</a>
     </div>
-  </section>
+  </div>
 
-  <hr>
-
-  <section class="services">
-    <div class="row">
-      <div class="col-sm-6 col-sm-push-6">
-        <h2>From Post to Broadcast</h2>
-        <p>We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
-        <p class="lead"><a href="/services/">Tailor a solution to your needs</a></p>
-      </div>
-      <div class="col-sm-6 col-sm-pull-6">
-          <a href="/services/">
-              <img src="/images/index/cables.jpg" alt="Router cabling"/>
-          </a>
-      </div>
+  <div class="card card-hero services">
+    <div class="card-img" data-src="/images/index/cables.jpg"></div>
+    <div class="card-block">
+      <h2 class="card-title">From Post to Broadcast</h2>
+      <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
+      <a class="btn" href="/services/">Tailor a solution to your needs</a>
     </div>
-  </section>
+  </div>
 
   <section class="clients">
     <h1>Built with Group 6 Technologies</h1>

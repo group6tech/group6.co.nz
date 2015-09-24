@@ -9,10 +9,10 @@
   color: $white;
   text-align: center;
 
-  background-color: $brand-gradient-light;
+  @include brand-gradient-bg();
 
   @include media-breakpoint-up(md) {
-    @include brand-gradient-bg();
+
 
     text-align: left;
   }
