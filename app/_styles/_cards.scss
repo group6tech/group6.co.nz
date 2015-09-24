@@ -128,6 +128,10 @@
 		padding-left: ($spacer * 2);
 		padding-right: ($spacer * 2);
 	}
+
+	&.card-block-no-btn {
+		padding-right: ($spacer / 2);
+	}
 }
 
 // Colour variations
@@ -207,6 +211,10 @@
 	margin-bottom: 0;
 
 	font-size: .8rem;
+
+	a {
+		color: $white;
+	}
 
 	@include media-breakpoint-up(md) {
 		font-size: 1rem;
