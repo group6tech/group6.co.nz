@@ -1,0 +1,15 @@
+//
+// Layouts - Services
+// ============================================================================
+
+.services {
+	.card-img {
+		@include media-breakpoint-up(lg) {
+			height: 30rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+			height: 40rem;
+		}
+	}
+}

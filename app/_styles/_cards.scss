@@ -244,10 +244,11 @@
 
 
 
-// Hero cards
+// Split cards
 // ----------------------------------------------------------------------------
 
-.card-hero {
+.card-img-left,
+.card-img-right {
 	@include media-breakpoint-up(lg) {
 		display: flex;
 	}
@@ -281,8 +282,12 @@
 	}
 
 	.card-img-right {
-		@include media-breakpoint-up(lg) {
-			order: 2;
-		}
+
+	}
+}
+
+.card-img-right .card-img {
+	@include media-breakpoint-up(lg) {
+		order: 2;
 	}
 }
