@@ -2,6 +2,8 @@
 title: Eyeworks
 layout: client
 category: client
+displayOrder: 14
+article: true
 date: 2013-07-01
 tagLine: Building a digital storage solution for reality TV project
 banner: eyeworks/the-block-s2.jpg

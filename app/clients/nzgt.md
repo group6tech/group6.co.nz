@@ -3,6 +3,8 @@ title: New Zealand's Got Talent
 layout: client
 category: client
 date: 2013-06-07
+displayOrder: 4
+article: true
 tagLine: Technical advice and management for ratings smash television show
 banner: imagination/nzgt-judges.jpg
 client: Imagination Television

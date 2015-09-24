@@ -34,6 +34,14 @@
 			padding-left: ($spacer);
 			padding-right: ($spacer);
 		}
+
+		&:nth-child(3n) {
+			@extend .card-light;
+		}
+
+		&:nth-child(5n) {
+			@extend .card-dark;
+		}
 	}
 
 	.card.card-hero {
@@ -43,15 +51,16 @@
 	}
 
 	.client-augusto,
-	.client-topshelf {
+	.client-great-southern-television,
+	.client-masterchef-new-zealand,
+	.client-new-zealand-s-got-talent,
+	.client-topshelf-productions {
 		.card-img {
 			background-position: top center;
 		}
 	}
 
-	.client-gstv,
-	.client-masterchef,
-	.client-nzgt,
+	.client-eyeworks,
 	.client-screentime,
 	.client-tomorrowland {
 		.card-img {
@@ -63,16 +72,16 @@
 		}
 	}
 
-	.client-pango,
-	.client-showdown,
-	.client-topshelf {
+	.client-pango-aotearoa,
+	.client-showdown-productions,
+	.client-topshelf-productions {
 		@include media-breakpoint-up(md) {
 			width: (100% / 3);
 		}
 	}
 
-	.client-showdown,
-	.client-topshelf {
+	.client-showdown-productions,
+	.client-topshelf-productions {
 		@include media-breakpoint-up(lg) {
 			width: (100% / 2);
 		}
@@ -85,45 +94,22 @@
 @include media-breakpoint-up(lg) {
 	.client-list {
 		.client-shortland-street { order: 1; }
-		.client-masterchef { order: 2; }
+		.client-masterchef-new-zealand { order: 2; }
 		.client-reel-factory { order: 3; }
-		.client-greenstone { order: 4; }
-		.client-dop { order: 5; }
+		.client-greenstone-tv { order: 4; }
+		.client-department-of-post { order: 5; }
 		.client-eyeworks { order: 6; }
-		.client-imagination { order: 7; }
-		.client-southseas { order: 8; }
+		.client-imagination-tv { order: 7; }
+		.client-south-seas-film-tv-school { order: 8; }
 		.client-screentime { order: 9; }
 		.client-augusto { order: 10; }
-		.client-arht { order: 11; }
-		.client-tomorrowland { order: 12; }
-		.client-gstv { order: 13; }
-		.client-pango { order: 14; }
-		.client-juice { order: 15; }
-		.client-nzgt { order: 16; }
-		.client-showdown { order: 17; }
-		.client-topshelf { order: 18; }
-	}
-}
-
-@include media-breakpoint-up(xl) {
-	.client-list {
-		.client-shortland-street { order: 1; }
-		.client-masterchef { order: 2; }
-		.client-reel-factory { order: 3; }
-		.client-greenstone { order: 4; }
-		.client-dop { order: 5; }
-		.client-eyeworks { order: 6; }
-		.client-imagination { order: 7; }
-		.client-southseas { order: 8; }
-		.client-screentime { order: 9; }
-		.client-augusto { order: 10; }
-		.client-arht { order: 11; }
-		.client-tomorrowland { order: 12; }
-		.client-gstv { order: 13; }
-		.client-pango { order: 14; }
-		.client-juice { order: 15; }
-		.client-nzgt { order: 16; }
-		.client-showdown { order: 17; }
-		.client-topshelf { order: 18; }
+		.client-auckland-rescue-helicopter-trust { order: 11; }
+		.client-tomorrowland-sound-vision { order: 12; }
+		.client-great-southern-television { order: 13; }
+		.client-pango-aotearoa { order: 14; }
+		.client-juice-tv { order: 15; }
+		.client-new-zealand-s-got-talent { order: 16; }
+		.client-showdown-productions { order: 17; }
+		.client-topshelf-productions { order: 18; }
 	}
 }

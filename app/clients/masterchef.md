@@ -3,8 +3,11 @@ title: Masterchef New Zealand
 layout: client
 category: client
 date: 2013-06-07
+displayOrder: 17
+article: true
 tagLine: Full studio to post solution for cooking sensation
 banner: imagination/masterchef-judges-2015.jpg
+cardImageSize: right
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
 roles:

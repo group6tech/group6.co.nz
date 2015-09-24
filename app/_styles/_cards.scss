@@ -9,10 +9,10 @@
 
 .card {
 	position: relative;
-	margin-bottom: $spacer * 2;
+	margin-bottom: $spacer;
 
 	@include media-breakpoint-up(xl) {
-		margin-bottom: ($spacer * 3);
+		margin-bottom: ($spacer * 2);
 	}
 }
 
@@ -117,11 +117,11 @@
 // Colour variations
 //
 .card-light .card-block {
-	background-color: $brand-light;
+	background-color: lighten($brand-primary, 10%);
 }
 
 .card-dark .card-block {
-	background-color: $brand-dark;
+	background-color: darken($brand-primary, 10%);
 }
 
 

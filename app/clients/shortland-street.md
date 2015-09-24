@@ -2,7 +2,9 @@
 title: Shortland Street
 layout: client
 category: client
+displayOrder: 18
 date: 2013-06-07
+article: true
 tagLine: HD upgrade for New Zealand's best loved soap
 banner: shortland-street/cast.jpg
 client: South Pacific Pictures
