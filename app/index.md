@@ -16,7 +16,7 @@ headerIncludes:
   </section>
 
   <a class="card card-hero diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
-    <div class="card-img card-img-right" data-src="/images/index/diva.jpg" title="DIVA Media System"></div>
+    <div class="card-img card-img-right" data-src="/images/index/diva-1440.jpg" title="DIVA Media System"></div>
     <div class="card-block">
       <h2 class="card-title" itemprop="name">DIVA Media System</h2>
       <span itemprop="description">
@@ -28,7 +28,7 @@ headerIncludes:
   </a>
 
   <a class="card card-hero services" href="/services/">
-    <div class="card-img" data-src="/images/index/cables.jpg"></div>
+    <div class="card-img" data-src="/images/index/cables-1440.jpg"></div>
     <div class="card-block">
       <h2 class="card-title">From Post to Broadcast</h2>
       <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
