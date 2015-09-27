@@ -9,11 +9,20 @@
 	time {
 		display: block;
 		margin-bottom: $spacer;
-		
+
 		color: $grey-light;
 	}
 
 	+ article {
 		border-top: 1px solid transparentize($white, .8);
 	}
+}
+
+.diva-release-list form {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+	
+	text-align: center;
+
+	border-top: 1px solid transparentize($white, .8);
 }
