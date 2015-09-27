@@ -52,7 +52,7 @@
 
 	.client-augusto,
 	.client-great-southern-television,
-	.client-masterchef-new-zealand,
+	.client-masterchef-nz,
 	.client-new-zealand-s-got-talent,
 	.client-topshelf-productions {
 		.card-img {
@@ -94,7 +94,7 @@
 @include media-breakpoint-up(lg) {
 	.client-list {
 		.client-shortland-street { order: 1; }
-		.client-masterchef-new-zealand { order: 2; }
+		.client-masterchef-nz { order: 2; }
 		.client-reel-factory { order: 3; }
 		.client-greenstone-tv { order: 4; }
 		.client-department-of-post { order: 5; }
