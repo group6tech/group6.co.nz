@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     // Run a local server
     //
     browserSync: {
-      server: {
+      serve: {
         bsFiles: {
           src: [
             '<%= config.src %>/scripts/**/*.js'
@@ -322,7 +322,7 @@ module.exports = function(grunt) {
 
     grunt.task.run([
       'build',
-      'browserSync',
+      'browserSync:serve',
       'watch'
     ]);
   });
