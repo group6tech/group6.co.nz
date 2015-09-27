@@ -14,10 +14,10 @@ module.exports = function(grunt) {
   // ---------------------------------------------------------------------------
 
   var config = {
-    src: './app',
-    dest: './dist',
-    temp: './.tmp',
-    jekyll: './.jekyll'
+    src: 'app',
+    dest: 'dist',
+    temp: '.tmp',
+    jekyll: '.jekyll'
   };
 
   // Tasks Configuration
@@ -35,6 +35,9 @@ module.exports = function(grunt) {
       server: [
         '<%= config.jekyll %>',
         '<%= config.temp %>'
+      ],
+      dist: [
+        '<%= config.dest %>'
       ]
     },
 
@@ -60,10 +63,16 @@ module.exports = function(grunt) {
             }
           }
         }
+      },
+      dist: {
+        options: {
+          server: '<%= config.dest %>'
+        }
       }
     },
 
     // BrowserSync reload tasks
+    //
     bsReload: {
       all: {
         reload: '*.html'
@@ -98,11 +107,39 @@ module.exports = function(grunt) {
 
 
     // Copy assets around that aren't normally moved
+    //
     copy: {
       build: {
         files: [
           { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
         ]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.jekyll %>',
+          src: [
+            'rss/**'
+          ],
+          dest: '<%= config.dest %>'
+        }, {
+          expand: true,
+          cwd: '<%= config.src %>',
+          src: [
+            '*.{ico,json,png,txt,xml}',
+            'CNAME',
+            'images/**'
+          ],
+          dest: '<%= config.dest %>'
+        }, {
+          expand: true,
+          cwd: '<%= config.temp %>',
+          src: [
+            'fonts/**',
+            'images/**'
+          ],
+          dest: '<%= config.dest %>'
+        }]
       }
     },
 
@@ -139,6 +176,7 @@ module.exports = function(grunt) {
     },
 
     // Generate responsive images
+    //
     responsive_images: {
       options: {
         engine: 'im',
@@ -194,11 +232,61 @@ module.exports = function(grunt) {
     },
 
     // Check js files for issues
+    //
     jshint: {
       all: [
         'Gruntfile.js',
         '<%= config.src %>/scripts'
       ]
+    },
+
+
+    // Prepare the use min tasks
+    //
+    useminPrepare: {
+      html: '<%= config.jekyll %>/index.html',
+      dest: '<%= config.dest %>'
+    },
+
+    // Join files together
+    //
+    concat: {
+
+    },
+
+    // Uglify Javascript
+    //
+    uglify: {
+
+    },
+
+    // Minify css
+    //
+    cssmin: {
+
+    },
+
+    // Apply the minified links
+    //
+    usemin: {
+      html: '<%= config.jekyll %>/**/*.html',
+      dest: '<%= config.dest %>'
+    },
+
+    // Minify the HTML
+    //
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.jekyll %>',
+          src: '**/*.html',
+          dest: '<%= config.dest %>'
+        }]
+      }
     },
 
     // Tasks which can run at the same time
@@ -227,10 +315,30 @@ module.exports = function(grunt) {
 
   // Serve
   //
-  grunt.registerTask('serve', [
+  grunt.registerTask('serve', 'start the server and preview your app', function(target) {
+    if (target === 'dist') {
+      return grunt.task.run(['dist', 'browserSync:dist']);
+    }
+
+    grunt.task.run([
+      'build',
+      'browserSync',
+      'watch'
+    ]);
+  });
+
+  // Dist
+  //
+  grunt.registerTask('dist', [
+    'clean:dist',
     'build',
-    'browserSync',
-    'watch'
+    'useminPrepare',
+    'concat',
+    'uglify',
+    'cssmin',
+    'usemin',
+    'htmlmin',
+    'copy:dist'
   ]);
 
   // Default
