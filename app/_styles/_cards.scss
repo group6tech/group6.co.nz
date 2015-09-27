@@ -249,8 +249,13 @@
 
 .card-img-left,
 .card-img-right {
-	@include media-breakpoint-up(lg) {
-		display: flex;
+
+	.card-inner {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+
+			overflow: hidden;
+		}
 	}
 
 	.card-img {
@@ -279,10 +284,6 @@
 		@include media-breakpoint-up(xl) {
 			width: (35.8rem + ($spacer * 2));
 		}
-	}
-
-	.card-img-right {
-
 	}
 }
 

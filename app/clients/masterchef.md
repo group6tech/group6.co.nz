@@ -7,7 +7,7 @@ displayOrder: 17
 article: true
 tagLine: Full studio to post solution for cooking sensation
 banner: imagination/masterchef-judges-2015
-cardImageSize: right
+cardImageSide: right
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
 roles:

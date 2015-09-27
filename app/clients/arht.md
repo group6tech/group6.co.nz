@@ -7,6 +7,7 @@ displayOrder: 10
 article: true
 tagLine: Custom software for life saving helicopter service.
 banner: arht/winch
+cardImageSide: left
 client: Great Southern Television
 clientUrl: http://www.greatsoutherntv.com/
 roles:

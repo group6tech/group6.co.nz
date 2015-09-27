@@ -15,24 +15,28 @@ headerIncludes:
     <p>Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
   </section>
 
-  <a class="card card-hero diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
-    <div class="card-img card-img-right" data-src="/images/index/diva-1440.jpg" title="DIVA Media System"></div>
-    <div class="card-block">
-      <h2 class="card-title" itemprop="name">DIVA Media System</h2>
-      <span itemprop="description">
-        <p class="card-text">DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
-        <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
-      </span>
-      <div class="btn" itemprop="url">Learn about DIVA</div>
+  <a class="card card-hero card-img-right diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
+    <div class="card-inner">
+      <div class="card-img" data-src="/images/index/diva-1440.jpg" title="DIVA Media System"></div>
+      <div class="card-block">
+        <h2 class="card-title" itemprop="name">DIVA Media System</h2>
+        <span itemprop="description">
+          <p class="card-text">DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
+          <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
+        </span>
+        <div class="btn" itemprop="url">Learn about DIVA</div>
+      </div>
     </div>
   </a>
 
-  <a class="card card-hero services" href="/services/">
-    <div class="card-img" data-src="/images/index/cables-1440.jpg"></div>
-    <div class="card-block">
-      <h2 class="card-title">From Post to Broadcast</h2>
-      <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
-      <div class="btn">Tailor a solution to your needs</div>
+  <a class="card card-hero card-img-left services" href="/services/">
+    <div class="card-inner">
+      <div class="card-img" data-src="/images/index/cables-1440.jpg"></div>
+      <div class="card-block">
+        <h2 class="card-title">From Post to Broadcast</h2>
+        <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
+        <div class="btn">Tailor a solution to your needs</div>
+      </div>
     </div>
   </a>
 
@@ -47,9 +51,11 @@ headerIncludes:
         {% if clientNo <= 4 and page.article %}
           <div class="col-sm-6 col-lg-3">
             <a class="card" href="{{ page.url }}" title="{{ page.title }}">
-              <div class="card-img" data-src="/images/clients/{{ page.banner }}-thumb.jpg"></div>
-              <div class="card-block">
-                <h4 class="card-title">{{ page.title }}</h4>
+              <div class="card-inner">            
+                <div class="card-img" data-src="/images/clients/{{ page.banner }}-thumb.jpg"></div>
+                <div class="card-block">
+                  <h4 class="card-title">{{ page.title }}</h4>
+                </div>
               </div>
             </a>
           </div>

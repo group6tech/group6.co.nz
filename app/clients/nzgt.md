@@ -7,6 +7,7 @@ displayOrder: 4
 article: true
 tagLine: Technical advice and management for ratings smash television show
 banner: imagination/nzgt-judges
+cardImageSide: left
 client: Imagination Television
 clientUrl: http://www.imaginationtv.co.nz/
 roles:
