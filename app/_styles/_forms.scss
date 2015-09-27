@@ -1,0 +1,27 @@
+//
+// Core CSS - Forms
+// ============================================================================
+
+
+
+// Form Group
+// ----------------------------------------------------------------------------
+
+.form-group {
+	margin-bottom: ($spacer / 2);
+}
+
+
+
+// Form Controls
+// ----------------------------------------------------------------------------
+
+.form-control {
+	padding: ($spacer / 4) ($spacer / 2);
+
+	font-size: 1.2rem;
+
+	background-color: transparentize($white, .8);
+	border: 1px solid transparentize($white, .8);
+	border-radius: $border-radius;
+}

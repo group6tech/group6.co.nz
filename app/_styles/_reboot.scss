@@ -3,6 +3,8 @@
 // ============================================================================
 
 body {
+	overflow-x: hidden;
+	
 	@include media-breakpoint-up(md) {
 		font-size: 1.6rem;
 	}

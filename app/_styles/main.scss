@@ -8,7 +8,7 @@
 // ----------------------------------------------------------------------------
 
 @import 'variables';
-@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/variables';
 
 @import 'mixins';
 @import 'bootstrap/scss/mixins';
@@ -18,22 +18,23 @@
 // Reset and dependencies
 // ----------------------------------------------------------------------------
 
-@import 'bootstrap/scss/_normalize';
-@import 'bootstrap/scss/_print';
+@import 'bootstrap/scss/normalize';
+@import 'bootstrap/scss/print';
 
 
 
 // Core css
 // ----------------------------------------------------------------------------
 
-@import 'bootstrap/scss/_reboot';
-@import 'bootstrap/scss/_type';
-@import 'bootstrap/scss/_images';
-@import 'bootstrap/scss/_grid';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/grid';
 
 @import 'reboot';
 @import 'buttons';
 @import 'grid';
+@import 'forms';
 @import 'type';
 
 
@@ -65,6 +66,7 @@
 @import 'layouts/client-details';
 @import 'layouts/client-list';
 @import 'layouts/company';
+@import 'layouts/diva';
 @import 'layouts/home';
 @import 'layouts/news-archive';
 @import 'layouts/news-article';
