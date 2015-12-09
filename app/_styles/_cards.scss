@@ -26,6 +26,13 @@
 	}
 }
 
+// Inner
+//
+
+.card-inner {
+	overflow: hidden;
+}
+
 
 
 // Image
@@ -253,8 +260,6 @@
 	.card-inner {
 		@include media-breakpoint-up(lg) {
 			display: flex;
-
-			overflow: hidden;
 		}
 	}
 
