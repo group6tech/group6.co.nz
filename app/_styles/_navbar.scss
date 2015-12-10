@@ -17,11 +17,13 @@
   @include media-breakpoint-up(md) {
     height: 3.5rem;
 
+    font-size: 1.2rem;
+
     background-color: transparent;
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.58pt;
   }
 
@@ -34,6 +36,14 @@
     display: block;
 
     padding: ($spacer / 2) $spacer;
+
+    color: transparentize($white, .3);
+
+    &:hover {
+      color: $white;
+
+      text-decoration: none;
+    }
   }
 
   .nav {

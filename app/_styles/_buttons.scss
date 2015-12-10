@@ -7,35 +7,35 @@
 	padding: .45rem ($spacer / 4);
 
 	color: $white;
-	font-size: .5rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.76pt;
 	text-transform: uppercase;
 
 	background-color: transparent;
-	border: .1rem solid $white;
+	border: 1px solid transparentize($white, .5);
 	border-radius: $border-radius-sm;
 	transition: background-color .2s, color .2s;
 
 	@include media-breakpoint-up(md) {
 		padding: .4rem ($spacer / 2);
 
-		font-size: .6rem;
-		letter-spacing: .92pt;
+		//font-size: .6rem;
+		//letter-spacing: .92pt;
 	}
 
 	@include media-breakpoint-up(lg) {
 		padding: .4rem ($spacer);
 
-		font-size: .9rem;
-		letter-spacing: 1.07pt;
+		//font-size: .9rem;
+		//letter-spacing: 1.07pt;
 	}
 
 	@include media-breakpoint-up(xl) {
 		padding: .55rem ($spacer);
 
-		font-size: 1.4rem;
-		letter-spacing: 1.11pt;
+		//font-size: 1.4rem;
+		//letter-spacing: 1.11pt;
 	}
 
 	&:hover {
