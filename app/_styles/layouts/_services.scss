@@ -4,6 +4,10 @@
 
 .services {
 	.card-img {
+		img {
+			height: 100%;
+		}
+		
 		@include media-breakpoint-up(lg) {
 			height: 30rem;
 		}
