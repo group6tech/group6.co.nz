@@ -4,7 +4,7 @@ layout: news
 date: 2014-11-11 12:50
 ---
 
-<img src="/images/company/josh-reardon.jpg" alt="Josh Reardon"/>
+<img src="/images/content/company/josh-reardon-sm.jpg" alt="Josh Reardon"/>
 
 We're delighted to introduce Josh Reardon, our new technical support engineer.
 
