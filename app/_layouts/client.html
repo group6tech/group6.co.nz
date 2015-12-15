@@ -6,7 +6,9 @@ bodyClass: inner no-page-header
 <div class="client-details client-{{ page.title | slugify }}">
 
 	<div class="jumbotron">
-		<div class="jumbotron-image" data-src="/images/clients/{{ page.banner }}-full.jpg"></div>
+		<div class="jumbotron-image">
+			{% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }} %}
+		</div>
 		<div class="jumbotron-block">
 			<h1>{{ page.title }}</h1>
 			<p>{{ page.tagLine }}</p>
