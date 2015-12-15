@@ -46,9 +46,6 @@
 	position: relative;
 	height: 16rem;
 
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	transition: transform 1s;
 	transform: scale(1,1);
 
@@ -56,16 +53,12 @@
 		transform: scale(1.05, 1.05);
 	}
 
-	@include media-breakpoint-up(md) {
-		height: 20rem;
-	}
-
-	@include media-breakpoint-up(lg) {
+	img {
 		height: 16rem;
-	}
+		width: 100%;
+		max-width: none;
 
-	@include media-breakpoint-up(xl) {
-		height: 24rem;
+		object-fit: cover;
 	}
 
 	&:after {
@@ -80,9 +73,25 @@
 	}
 }
 
+.card-img,
+.card-img img {
+	@include media-breakpoint-up(md) {
+		height: 20rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 16rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: 24rem;
+	}
+}
+
 // Hero
 //
-.card-hero .card-img {
+.card-hero .card-img,
+.card-hero .card-img img {
 	@include media-breakpoint-up(md) {
 		height: 25rem;
 	}
@@ -272,7 +281,13 @@
 	.card-img {
 		@include media-breakpoint-up(lg) {
 			flex-grow: 1;
-			flex-shrink: 0;
+			flex-shrink: 1;
+
+			width: 65.6rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 75rem;
 		}
 	}
 

@@ -185,48 +185,28 @@ module.exports = function(grunt) {
       clients: {
         options: {
           sizes: [{
-            name: 'thumb',
-            quality: 70,
-            width: 440,
+            name: 'sm',
+            quality: 75,
+            width: 480,
           }, {
-            name: 'full',
-            quality: 70,
-            width: 1440
-          }]
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= config.src %>/images/clients',
-          src: '**/*.{jpg,png}',
-          dest: '<%= config.temp %>/images/clients'
-        }]
-      },
-      index: {
-        options: {
-          sizes: [{
+            name: 'md',
             quality: 80,
-            width: 1440
+            width: 656,
+          }, {
+            name: 'lg',
+            quality: 85,
+            width: 768,
+          }, {
+            name: 'xl',
+            quality: 90,
+            width: 1536,
           }]
         },
         files: [{
           expand: true,
-          cwd: '<%= config.src %>/images/index',
+          cwd: '<%= config.src %>/images/content',
           src: '**/*.{jpg,png}',
-          dest: '<%= config.temp %>/images/index'
-        }]
-      },
-      services: {
-        options: {
-          sizes: [{
-            quality: 80,
-            width: 1440
-          }]
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= config.src %>/images/services',
-          src: '**/*.{jpg,png}',
-          dest: '<%= config.temp %>/images/services'
+          dest: '<%= config.temp %>/images/content'
         }]
       }
     },

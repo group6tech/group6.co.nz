@@ -1,0 +1,47 @@
+module Jekyll
+  class ImgSrcSetTag < Liquid::Tag
+
+		attr_accessor :markup
+
+    def initialize(tag_name, variables, tokens)
+      @variables = variables.split(", ")
+      @src = @variables[0]
+      @alt = @variables[1]
+
+      super
+    end
+
+    def render(context)
+			return "Bad options to img_srcset, syntax is {% img_srcset path/to/image.jpg, alt text}:" unless @src
+
+      img_src = Liquid::Template.parse(@src).render(context)
+
+			img_attrs = {}
+			img_attrs["src"] = get_image_source(img_src, "md")
+
+			sizes = []
+			sizes << {:label => "sm", :width => 480}
+			#sizes << {:label => "md", :width => 656} // Used as the default
+			sizes << {:label => "lg", :width => 768}
+			sizes << {:label => "xl", :width => 1536}
+
+			srcset = []
+			sizes.each do |size|
+				srcset << {:src => get_image_source(img_src, size[:label]), :width => size[:width]}
+			end
+			img_attrs["srcset"] = srcset.map{|i| "#{i[:src]} #{i[:width]}w"}.join(", ")
+
+      if (@alt)
+	      img_attrs["alt"] = Liquid::Template.parse(@alt).render(context)
+      end
+
+      "<img #{img_attrs.map {|k,v| "#{k}=\"#{v}\""}.join(" ")}>"
+    end
+
+		def get_image_source(src, size)
+			src.sub(/(\.\w+)$/, "-#{size}" + '\1')
+		end
+  end
+end
+
+Liquid::Template.register_tag('img_srcset', Jekyll::ImgSrcSetTag)

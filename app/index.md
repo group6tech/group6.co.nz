@@ -17,7 +17,9 @@ headerIncludes:
 
   <a class="card card-hero card-img-right diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
     <div class="card-inner">
-      <div class="card-img" data-src="/images/index/diva-1440.jpg" title="DIVA Media System"></div>
+      <div class="card-img">
+        {% img_srcset /images/content/index/diva.jpg, DIVA Media System %}
+      </div>
       <div class="card-block">
         <h2 class="card-title" itemprop="name">DIVA Media System</h2>
         <span itemprop="description">
@@ -31,7 +33,9 @@ headerIncludes:
 
   <a class="card card-hero card-img-left services" href="/services/">
     <div class="card-inner">
-      <div class="card-img" data-src="/images/index/cables-1440.jpg"></div>
+      <div class="card-img">
+        {% img_srcset /images/content/index/cables.jpg, Rack installation %}
+      </div>
       <div class="card-block">
         <h2 class="card-title">From Post to Broadcast</h2>
         <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
@@ -52,7 +56,9 @@ headerIncludes:
           <div class="col-sm-6 col-lg-3">
             <a class="card" href="{{ page.url }}" title="{{ page.title }}">
               <div class="card-inner">            
-                <div class="card-img" data-src="/images/clients/{{ page.banner }}-thumb.jpg"></div>
+                <div class="card-img">
+                  {% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }} %}
+                </div>
                 <div class="card-block">
                   <h4 class="card-title">{{ page.title }}</h4>
                 </div>
