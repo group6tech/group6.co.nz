@@ -50,25 +50,13 @@
 		}
 	}
 
-	.client-augusto,
-	.client-great-southern-television,
 	.client-masterchef-nz,
+	.client-screentime,
+	.client-great-southern-television,
 	.client-new-zealand-s-got-talent,
 	.client-topshelf-productions {
-		.card-img {
-			background-position: top center;
-		}
-	}
-
-	.client-eyeworks,
-	.client-screentime,
-	.client-tomorrowland {
-		.card-img {
-			background-position: top center;
-
-			@include media-breakpoint-up(lg) {
-				background-position: center center;
-			}
+		.card-img img {
+			object-position: top center;
 		}
 	}
 
