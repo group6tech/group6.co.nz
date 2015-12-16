@@ -3,11 +3,7 @@
 // ============================================================================
 
 .services {
-	.card-img {
-		img {
-			height: 100%;
-		}
-		
+	.card-img {		
 		@include media-breakpoint-up(lg) {
 			height: 30rem;
 		}

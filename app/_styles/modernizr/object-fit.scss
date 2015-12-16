@@ -1,0 +1,11 @@
+//
+// Modernizr - Object Fit
+// ============================================================================
+
+.no-object-fit {
+	.card-img,
+	.jumbotron-image {
+		background-size: cover;
+		background-position: center center;
+	}
+}

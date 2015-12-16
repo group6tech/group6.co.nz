@@ -17,12 +17,12 @@ module Jekyll
       img_src = Liquid::Template.parse(@src).render(context)
 
 			img_attrs = {}
-			img_attrs["src"] = get_image_source(img_src, "md")
+			img_attrs["src"] = get_image_source(img_src, "lg")
 
 			sizes = []
 			sizes << {:label => "sm", :width => 480}
-			#sizes << {:label => "md", :width => 656} // Used as the default
-			sizes << {:label => "lg", :width => 768}
+			sizes << {:label => "md", :width => 656}
+			#sizes << {:label => "lg", :width => 768} // Used as the default
 			sizes << {:label => "xl", :width => 1536}
 
 			srcset = []
