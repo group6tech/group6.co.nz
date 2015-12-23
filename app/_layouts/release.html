@@ -1,6 +1,6 @@
 ---
 layout: base
-bodyClass: diva-release
+bodyClass: inner no-page-header diva-release
 socialImage: logos/diva.png
 ---
 <article class="release" itemscope itemtype="http://schema.org/Article">
@@ -9,6 +9,10 @@ socialImage: logos/diva.png
 		<time itemprop="dateCreated">{{ page.date | date_to_string }}</time>
 		<div itemprop="articleBody">
 			{{ content }}
+		</div>
+
+		<div class="all-notes">
+			<a href="/diva/releases.html" class="btn">All release notes</a>
 		</div>
 	</div>
 </article>

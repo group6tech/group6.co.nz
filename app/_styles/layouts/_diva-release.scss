@@ -9,4 +9,13 @@
 
 		color: $grey-light;
 	}
+
+	.all-notes {
+		margin-top: ($spacer * 2);
+		padding-top: $spacer;
+
+		text-align: center;
+
+		border-top: 1px solid transparentize($white, .8);
+	}
 }

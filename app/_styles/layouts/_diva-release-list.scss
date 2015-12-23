@@ -6,6 +6,11 @@
 	padding-top: $spacer;
 	padding-bottom: $spacer;
 
+	@include media-breakpoint-up(lg) {
+		padding-top: ($spacer * 2);
+		padding-bottom: ($spacer * 2);
+	}
+
 	time {
 		display: block;
 		margin-bottom: $spacer;
@@ -21,7 +26,7 @@
 .diva-release-list form {
 	padding-top: $spacer;
 	padding-bottom: $spacer;
-	
+
 	text-align: center;
 
 	border-top: 1px solid transparentize($white, .8);
