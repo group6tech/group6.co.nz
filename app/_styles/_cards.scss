@@ -179,21 +179,6 @@
 	&:hover {
 		text-decoration: none;
 	}
-
-	@include media-breakpoint-up(md) {
-		//font-size: 1.1rem;
-		//letter-spacing: 1.16pt;
-	}
-
-	@include media-breakpoint-up(lg) {
-		//font-size: 1.2rem;
-		//letter-spacing: 0.86pt;
-	}
-
-	@include media-breakpoint-up(xl) {
-		//font-size: 1.8rem;
-		//letter-spacing: 0.88pt;
-	}
 }
 
 // Hero
@@ -201,23 +186,8 @@
 .card-hero .card-title {
 	margin-bottom: ($spacer / 2);
 
-	@include media-breakpoint-up(md) {
-		//font-size: 2rem;
-		//letter-spacing: 1.86pt;
-	}
-
-	@include media-breakpoint-up(lg) {
-		margin-bottom: ($spacer / 2);
-
-		//font-size: 2.3rem;
-		//letter-spacing: 1.67;
-	}
-
 	@include media-breakpoint-up(xl) {
 		margin-bottom: $spacer;
-
-		//font-size: 3.5rem;
-		//letter-spacing: 1.71pt;
 	}
 }
 
@@ -229,19 +199,8 @@
 .card-text {
 	margin-bottom: 0;
 
-	//font-size: .8rem;
-
 	a {
 		color: $white;
-	}
-
-	@include media-breakpoint-up(md) {
-		//font-size: 1rem;
-		//letter-spacing: normal;
-	}
-
-	@include media-breakpoint-up(xl) {
-		//font-size: 1.6rem;
 	}
 }
 
