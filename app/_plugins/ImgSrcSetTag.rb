@@ -4,9 +4,10 @@ module Jekyll
 		attr_accessor :markup
 
     def initialize(tag_name, variables, tokens)
-      @variables = variables.split(", ")
+      @variables = variables.strip.split(", ")
       @src = @variables[0]
       @alt = @variables[1]
+      @mediaquery = @variables[2]
 
       super
     end
@@ -30,6 +31,11 @@ module Jekyll
 				srcset << {:src => get_image_source(img_src, size[:label]), :width => size[:width]}
 			end
 			img_attrs["srcset"] = srcset.map{|i| "#{i[:src]} #{i[:width]}w"}.join(", ")
+
+      if (@mediaquery)
+        mediaqueries = @mediaquery.split("-")
+        img_attrs["sizes"] = "(min-width: 1800px) #{mediaqueries[4]}vw, (min-width: 1400px) #{mediaqueries[3]}vw, (min-width: 992px) #{mediaqueries[2]}vw, (min-width: 544px) #{mediaqueries[1]}vw, #{mediaqueries[0]}vw"
+      end
 
       if (@alt)
 	      img_attrs["alt"] = Liquid::Template.parse(@alt).render(context)

@@ -18,7 +18,7 @@ headerIncludes:
   <a class="card card-hero card-img-right diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
     <div class="card-inner">
       <div class="card-img">
-        {% img_srcset /images/content/index/diva.jpg, DIVA Media System %}
+        {% img_srcset /images/content/index/diva.jpg, DIVA Media System, 100-100-90-50-60 %}
       </div>
       <div class="card-block">
         <h2 class="card-title" itemprop="name">DIVA Media System</h2>
@@ -34,7 +34,7 @@ headerIncludes:
   <a class="card card-hero card-img-left services" href="/services/">
     <div class="card-inner">
       <div class="card-img">
-        {% img_srcset /images/content/index/cables.jpg, Rack installation %}
+        {% img_srcset /images/content/index/cables.jpg, Rack installation, 100-100-90-50-60 %}
       </div>
       <div class="card-block">
         <h2 class="card-title">From Post to Broadcast</h2>
@@ -57,7 +57,7 @@ headerIncludes:
             <a class="card" href="{{ page.url }}" title="{{ page.title }}">
               <div class="card-inner">            
                 <div class="card-img">
-                  {% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }} %}
+                  {% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }}, 100-50-50-25-25 %}
                 </div>
                 <div class="card-block">
                   <h4 class="card-title">{{ page.title }}</h4>
