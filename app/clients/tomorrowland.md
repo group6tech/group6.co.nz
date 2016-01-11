@@ -1,5 +1,5 @@
 ---
-title: Tomorrowland Sound & Vision
+title: Tomorrowland
 layout: client
 category: client
 displayOrder: 6
