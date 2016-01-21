@@ -11,7 +11,7 @@
 	position: relative;
 	overflow: hidden;
 
-	display: block;
+	display: flex;
 	margin-bottom: $spacer;
 
 	color: $white;
@@ -30,6 +30,9 @@
 //
 
 .card-inner {
+	display: flex;
+	flex-direction: column;
+	
 	overflow: hidden;
 
 	.btn {
@@ -113,6 +116,7 @@
 
 .card-block {
 	position: relative;
+	flex-grow: 1;
 
 	padding: $spacer;
 
@@ -127,7 +131,7 @@
 //
 .card-hero .card-block {
 	@include media-breakpoint-up(md) {
-		padding: ($spacer * 1.5) ($spacer * 4);
+		padding: ($spacer * 1.5);
 	}
 
 	@include media-breakpoint-up(lg) {

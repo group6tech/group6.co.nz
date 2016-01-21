@@ -25,6 +25,8 @@
 		width: 25rem;
 		margin-left: $spacer;
 		padding: ($spacer * 1.5) $spacer;
+
+		background-color: $grey-darkish;
 	}
 
 	a {
@@ -219,14 +221,14 @@
 
 .other-clients {
 	padding-top: $spacer;
-	
+
 	border-top: 1px solid transparentize($white, .8);
 
 	@include media-breakpoint-up(md) {
 		display: block;
 		margin-top: -($spacer * 1.5);
+		padding-top: 0;
 
-		background-color: $grey-darkish;
 		border-top: 0 none;
 	}
 
