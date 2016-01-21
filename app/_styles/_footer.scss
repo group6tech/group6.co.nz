@@ -23,31 +23,18 @@
 	}
 
 	p {
-		margin-bottom: ($spacer / 2);
-
-		font-size: .8rem;
-		letter-spacing: 0.33pt;
-
-		&:last-child {
-			margin-top: $spacer;
-		}
-
-		@include media-breakpoint-up(md) {
-			font-size: .9rem;
-		}
-
-		@include media-breakpoint-up(lg) {
-			font-size: 1.1rem;
-		}
-
-		@include media-breakpoint-up(xl) {
-			font-size: 1.4rem;
-			letter-spacing: .4pt;
-			line-height: 1.7;
-		}
+		margin-bottom: $spacer;
 	}
 
 	.fa-circle {
+		@include media-breakpoint-down(xs) {
+			display: block;
+
+			&:before {
+				content: "";
+			}
+		}
+
 		position: relative;
 		bottom: .2rem;
 
@@ -71,13 +58,6 @@
 // ----------------------------------------------------------------------------
 
 .footer-menu {
-	font-size: 1.2rem;
-	letter-spacing: 0.39pt;
-
-	@include media-breakpoint-up(xl) {
-		font-size: 1.8rem;
-		letter-spacing: .4pt;
-	}
 
 	li {
 		@include media-breakpoint-up(lg) {
@@ -122,26 +102,21 @@
 // ----------------------------------------------------------------------------
 
 .call-to-help {
-	padding: $spacer;
+	padding: $spacer ($spacer * 2);
 
 	color: $brand-light;
 	font-family: $font-family-alt;
-	font-size: 1.4rem;
-	letter-spacing: 0.76pt;
+	font-size: 1.6rem;
 	text-align: center;
 
 	background-color: $white;
 
 	@include media-breakpoint-up(lg) {
 		padding: ($spacer * 1.5);
-
-		font-size: 1.6rem;
 	}
 
 	@include media-breakpoint-up(xl) {
 		padding: ($spacer * 2);
-
-		font-size: 2.4rem;
 	}
 
 	a {

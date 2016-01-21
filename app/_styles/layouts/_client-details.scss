@@ -21,8 +21,6 @@
 .client-col-aside {
 	flex-shrink: 0;
 
-	background-color: $grey-darkish;
-
 	@include media-breakpoint-up(md) {
 		width: 25rem;
 		margin-left: $spacer;
@@ -126,18 +124,7 @@
 
 			font-family: $font-family-alt;
 			font-weight: 700;
-			font-size: 2rem;
-			letter-spacing: 1.2pt;
 			text-transform: uppercase;
-
-			@include media-breakpoint-up(md) {
-				font-size: 2.5rem;
-				letter-spacing: 1.5pt;
-			}
-
-			@include media-breakpoint-up(lg) {
-				font-size: 3rem;
-			}
 		}
 
 		p {
@@ -152,32 +139,17 @@
 // ----------------------------------------------------------------------------
 
 .client-roles {
-	font-size: 1.2rem;
-
-	@include media-breakpoint-up(md) {
-		font-size: 1.4rem;
-	}
-
-	@include media-breakpoint-up(lg) {
-		font-size: 1.6rem;
-	}
 
 	h3 {
 		display: inline-block;
 		width: 5rem;
 
-		font-size: 1.2rem;
 		font-weight: 700;
+		font-size: 1.4rem;
 		vertical-align: baseline;
-
-		@include media-breakpoint-up(md) {
-			font-size: 1.4rem;
-		}
 
 		@include media-breakpoint-up(lg) {
 			width: 6rem;
-
-			font-size: 1.6rem;
 		}
 	}
 
@@ -246,32 +218,24 @@
 // ----------------------------------------------------------------------------
 
 .other-clients {
-	display: none;
-
-	margin-top: -($spacer * 1.5);
-
-	font-size: 1.4rem;
+	padding-top: $spacer;
+	
+	border-top: 1px solid transparentize($white, .8);
 
 	@include media-breakpoint-up(md) {
 		display: block;
-	}
+		margin-top: -($spacer * 1.5);
 
-	@include media-breakpoint-up(lg) {
-		font-size: 1.6rem;
+		background-color: $grey-darkish;
+		border-top: 0 none;
 	}
 
 	h4 {
 		margin-bottom: 0;
 
 		font-family: $font-family-alt;
-		font-size: 1.4rem;
 		font-weight: 700;
-		letter-spacing: 1.68pt;
 		text-transform: uppercase;
-
-		@include media-breakpoint-up(lg) {
-			font-size: 1.6rem;
-		}
 	}
 
 	ul {
@@ -282,14 +246,21 @@
 	}
 
 	li {
-		border-top: 1px solid $white;
+		@include media-breakpoint-up(md) {
+			border-top: 1px solid $white;
+		}
 	}
 
 	a {
 		display: block;
 
-		padding-top: ($spacer * 1.5);
-		padding-bottom: ($spacer * 1.5);
+		padding-top: ($spacer / 4);
+		padding-bottom: ($spacer / 4);
+
+		@include media-breakpoint-up(md) {
+			padding-top: ($spacer * 1.5);
+			padding-bottom: ($spacer * 1.5);
+		}
 	}
 }
 
@@ -297,10 +268,10 @@
 // Specific clients
 
 .client-details {
-	&.client-masterchef-nz,
-	&.client-new-zealand-s-got-talent {
-		.jumbotron-image {
-			background-position: top center;
+	&.client-auckland-rescue-helicopter-trust,
+	&.client-juice-tv {
+		.jumbotron-image img {
+			object-position: center center;
 		}
 	}
 }

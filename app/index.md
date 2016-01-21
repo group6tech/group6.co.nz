@@ -54,7 +54,7 @@ headerIncludes:
     	{% for page in client_pages reversed %}
         {% if clientNo <= 4 and page.article %}
           <div class="col-sm-6 col-lg-3">
-            <a class="card" href="{{ page.url }}" title="{{ page.title }}">
+            <a class="card client-{{ page.title | slugify }}" href="{{ page.url }}" title="{{ page.title }}">
               <div class="card-inner">            
                 <div class="card-img">
                   {% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }}, 100-50-50-25-25 %}

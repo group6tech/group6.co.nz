@@ -6,8 +6,6 @@
   margin-top: $spacer;
 
   font-family: $font-family-alt;
-  font-size: 1rem;
-  letter-spacing: .56pt;
   text-transform: uppercase;
   text-align: left;
 
@@ -17,19 +15,7 @@
   @include media-breakpoint-up(md) {
     height: 3.5rem;
 
-    font-size: 1.2rem;
-
     background-color: transparent;
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: 1.4rem;
-    letter-spacing: 0.58pt;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 1.8rem;
-    letter-spacing: 0.6pt;
   }
 
   a {
@@ -37,7 +23,7 @@
 
     padding: ($spacer / 2) $spacer;
 
-    color: transparentize($white, .3);
+    //color: transparentize($white, .3);
 
     &:hover {
       color: $white;
@@ -70,7 +56,7 @@
   }
 
   i {
-    padding-top: .2rem;
+    padding-top: .3rem;
 
     float: right;
   }
