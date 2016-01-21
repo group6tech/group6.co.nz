@@ -36,7 +36,7 @@
 		}
 
 		position: relative;
-		bottom: .2rem;
+		bottom: .5rem;
 
 		margin-left: ($spacer / 2);
 		margin-right: ($spacer / 2);
@@ -102,11 +102,12 @@
 // ----------------------------------------------------------------------------
 
 .call-to-help {
+	@extend .txt-lg;
+	
 	padding: $spacer ($spacer * 2);
 
 	color: $brand-light;
 	font-family: $font-family-alt;
-	font-size: 1.6rem;
 	text-align: center;
 
 	background-color: $white;

@@ -2,24 +2,30 @@
 // Core CSS - Typography
 // ============================================================================
 
+// Default
+//
+body		{ font-size: 1.4rem; }
+h1 			{ font-size: 2.0rem; }
+h2 			{ font-size: 1.8rem; }
+h3 			{ font-size: 1.6rem; }
+h4			{ font-size: 1.4rem; }
+.txt-lg	{ font-size: 1.6rem; }
 
-
-// Headings
-// ----------------------------------------------------------------------------
-
-h1 {
-	font-size: 2rem;
+// Small
+//
+@include media-breakpoint-up(sm) {
+	body		{ font-size: 1.6rem; }
+	h1 			{ font-size: 2.2rem; }
+	h2 			{ font-size: 2.0rem; }
+	h3 			{ font-size: 1.8rem; }
+	h4			{ font-size: 1.6rem; }
+	.txt-lg	{ font-size: 1.8rem; }
 }
-
-h4 {
-	font-size: 1.4rem;
-}
-
-
-
-// Misc
-// ----------------------------------------------------------------------------
 
 .lead {
-	font-size: 1.6rem;
+	@extend .txt-lg;
+}
+
+ul {
+	padding-left: $spacer * 1.25;
 }

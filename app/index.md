@@ -11,8 +11,8 @@ headerIncludes:
 
 <div class="container">
   <section class="intro">
-    <p>Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters.</p>
-    <p>Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
+    <p class="lead">Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters.</p>
+    <p class="lead">Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
   </section>
 
   <a class="card card-hero card-img-right diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
@@ -22,10 +22,10 @@ headerIncludes:
       </div>
       <div class="card-block">
         <h2 class="card-title" itemprop="name">DIVA Media System</h2>
-        <span itemprop="description">
+        <div class="card-text">
           <p class="card-text">DIVA is a powerful distributed media management tool for the Avid post production environment.</p>
           <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
-        </span>
+        </div>
         <div class="btn" itemprop="url">Learn about DIVA</div>
       </div>
     </div>
@@ -38,7 +38,9 @@ headerIncludes:
       </div>
       <div class="card-block">
         <h2 class="card-title">From Post to Broadcast</h2>
-        <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
+        <div class="card-text">
+          <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
+        </div>
         <div class="btn">Tailor a solution to your needs</div>
       </div>
     </div>

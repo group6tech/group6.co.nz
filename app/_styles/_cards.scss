@@ -73,6 +73,10 @@
 }
 
 .card-img {
+	@include media-breakpoint-up(sm) {
+		height: 20rem;
+	}
+
 	@include media-breakpoint-up(md) {
 		height: 20rem;
 	}
@@ -136,16 +140,10 @@
 	}
 
 	.btn {
-		@include media-breakpoint-down(xs) {
+		@include media-breakpoint-down(sm) {
 			width: 100%;
 
 			text-align: center;
-		}
-
-		@include media-breakpoint-up(sm) {
-			position: absolute;
-			right: ($spacer / 2);
-			top: ($spacer * 1.4);
 		}
 
 		@include media-breakpoint-up(md) {
@@ -180,11 +178,15 @@
 	font-weight: 400;
 	text-transform: uppercase;
 
+	@include media-breakpoint-up(sm) {
+		font-size: 2rem;
+	}
+
 	&:hover {
 		text-decoration: none;
 	}
 
-	+ p {
+	+ .card-text {
 		margin-top: $spacer / 2;
 	}
 }
