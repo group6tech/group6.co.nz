@@ -3,9 +3,15 @@
 // ============================================================================
 
 .services {
-	.card-img {		
+	.card-block {
 		@include media-breakpoint-up(lg) {
-			height: 30rem;
+			padding: $spacer * 2;
+		}
+	}
+
+	.card-img {
+		@include media-breakpoint-up(lg) {
+			height: 45rem;
 		}
 
 		@include media-breakpoint-up(xl) {

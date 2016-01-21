@@ -118,7 +118,7 @@
 			left: ($spacer * 2);
 			bottom: ($spacer * 2);
 
-			width: 37rem;
+			width: 45%;
 		}
 
 		h1 {
@@ -127,10 +127,19 @@
 			font-family: $font-family-alt;
 			font-weight: 700;
 			text-transform: uppercase;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 4rem;
+				font-weight: 200;
+			}
 		}
 
 		p {
 			margin-bottom: 0;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 2.4rem;
+			}
 		}
 	}
 }
