@@ -194,12 +194,12 @@ module.exports = function(grunt) {
             width: 656,
           }, {
             name: 'lg',
-            quality: 85,
+            quality: 80,
             width: 768,
           }, {
             name: 'xl',
-            quality: 90,
-            width: 1536,
+            quality: 80,
+            width: 1200,
           }]
         },
         files: [{

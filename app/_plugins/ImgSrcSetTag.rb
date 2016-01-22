@@ -23,7 +23,7 @@ module Jekyll
 			sizes = []
 			sizes << {:label => "sm", :width => 480}
 			sizes << {:label => "md", :width => 656}
-			#sizes << {:label => "lg", :width => 768} // Used as the default
+			sizes << {:label => "lg", :width => 768} # // Also the default
 			sizes << {:label => "xl", :width => 1536}
 
 			srcset = []
