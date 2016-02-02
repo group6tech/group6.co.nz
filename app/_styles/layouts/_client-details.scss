@@ -214,10 +214,14 @@
 .client-image .image {
 	height: 40vw;
 
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	img {
+		height: 100%;
+		width: 100%;
 
+		object-fit: cover;
+		object-position: center center;
+	}
+	
 	@include media-breakpoint-up(md) {
 		height: 20vw;
 	}

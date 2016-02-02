@@ -53,7 +53,9 @@ bodyClass: inner no-page-header
 					<div class="client-images">
 						{% for image in page.images %}
 							<div class="client-image">
-								<div class="image" data-src="/images/clients/{{ image.image }}.jpg" alt="{{ image.title }}"></div>
+								<div class="image">
+									{% img_srcset /images/content/clients/{{ image.image }}.jpg, {{ image.title }} %}
+								</div>
 							</div>
 						{% endfor %}
 					</div>
