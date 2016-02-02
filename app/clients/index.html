@@ -12,6 +12,7 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 			<div class="card-inner">
 				<div class="card-img">
 					{% img_srcset /images/content/clients/{{ page.banner }}.jpg, {{ page.title }}, 100-100-100-50-45 %}
+					{% if page.article %}<a href="{{ page.url }}"></a>{% endif %}
 				</div>
 				<div class="card-block">
 					<h4 class="card-title">{{ page.title }}</h4>
