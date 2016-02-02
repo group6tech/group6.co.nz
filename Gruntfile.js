@@ -185,6 +185,11 @@ module.exports = function(grunt) {
       clients: {
         options: {
           sizes: [{
+            name: 'pvw',
+            filter: 'Gaussian',
+            quality: 25,
+            width: 100,
+          }, {
             name: 'sm',
             quality: 75,
             width: 480,

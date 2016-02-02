@@ -18,7 +18,7 @@ module Jekyll
       img_src = Liquid::Template.parse(@src).render(context)
 
 			img_attrs = {}
-			img_attrs["src"] = get_image_source(img_src, "lg")
+			img_attrs["src"] = get_image_source(img_src, "pvw")
 
 			sizes = []
 			sizes << {:label => "sm", :width => 480}
@@ -30,16 +30,18 @@ module Jekyll
 			sizes.each do |size|
 				srcset << {:src => get_image_source(img_src, size[:label]), :width => size[:width]}
 			end
-			img_attrs["srcset"] = srcset.map{|i| "#{i[:src]} #{i[:width]}w"}.join(", ")
+			img_attrs["data-srcset"] = srcset.map{|i| "#{i[:src]} #{i[:width]}w"}.join(", ")
 
       if (@mediaquery)
         mediaqueries = @mediaquery.split("-")
-        img_attrs["sizes"] = "(min-width: 1800px) #{mediaqueries[4]}vw, (min-width: 1400px) #{mediaqueries[3]}vw, (min-width: 992px) #{mediaqueries[2]}vw, (min-width: 544px) #{mediaqueries[1]}vw, #{mediaqueries[0]}vw"
+        img_attrs["data-sizes"] = "(min-width: 1800px) #{mediaqueries[4]}vw, (min-width: 1400px) #{mediaqueries[3]}vw, (min-width: 992px) #{mediaqueries[2]}vw, (min-width: 544px) #{mediaqueries[1]}vw, #{mediaqueries[0]}vw"
       end
 
       if (@alt)
 	      img_attrs["alt"] = Liquid::Template.parse(@alt).render(context)
       end
+
+      img_attrs["class"] = "blur-up lazyload"
 
       "<img #{img_attrs.map {|k,v| "#{k}=\"#{v}\""}.join(" ")}>"
     end

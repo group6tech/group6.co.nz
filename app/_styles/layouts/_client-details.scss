@@ -212,6 +212,8 @@
 }
 
 .client-image .image {
+	overflow: hidden;
+	
 	height: 40vw;
 
 	img {
@@ -221,7 +223,7 @@
 		object-fit: cover;
 		object-position: center center;
 	}
-	
+
 	@include media-breakpoint-up(md) {
 		height: 20vw;
 	}
