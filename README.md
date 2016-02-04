@@ -33,13 +33,14 @@ And the Gems from the project directory...
 
 Jeez!
 
-When it doesn't work on Windows
--------------------------------
+Now you can install the Node modules.
+If Windows, make sure you run it from the **Developer Command Prompt for VS2015**.
 
-First make sure you've got at least npm v3. It might actually be released by the
-time you read this.
+`npm install`
 
-`npm install -g npm@3.3.4`
+And the Bower modules
+
+`bower install`
 
 
 Development
