@@ -274,6 +274,18 @@ module.exports = function(grunt) {
       }
     },
 
+    // Deploy the site to GitHub
+    //
+    'gh-pages': {
+      options: {
+        base: '<%= config.dest %>',
+        clone: '.gh-pages',
+        repo: 'git@github.com:group6tech/group6tech.github.io.git',
+        branch: 'master'
+      },
+      src: ['**']
+    },
+
     // Tasks which can run at the same time
     //
     concurrent: {
@@ -324,6 +336,13 @@ module.exports = function(grunt) {
     'usemin',
     'htmlmin',
     'copy:dist'
+  ]);
+
+  // Deploy
+  //
+  grunt.registerTask('deploy', [
+    'dist',
+    'gh-pages'
   ]);
 
   // Default
