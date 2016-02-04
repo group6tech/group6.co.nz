@@ -1,0 +1,32 @@
+//
+// Componets - Page header
+// ============================================================================
+
+.page-header {
+  clear: left;
+
+  padding-top: ($spacer * 1.5);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: ($spacer * 2);
+  }
+
+  h1 {
+    margin-bottom: 0;
+
+    font-size: 2.4rem;
+    font-weight: 200;
+
+    @include media-breakpoint-up(md) {
+      font-size: 4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+  }
+}
+
+.no-page-header .page-header {
+  display: none;
+}

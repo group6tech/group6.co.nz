@@ -1,0 +1,294 @@
+//
+// Layouts - Client Details
+// ============================================================================
+
+.client-details {
+	margin-top: -($spacer);
+}
+
+
+
+// Rows and columns
+// ----------------------------------------------------------------------------
+
+.client-row {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		align-items: stretch;
+	}
+}
+
+.client-col-aside {
+	flex-shrink: 0;
+
+	@include media-breakpoint-up(md) {
+		width: 25rem;
+		margin-left: $spacer;
+		padding: ($spacer * 1.5) $spacer;
+
+		background-color: $grey-darkish;
+	}
+
+	a {
+		color: $white;
+	}
+}
+
+
+
+// Jumbotron
+// ----------------------------------------------------------------------------
+
+.client-details .jumbotron {
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		width: map-get($container-max-widths, md);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: ($spacer * 2);
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: map-get($container-max-widths, lg);
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: map-get($container-max-widths, xl);
+	}
+
+	// Image
+	//
+	.jumbotron-image {
+		position: relative;
+
+		height: 50vw;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			background-color: transparentize($brand-primary, .7);
+			content: " ";
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+
+			object-fit: cover;
+			object-position: top center;
+		}
+
+		@include media-breakpoint-up(md) {
+			height: 46rem;
+		}
+	}
+
+	// Block
+	//
+	.jumbotron-block {
+		padding: $spacer ($spacer * 2);
+
+		@include media-breakpoint-up(sm) {
+			width: map-get($container-max-widths, sm);
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			left: $spacer;
+			bottom: $spacer;
+
+			width: 50%;
+			padding: $spacer;
+
+			background-color: transparentize($brand-primary, .5);
+		}
+
+		@include media-breakpoint-up(lg) {
+			left: ($spacer * 2);
+			bottom: ($spacer * 2);
+
+			width: 45%;
+		}
+
+		h1 {
+			margin-bottom: 0;
+
+			font-family: $font-family-alt;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 4rem;
+				font-weight: 200;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 2.4rem;
+			}
+		}
+	}
+}
+
+
+
+// Roles and Order
+// ----------------------------------------------------------------------------
+
+.client-roles {
+
+	h3 {
+		display: inline-block;
+		width: 5rem;
+
+		font-weight: 700;
+		font-size: 1.4rem;
+		vertical-align: baseline;
+
+		@include media-breakpoint-up(lg) {
+			width: 6rem;
+		}
+	}
+
+	ul {
+		display: inline-block;
+
+		padding-left: 0;
+
+		list-style: none;
+		vertical-align: top;
+	}
+}
+
+
+
+// Images
+// ----------------------------------------------------------------------------
+
+.client-images {
+	@include media-breakpoint-up(sm) {
+		width: map-get($container-max-widths, sm);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 100%;
+		margin: -($spacer / 2);
+	}
+}
+
+.client-image {
+	+ .client-image {
+		margin-top: $spacer;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 0;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		flex: 0 0 50%;
+
+		padding: ($spacer / 2);
+	}
+}
+
+.client-image .image {
+	overflow: hidden;
+	
+	height: 40vw;
+
+	img {
+		height: 100%;
+		width: 100%;
+
+		object-fit: cover;
+		object-position: center center;
+	}
+
+	@include media-breakpoint-up(md) {
+		height: 20vw;
+	}
+}
+
+
+
+// Other clients
+// ----------------------------------------------------------------------------
+
+.other-clients {
+	padding-top: $spacer;
+
+	border-top: 1px solid transparentize($white, .8);
+
+	@include media-breakpoint-up(md) {
+		display: block;
+		margin-top: -($spacer * 1.5);
+		padding-top: 0;
+
+		border-top: 0 none;
+	}
+
+	h4 {
+		margin-bottom: 0;
+
+		font-family: $font-family-alt;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+
+		list-style: none;
+	}
+
+	li {
+		@include media-breakpoint-up(md) {
+			border-top: 1px solid $white;
+		}
+	}
+
+	a {
+		display: block;
+
+		padding-top: ($spacer / 4);
+		padding-bottom: ($spacer / 4);
+
+		@include media-breakpoint-up(md) {
+			padding-top: ($spacer * 1.5);
+			padding-bottom: ($spacer * 1.5);
+		}
+	}
+}
+
+
+// Specific clients
+
+.client-details {
+	&.client-auckland-rescue-helicopter-trust,
+	&.client-juice-tv {
+		.jumbotron-image img {
+			object-position: center center;
+		}
+	}
+}

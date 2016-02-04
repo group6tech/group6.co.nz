@@ -3,11 +3,13 @@ title: Auckland Rescue Helicopter Trust
 layout: client
 category: client
 date: 2013-06-07
-tagLine: Custom software for life saving helicopter service
-banner: arht/flight.jpg
+displayOrder: 10
+article: true
+tagLine: Custom software for life saving helicopter service.
+banner: arht/winch
+cardImageSide: left
 client: Great Southern Television
 clientUrl: http://www.greatsoutherntv.com/
-clientLogo: gstv/gstv
 roles:
 order:
 - Media Ingest and Management Application

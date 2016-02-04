@@ -1,0 +1,85 @@
+//
+// group6.co.nz - main stylesheet
+// ============================================================================
+
+
+
+// Core variables and mixins
+// ----------------------------------------------------------------------------
+
+@import 'variables';
+@import 'bootstrap/scss/variables';
+
+@import 'mixins';
+@import 'bootstrap/scss/mixins';
+
+
+
+// Reset and dependencies
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/normalize';
+@import 'bootstrap/scss/print';
+
+
+
+// Core css
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/grid';
+
+@import 'reboot';
+@import 'buttons';
+@import 'grid';
+@import 'forms';
+@import 'type';
+
+
+
+// Components
+// ----------------------------------------------------------------------------
+
+@import 'bootstrap/scss/animation';
+@import 'bootstrap/scss/nav';
+
+@import 'cards';
+@import 'content';
+@import 'header';
+@import 'footer';
+@import 'jumbotron';
+@import 'navbar';
+@import 'page-header';
+
+
+// Utility classes
+// ----------------------------------------------------------------------------
+
+@import 'utilities';
+@import 'modernizr/object-fit';
+
+
+
+// Plugins
+// ----------------------------------------------------------------------------
+
+@import 'plugins/lazyload';
+
+
+
+// Layouts
+// ----------------------------------------------------------------------------
+
+@import 'layouts/client-details';
+@import 'layouts/client-list';
+@import 'layouts/company';
+@import 'layouts/diva';
+@import 'layouts/diva-release';
+@import 'layouts/diva-release-list';
+@import 'layouts/home';
+@import 'layouts/news-archive';
+@import 'layouts/news-article';
+@import 'layouts/news-index';
+@import 'layouts/services';

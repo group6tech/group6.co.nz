@@ -1,0 +1,7 @@
+//
+// Mixins - Branding
+// =============================================================================
+
+@mixin brand-gradient-bg() {
+  background: linear-gradient(45deg, $brand-gradient-dark 0%, $brand-gradient-light 100%);
+}

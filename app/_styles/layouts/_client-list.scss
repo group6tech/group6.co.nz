@@ -1,0 +1,103 @@
+//
+// Layouts - Client List
+// ============================================================================
+
+.client-list {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		align-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -($spacer / 2);
+		margin-right: -($spacer / 2);
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-left: -($spacer);
+		margin-right: -($spacer);
+	}
+
+	.card {
+		@include media-breakpoint-up(md) {
+			flex-grow: 0;
+			flex-shrink: 0;
+			padding-left: ($spacer / 2);
+			padding-right: ($spacer / 2);
+			width: 50%;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: (100% / 3);
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: ($spacer);
+			padding-right: ($spacer);
+		}
+
+		&:nth-child(3n) {
+			@extend .card-light;
+		}
+
+		&:nth-child(5n) {
+			@extend .card-dark;
+		}
+	}
+
+	.card.card-hero {
+		@include media-breakpoint-up(md) {
+			width: 100%;
+		}
+	}
+
+	.client-masterchef-nz,
+	.client-screentime,
+	.client-great-southern-television,
+	.client-new-zealand-s-got-talent,
+	.client-topshelf-productions {
+		.card-img img {
+			object-position: top center;
+		}
+	}
+
+	.client-pango-aotearoa,
+	.client-showdown-productions,
+	.client-topshelf-productions {
+		@include media-breakpoint-up(md) {
+			width: (100% / 3);
+		}
+	}
+
+	.client-showdown-productions,
+	.client-topshelf-productions {
+		@include media-breakpoint-up(lg) {
+			width: (100% / 2);
+		}
+	}
+}
+
+
+// Flex order
+//
+@include media-breakpoint-up(lg) {
+	.client-list {
+		.client-shortland-street { order: 1; }
+		.client-masterchef-nz { order: 2; }
+		.client-reel-factory { order: 3; }
+		.client-greenstone-tv { order: 4; }
+		.client-department-of-post { order: 5; }
+		.client-eyeworks { order: 6; }
+		.client-imagination-tv { order: 7; }
+		.client-south-seas-film-tv-school { order: 8; }
+		.client-screentime { order: 9; }
+		.client-augusto { order: 10; }
+		.client-auckland-rescue-helicopter-trust { order: 11; }
+		.client-tomorrowland { order: 12; }
+		.client-great-southern-television { order: 13; }
+		.client-pango-aotearoa { order: 14; }
+		.client-juice-tv { order: 15; }
+		.client-new-zealand-s-got-talent { order: 16; }
+		.client-showdown-productions { order: 17; }
+		.client-topshelf-productions { order: 18; }
+	}
+}

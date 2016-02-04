@@ -1,0 +1,30 @@
+//
+// Components - Header
+// ============================================================================
+
+.header {
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+
+  color: $white;
+  text-align: center;
+
+  @include brand-gradient-bg();
+
+  @include media-breakpoint-up(md) {
+
+
+    text-align: left;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.no-page-header .header {
+  @include media-breakpoint-up(md) {
+    background-image: none;
+    background-color: $grey-dark;
+  }
+}

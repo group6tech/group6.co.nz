@@ -1,0 +1,18 @@
+//
+// Core CSS - Reboot
+// ============================================================================
+
+body {
+	font-weight: 300;
+
+	overflow-x: hidden;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 1.6rem;
+	}
+}
+
+
+img {
+	max-width: 100%;
+}

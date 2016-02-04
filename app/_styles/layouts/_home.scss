@@ -1,0 +1,118 @@
+//
+// Layouts - Home
+// ============================================================================
+
+
+
+// Jumbotron
+// ----------------------------------------------------------------------------
+
+.home .jumbotron {
+	position: relative;
+	clear: both;
+
+	margin-top: $spacer;
+	margin-bottom: $spacer;
+
+	text-align: left;
+
+	@include media-breakpoint-up(sm) {
+		padding-right: 25%;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-right: 40%;
+	}
+
+	&:after {
+		@include media-breakpoint-up(sm) {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			display: block;
+			content: " ";
+			height: 100%;
+			width: 10rem;
+
+			background-image: url(/images/logos/group6logo.png);
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		@include media-breakpoint-up(md) {
+			width: 10rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 13rem;
+		}
+	}
+
+	img {
+		margin-top: ($spacer / 2);
+		margin-bottom: $spacer;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	p {
+		font-size: 5vw;
+
+		@include media-breakpoint-up(sm) {
+			font-size: 2rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+
+
+// Intro
+// ----------------------------------------------------------------------------
+
+.home .intro {
+	margin-bottom: $spacer;
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: ($spacer * 2);
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+
+// DIVA and Services
+// ----------------------------------------------------------------------------
+
+.home .diva,
+.home .services {
+	.card-block {
+
+		.btn {
+			position: relative;
+			right: auto;
+			top: auto;
+		}
+	}
+}
+
+
+// Client List
+// ----------------------------------------------------------------------------
+
+.home .clients {
+	@include media-breakpoint-up(md) {
+		margin-top: ($spacer * 2);
+	}
+
+	.card-img img {
+		object-position: top center;
+	}
+}

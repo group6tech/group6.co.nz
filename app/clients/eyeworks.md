@@ -2,12 +2,14 @@
 title: Eyeworks
 layout: client
 category: client
+displayOrder: 14
+article: true
 date: 2013-07-01
 tagLine: Building a digital storage solution for reality TV project
-banner: eyeworks/eyeworks.png
+banner: eyeworks/the-block-s2
+cardImageSide: left
 client: Eyeworks
-clientUrl: http://www.touchdowntv.com/
-clientLogo: eyeworks/eyeworks
+clientUrl: http://www.eyeworks.tv/countries/new_zealand/overview
 roles:
 order:
 - DIVA Media System

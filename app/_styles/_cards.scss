@@ -1,0 +1,314 @@
+//
+// Components - Cards
+// ============================================================================
+
+
+
+// Card
+// ----------------------------------------------------------------------------
+
+.card {
+	position: relative;
+	overflow: hidden;
+
+	display: flex;
+	margin-bottom: $spacer;
+
+	color: $white;
+
+	&:hover,
+	&:focus {
+		color: $white;
+		text-decoration: none;
+
+		outline: 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: ($spacer * 2);
+	}
+}
+
+// Inner
+//
+
+.card-inner {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	overflow: hidden;
+
+	.btn {
+		margin-top: ($spacer / 2);
+	}
+}
+
+
+
+// Image
+// ----------------------------------------------------------------------------
+
+.card-img {
+	position: relative;
+	height: 16rem;
+
+	transition: transform 1s;
+	transform: scale(1,1);
+
+	&:hover {
+		transform: scale(1.05, 1.05);
+	}
+
+	a {
+		position: absolute;;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		position: relative;
+
+		height: 100%;
+		width: 100%;
+
+		object-fit: cover;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+
+		background-color: transparentize($brand-primary, .7);
+		content: " ";
+	}
+}
+
+.card-img {
+	@include media-breakpoint-up(sm) {
+		height: 20rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		height: 20rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		//height: 16rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: 24rem;
+	}
+}
+
+// Hero
+//
+.card-hero .card-img {
+	@include media-breakpoint-up(md) {
+		height: 25rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 35rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: 45rem;
+	}
+}
+
+
+
+// Block
+// ----------------------------------------------------------------------------
+
+.card-block {
+	position: relative;
+	flex-grow: 1;
+
+	padding: $spacer;
+
+	background-color: $brand-primary;
+
+	@include media-breakpoint-up(lg) {
+		padding: $spacer;
+	}
+}
+
+// Hero
+//
+.card-hero .card-block {
+	@include media-breakpoint-up(md) {
+		padding: ($spacer * 1.5);
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-left: ($spacer * 2);
+		padding-right: ($spacer * 2);
+	}
+
+	&.card-block-no-btn {
+		padding-right: ($spacer / 2);
+	}
+
+	.btn {
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+
+			text-align: center;
+		}
+
+		@include media-breakpoint-up(md) {
+			position: relative;
+			right: auto;
+			top: auto;
+		}
+	}
+}
+
+// Colour variations
+//
+.card-light .card-block {
+	background-color: lighten($brand-primary, 10%);
+}
+
+.card-dark .card-block {
+	background-color: darken($brand-primary, 10%);
+}
+
+
+
+
+// Title
+// ----------------------------------------------------------------------------
+
+.card-title {
+	margin-bottom: 0;
+
+	font-family: $font-family-alt;
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 2rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		//font-size: 2.4rem;
+		font-weight: 200;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	+ .card-text {
+		margin-top: $spacer / 2;
+	}
+}
+
+// Hero
+//
+.card-hero .card-title {
+	@include media-breakpoint-up(lg) {
+		font-size: 2.4rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: $spacer;
+	}
+}
+
+
+
+// Text
+// ----------------------------------------------------------------------------
+
+.card-text {
+	margin-bottom: 0;
+
+	a {
+		color: $white;
+	}
+}
+
+// Hero
+//
+.card-hero .card-text {
+	@include media-breakpoint-up(lg) {
+		margin-bottom: ($spacer / 2);
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: $spacer;
+	}
+}
+
+
+
+// Split cards
+// ----------------------------------------------------------------------------
+
+.card-img-left,
+.card-img-right {
+
+	.card-inner {
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+		}
+	}
+
+	.card-img {
+		@include media-breakpoint-up(lg) {
+			flex-grow: 1;
+			flex-shrink: 1;
+
+			width: 65.6rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 75rem;
+		}
+	}
+
+	.card-block {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: (32rem + $spacer);
+
+			> * {
+				display: block;
+				max-width: 100%;
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: (35.8rem + ($spacer * 2));
+		}
+	}
+}
+
+.card-img-right .card-img {
+	@include media-breakpoint-up(lg) {
+		order: 2;
+	}
+}

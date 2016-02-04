@@ -1,0 +1,20 @@
+//
+// Components - Jumbotron
+// ============================================================================
+
+.jumbotron {
+	overflow: hidden;
+	
+	h1 { font-size: 2.4rem; font-weight: 200; }
+	p { font-size: 1.8rem; }
+
+	@include media-breakpoint-up(sm) {
+		h1 { font-size: 3rem; }
+		p { font-size: 2rem; }
+	}
+
+	@include media-breakpoint-up(lg) {
+		h1 { font-size: 5rem; }
+		p { font-size: 2.6rem; }
+	}
+}

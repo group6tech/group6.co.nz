@@ -1,11 +1,15 @@
-<!-- build:js(app) /scripts/script.js -->
-<script src="../_bower_components/jquery/dist/jquery.js"></script>
-<script src="../_bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-<script src="../_bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-<script src="../_bower_components/imagesloaded/imagesloaded.pkgd.js"></script>
-<script src="../_bower_components/masonry/dist/masonry.pkgd.js"></script>
-<script src="../_bower_components/blueimp-gallery/js/blueimp-gallery.js"></script>
-<script src="../_bower_components/blueimp-gallery/js/jquery.blueimp-gallery.js"></script>
-<script src="/scripts/clients.js"></script>
-<script src="/scripts/flickr-gallery.js"></script>
+<!-- build:js({app,.}) /scripts/plugins.js -->
+<script src="/scripts/modernizr-custom.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/js/dist/util.js"></script>
+<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+<script src="/bower_components/lazysizes/lazysizes.js"></script>
 <!-- endbuild -->
+
+<!-- build:js({app,.tmp}) /scripts/main.js -->
+<script src="/scripts/object-fit.js"></script>
+<!-- endbuild -->
+
+{% for script in page.scripts %}
+	<script src="/scripts/{{ script }}"></script>
+{% endfor %}

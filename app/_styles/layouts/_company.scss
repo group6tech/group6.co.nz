@@ -1,0 +1,26 @@
+//
+// Layouts - Company
+// ============================================================================
+
+
+
+// Team
+// ----------------------------------------------------------------------------
+
+.company .team {
+	.card-img {
+		height: 75vw;
+
+		@include media-breakpoint-up(sm) {
+			height: 50rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			height: 35rem;
+		}
+
+		img {
+			object-position: top center;
+		}
+	}
+}

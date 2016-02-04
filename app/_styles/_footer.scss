@@ -1,0 +1,132 @@
+//
+// Components - Footer
+// ============================================================================
+
+.footer {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+
+	color: $grey-light;
+	font-family: $footer-font-family;
+	font-weight: 400;
+	text-align: center;
+
+	a {
+		color: $grey-light;
+
+		transition: color .2s;
+
+		&:hover {
+			color: darken($grey-light, 10%);
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin-bottom: $spacer;
+	}
+
+	.fa-circle {
+		@include media-breakpoint-down(xs) {
+			display: block;
+
+			&:before {
+				content: "";
+			}
+		}
+
+		position: relative;
+		bottom: .5rem;
+
+		margin-left: ($spacer / 2);
+		margin-right: ($spacer / 2);
+		padding-bottom: .2rem;
+
+		font-size: .3rem;
+
+		@include media-breakpoint-up(lg) {
+			bottom: .3rem;
+
+			font-size: .4rem;
+		}
+	}
+}
+
+
+
+// Footer menu
+// ----------------------------------------------------------------------------
+
+.footer-menu {
+
+	li {
+		@include media-breakpoint-up(lg) {
+			display: inline-block;
+		}
+	}
+
+	a {
+		display: block;
+		padding: ($spacer / 2) $spacer;
+	}
+}
+
+
+
+// Footer social links
+// ----------------------------------------------------------------------------
+
+.footer-social {
+	margin-top: ($spacer / 2);
+	margin-bottom: ($spacer / 2);
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: $spacer;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: block;
+		padding: ($spacer / 2);
+
+		font-size: 3rem;
+	}
+}
+
+
+
+// Call to help
+// ----------------------------------------------------------------------------
+
+.call-to-help {
+	@extend .txt-lg;
+	
+	padding: $spacer ($spacer * 2);
+
+	color: $brand-light;
+	font-family: $font-family-alt;
+	text-align: center;
+
+	background-color: $white;
+
+	@include media-breakpoint-up(lg) {
+		padding: ($spacer * 1.5);
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding: ($spacer * 2);
+	}
+
+	a {
+		color: $brand-light;
+		transition: color .2s;
+
+		&:hover {
+			color: darken($brand-light, 10%);
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+//
+// Layouts - DIVA Release List
+// ============================================================================
+
+.diva-release-list article {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: ($spacer * 2);
+		padding-bottom: ($spacer * 2);
+	}
+
+	time {
+		display: block;
+		margin-bottom: $spacer;
+
+		color: $grey-light;
+	}
+
+	+ article {
+		border-top: 1px solid transparentize($white, .8);
+	}
+}
+
+.diva-release-list form {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+
+	text-align: center;
+
+	border-top: 1px solid transparentize($white, .8);
+}

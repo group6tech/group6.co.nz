@@ -1,38 +1,16 @@
 ---
 layout: base
-bodyClass: inner
+bodyClass: inner no-page-header
 ---
 
-<div class="jumbotron">
-	<div class="container">
-		<h1>News</h1>
-		<div class="sprites-group6logo-smaller"></div>
-		<div class="sprites-group6logo-small"></div>
-	</div>
-</div>
-
-<div class="container content news">
+<div class="container content news-article">
 	<article itemscope itemtype="http://schema.org/NewsArticle">
 		<h1 itemprop="name">{{ page.title }}</h1>
-		<div class="details">
-			<time itemprop="dateCreated">{{ page.date | date_to_string }}</time>
-			&nbsp;|&nbsp;
-			<a href="{{ page.url }}" itemprop="url">Permalink</a>
-		</div>
-		<div itemprop="articleBody">
+		<time itemprop="dateCreated">{{ page.date | date_to_long_string }}</time>
+		<div class="article-body" itemprop="articleBody">
 			{{ content }}
 		</div>
 
 		{% include gallery.html %}
 	</article>
-
-	<hr>
-
-	<h2>
-		<a href="/news/archive.html">
-			<i class="fa fa-chevron-left"></i>
-			News Archive
-			<i class="fa fa-archive"></i>
-		</a>
-	</h2>
 </div>

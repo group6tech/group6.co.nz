@@ -1,46 +1,25 @@
-# Jekyll configuration precedence:
-# 1. Gruntfile task
-# 2. config.build.yml
-# 3. config.yml
+#
+# Jekyll config
+# ==============================================================================
 
-name: group6.co.nz
-description: Group 6 Technologies
-url: http://www.group6.co.nz
-author:
-  name: Matt Dwen
-  email: matt@group6.co.nz
 
-# Grunt handles images and assets.
-exclude: ['images', 'css', 'scripts', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
-include: ['.htaccess']
+# Globals
+# ------------------------------------------------------------------------------
 
-# _config.build.yml sets future and show_drafts to false on `grunt build`
-future: true
-show_drafts: true
-highlighter: true
-permalink: none
+exclude: ['images', 'scripts']
 
-# Defaults
+
+
+# Site
+# ------------------------------------------------------------------------------
+
+name: Group 6 Technologies
+description: End to end television, post production, and broadcast facility solutions
+
+
+
+# Page Defaults
+# ------------------------------------------------------------------------------
+
 defaults:
-  -
-    scope:
-      path: "diva"
-      type: "post"
-    values:
-      layout: "release"
-
-# Sitemap Generator
-sitemap:
-  exclude:
-    - "/rss/diva.xml"
-    - "/rss/news.xml"
-  include_posts:
-    - "/diva/releases.html"
-    - "/news/archive.html"
-    - "/news/index.html"
-
-# Gems
-gems:
-  - jekyll-redirect-from

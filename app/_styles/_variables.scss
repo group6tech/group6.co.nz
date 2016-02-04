@@ -1,0 +1,82 @@
+//
+// Variables
+// ============================================================================
+
+
+
+// Options
+// ----------------------------------------------------------------------------
+
+
+
+
+// Colors
+// ----------------------------------------------------------------------------
+
+$black:                       #000;
+$white:                       #fff;
+
+$grey-dark:                   #222222;  // Page background
+$grey-darkish:                #4f4f4f;  // Asides
+$grey-light:                  #b0b0b0;  // Footer text
+$grey-lighter:                #dee2e3;  // Footer background
+
+$brand-primary:               #0088cc;
+$brand-light:									#79cdef;
+$brand-dark:									#1080bb;
+
+$brand-gradient-dark:         $brand-dark;
+$brand-gradient-light:        $brand-light;
+
+$spacer:                      1.6rem;
+
+
+
+// Body
+// ----------------------------------------------------------------------------
+
+$body-bg:                     $grey-lighter; // Use the footer color
+$body-color:                  $white;
+
+
+
+// Typography
+// ----------------------------------------------------------------------------
+
+$font-family-sans-serif:      'Open Sans' ,sans-serif;
+$font-family-alt:             $font-family-sans-serif;
+
+$footer-font-family:					$font-family-sans-serif;
+
+$font-size-root:              10px;
+
+$font-size-base:              1.4rem;
+
+$font-size-h1:                ($font-size-base * 2.5);
+$font-size-h2:                ($font-size-base * 2);
+$font-size-h3:                ($font-size-base * 1.75);
+$font-size-h4:                ($font-size-base * 1.5);
+$font-size-h5:                ($font-size-base * 1.25);
+$font-size-h6:                ($font-size-base * 2.5);
+
+$line-height:                 1.5;
+
+
+
+// Grid breakpoints
+// ----------------------------------------------------------------------------
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 992px,
+  lg: 1400px,
+  xl: 1800px
+);
+
+$container-max-widths: (
+  sm: 48rem,
+  md: 76.8rem,
+  lg: 99.2rem,
+  xl: 114rem
+);

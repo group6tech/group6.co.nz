@@ -1,0 +1,165 @@
+//
+// Layouts - DIVA
+// ============================================================================
+
+
+
+// Jumbotron
+// ----------------------------------------------------------------------------
+
+.diva .jumbotron {
+	position: relative;
+
+	margin-top: $spacer;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $spacer * 2;
+	}
+
+	img {
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			display: block;
+			height: 100%;
+		}
+	}
+
+	p {
+		@include media-breakpoint-up(md) {
+			max-width: 60%;
+		}
+	}
+}
+
+
+
+// Detail
+// ----------------------------------------------------------------------------
+
+.detail {
+	position: relative;
+	overflow: visible;
+
+	padding-top: ($spacer * 2);
+	padding-bottom: ($spacer * 2);
+
+	+ .detail {
+		border-top: 1px solid transparentize($white, .8);
+	}
+
+	.background {
+		display: block;
+		max-width: 75%;
+		max-height: 40vh;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $spacer;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.detail {
+		padding-top: ($spacer * 4);
+		padding-bottom: ($spacer * 4);
+
+		section {
+			position: relative;
+		}
+
+		.background {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			max-width: none;
+			max-height: none;
+		}
+	}
+
+	.detail#intro {
+		height: 30rem + ($spacer * 8);
+
+		section {
+			padding-top: 8rem;
+			padding-right: 28rem;
+		}
+
+		.background {
+			right: -15rem;
+
+			height: 30rem;
+		}
+	}
+
+	.detail#why {
+		height: 35rem + ($spacer * 8);
+
+		section {
+			padding-top: 4rem;
+			padding-left: 25rem;
+		}
+
+		.background {
+			left: -40rem;
+			right: auto;
+
+			height: 35rem;
+		}
+	}
+
+	.detail#tech {
+		padding-bottom: ($spacer * 2);
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.detail#intro {
+		section {
+			padding-right: 40rem;
+		}
+
+		.background {
+			right: -4rem;
+		}
+	}
+
+	.detail#why {
+		section {
+			padding-top: 0;
+			padding-left: 50%;
+		}
+
+		.background {
+			left: -20rem;
+		}
+	}
+}
+
+
+
+// Sub Detail
+// ----------------------------------------------------------------------------
+
+.sub-detail {
+	padding-top: $spacer;
+	padding-bottom: $spacer;
+}
+
+
+
+// Subscribe
+// ----------------------------------------------------------------------------
+
+.detail#subscribe {
+	text-align: center;
+
+	.form-control {
+		width: 100%;
+		max-width: 35rem;
+	}
+}

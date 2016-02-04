@@ -33,6 +33,15 @@ And the Gems from the project directory...
 
 Jeez!
 
+When it doesn't work on Windows
+-------------------------------
+
+First make sure you've got at least npm v3. It might actually be released by the
+time you read this.
+
+`npm install -g npm@3.3.4`
+
+
 Development
 ----------
 

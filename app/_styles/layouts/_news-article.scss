@@ -1,0 +1,26 @@
+//
+// Layouts - News Article
+// ============================================================================
+
+.news-article {
+	h1 {
+		text-align: center;
+	}
+
+	time {
+		display: block;
+		margin-bottom: $spacer;
+
+		color: $grey-light;
+		text-align: center;
+	}
+
+	.article-body {
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 75%;
+		}
+	}
+}

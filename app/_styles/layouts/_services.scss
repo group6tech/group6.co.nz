@@ -1,0 +1,21 @@
+//
+// Layouts - Services
+// ============================================================================
+
+.services {
+	.card-block {
+		@include media-breakpoint-up(lg) {
+			padding: $spacer * 2;
+		}
+	}
+
+	.card-img {
+		@include media-breakpoint-up(lg) {
+			height: 45rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+			height: 40rem;
+		}
+	}
+}

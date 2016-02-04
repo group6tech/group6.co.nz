@@ -1,6 +1,5 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>2.0.0'
-gem 'redcarpet'
-gem 'compass', '>=0.12'
-gem 'jekyll-redirect-from'
+ruby '2.2.2'
+
+gem 'jekyll', '~>2.5.3'
