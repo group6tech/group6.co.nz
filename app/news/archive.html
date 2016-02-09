@@ -11,6 +11,6 @@ contentClass: news-archive
 				<span itemprop="name">{{ post.title }}</a>
 			</a>
 		</h4>
-		<time itemprop="dateCreated">{{ post.date | date_to_long_string }}</time>
+		<p class="date">Posted <time itemprop="dateCreated">{{ post.date | date_to_long_string }}</time></p>
 	</article>
 {% endfor %}
