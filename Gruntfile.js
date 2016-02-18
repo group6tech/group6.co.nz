@@ -182,7 +182,7 @@ module.exports = function(grunt) {
         engine: 'im',
         newFilesOnly: true
       },
-      clients: {
+      content: {
         options: {
           sizes: [{
             name: 'pvw',

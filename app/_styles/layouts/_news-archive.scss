@@ -6,13 +6,15 @@
 	article {
 		h4 {
 			margin-bottom: 0;
+
+			font-size: 2rem;
 		}
 
 		a {
 			color: $white;
 		}
 
-		time {
+		.date {
 			color: $grey-light;
 		}
 
