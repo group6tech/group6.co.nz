@@ -4,11 +4,7 @@ layout: news
 date: 2014-11-11 12:50
 ---
 
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
-		{% img_srcset /images/content/company/josh-reardon.jpg, Josh Reardon %}
-	</div>
-</div>
+{% img_srcset /images/content/company/josh-reardon.jpg, Josh Reardon %}
 
 We're delighted to introduce Josh Reardon, our new technical support engineer.
 

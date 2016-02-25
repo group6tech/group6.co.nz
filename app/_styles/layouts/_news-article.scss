@@ -5,7 +5,6 @@
 .news-article {
 	h1 {
 		font-size: 2.8rem;
-		text-align: center;
 
 		@include media-breakpoint-up(md) {
 			font-size: 3.6rem;
@@ -22,19 +21,22 @@
 
 		color: $grey-light;
 		font-size: 1.4rem;
-		text-align: center;
 	}
 
 	.article-body {
 		img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 75%;
+			@include media-breakpoint-up(md) {
+				float: right;
+				max-width: 50%;
+				max-height: 25vw;
+				margin-left: $spacer;
+				margin-bottom: $spacer;
+			}
 		}
 	}
 
 	.more {
+		clear: both;
 		padding-top: ($spacer * 4);
 		padding-top: ($spacer * 4);
 
