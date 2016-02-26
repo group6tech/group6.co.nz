@@ -109,11 +109,6 @@ module.exports = function(grunt) {
     // Copy assets around that aren't normally moved
     //
     copy: {
-      build: {
-        files: [
-          { expand: true, flatten: true, src: 'bower_components/font-awesome/fonts/*', dest: '<%= config.temp %>/fonts' }
-        ]
-      },
       dist: {
         files: [{
           expand: true,
@@ -230,7 +225,10 @@ module.exports = function(grunt) {
     //
     useminPrepare: {
       html: '<%= config.jekyll %>/index.html',
-      dest: '<%= config.dest %>'
+      options: {
+        dest: '<%=config.dest %>',
+        root: './'
+      }
     },
 
     // Join files together
@@ -248,7 +246,6 @@ module.exports = function(grunt) {
     // Minify css
     //
     cssmin: {
-
     },
 
     // Apply the minified links
@@ -290,7 +287,6 @@ module.exports = function(grunt) {
     //
     concurrent: {
       build: [
-        'copy:build',
         'jekyll:server',
         'responsive_images',
         'sass:server'
@@ -349,5 +345,10 @@ module.exports = function(grunt) {
   //
   grunt.registerTask('default', [
     'build'
+  ]);
+
+  grunt.registerTask('test', [
+    'useminPrepare',
+    'cssmin'
   ]);
 };

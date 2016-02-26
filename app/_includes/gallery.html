@@ -1,17 +1,8 @@
 {% if page.flickrSet %}
   <hr>
   <div id="flickr-gallery-loading">
-    Gallery <img src="/images/loading.gif"> loading
+    gallery <img src="/images/loading.gif"> loading
   </div>
-  <div id="flickr-gallery" data-set="{{ page.flickrSet }}">
-  </div>
-  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
+  <div id="flickr-gallery" class="row" data-set="{{ page.flickrSet }}">
   </div>
 {% endif %}
