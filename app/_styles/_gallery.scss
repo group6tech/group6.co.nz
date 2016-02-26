@@ -1,0 +1,23 @@
+//
+// Components - Gallery
+// =============================================================================
+
+#flickr-gallery-loading {
+	position: absolute;
+	left: 50%;
+
+	width: 140px;
+	margin-left: -70px;
+
+	text-align: center;
+}
+
+#flickr-gallery {
+	min-height: 5rem;
+
+	.gallery-link {
+		margin-bottom: $spacer;
+
+		text-align: center;
+	}
+}
