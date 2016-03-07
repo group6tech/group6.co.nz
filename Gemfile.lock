@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     colorator (0.1)
+    ffi (1.9.10)
     ffi (1.9.10-x86-mingw32)
     jekyll (3.1.2)
       colorator (~> 0.1)
@@ -30,6 +31,7 @@ GEM
     sass (3.4.21)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
