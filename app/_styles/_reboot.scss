@@ -2,6 +2,10 @@
 // Core CSS - Reboot
 // ============================================================================
 
+html {
+  font-size: $font-size-root;
+}
+
 body {
 	font-weight: 300;
 
