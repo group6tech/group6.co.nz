@@ -25,31 +25,6 @@
 	p {
 		margin-bottom: $spacer;
 	}
-
-	.fa-circle {
-		@include media-breakpoint-down(xs) {
-			display: block;
-
-			&:before {
-				content: "";
-			}
-		}
-
-		position: relative;
-		bottom: .5rem;
-
-		margin-left: ($spacer / 2);
-		margin-right: ($spacer / 2);
-		padding-bottom: .2rem;
-
-		font-size: .3rem;
-
-		@include media-breakpoint-up(lg) {
-			bottom: .3rem;
-
-			font-size: .4rem;
-		}
-	}
 }
 
 
@@ -103,7 +78,7 @@
 
 .call-to-help {
 	@extend .txt-lg;
-	
+
 	padding: $spacer ($spacer * 2);
 
 	color: $brand-light;
