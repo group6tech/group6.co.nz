@@ -2,68 +2,38 @@
 // Components - Navbar
 // ============================================================================
 
-.navbar-nav {
-  margin-top: $spacer;
-
-  font-family: $font-family-alt;
-  text-transform: uppercase;
-  text-align: left;
-
+.navbar-collapse {
   background-color: transparentize($white, .8);
   border-radius: $border-radius-lg;
 
-  @include media-breakpoint-up(md) {
-    height: 3.5rem;
-
-    background-color: transparent;
-  }
-
-  a {
-    display: block;
-
-    padding: ($spacer / 2) $spacer;
-
-    //color: transparentize($white, .3);
-
-    &:hover {
-      color: $white;
-
-      text-decoration: none;
-    }
-  }
-
-  .nav {
-    @include media-breakpoint-up(md) {
-      display: block;
-      float: right;
-
-      li {
-        float: left;
-
-        &:last-child {
-          a {
-            padding-right: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-.nav-toggle {
-  @include media-breakpoint-up(md) {
-    display: none !important;
-  }
-
-  i {
-    padding-top: .3rem;
-
-    float: right;
+  @include media-breakpoint-up(sm) {
+    background: none;
+    border-radius: 0;
   }
 }
 
 .navbar-brand {
-  @include media-breakpoint-up(md) {
-    float: left;
+  img {
+    max-width: none;
+  }
+}
+
+.navbar-toggler {
+  top: $spacer;
+}
+
+.navbar-toggleable-sm .navbar-nav {
+  @include media-breakpoint-up(sm) {
+    width: 100%;
+
+    justify-content: flex-end;
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+    }
   }
 }
