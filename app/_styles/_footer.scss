@@ -23,32 +23,11 @@
 	}
 
 	p {
-		margin-bottom: $spacer;
-	}
+    margin-bottom: $spacer;
 
-	.fa-circle {
-		@include media-breakpoint-down(xs) {
-			display: block;
-
-			&:before {
-				content: "";
-			}
-		}
-
-		position: relative;
-		bottom: .5rem;
-
-		margin-left: ($spacer / 2);
-		margin-right: ($spacer / 2);
-		padding-bottom: .2rem;
-
-		font-size: .3rem;
-
-		@include media-breakpoint-up(lg) {
-			bottom: .3rem;
-
-			font-size: .4rem;
-		}
+    @include media-breakpoint-up(sm) {
+      font-size: 1.2rem;
+    }
 	}
 }
 
@@ -58,17 +37,12 @@
 // ----------------------------------------------------------------------------
 
 .footer-menu {
+  flex-direction: column;
 
-	li {
-		@include media-breakpoint-up(lg) {
-			display: inline-block;
-		}
-	}
-
-	a {
-		display: block;
-		padding: ($spacer / 2) $spacer;
-	}
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 
@@ -77,23 +51,33 @@
 // ----------------------------------------------------------------------------
 
 .footer-social {
-	margin-top: ($spacer / 2);
-	margin-bottom: ($spacer / 2);
+	margin-top: $spacer;
+  margin-bottom: $spacer;
+
+  flex-wrap: wrap;
+  justify-content: center;
 
 	@include media-breakpoint-up(lg) {
 		margin-bottom: $spacer;
 	}
 
-	li {
-		display: inline-block;
-	}
-
 	a {
 		display: block;
-		padding: ($spacer / 2);
+    padding-left: ($spacer / 2);
+    padding-right: ($spacer / 2);
 
 		font-size: 3rem;
 	}
+}
+
+
+// Copyright and stuff
+// ----------------------------------------------------------------------------
+
+.footer-copyright {
+  span {
+    display: block;
+  }
 }
 
 
@@ -103,7 +87,7 @@
 
 .call-to-help {
 	@extend .txt-lg;
-	
+
 	padding: $spacer ($spacer * 2);
 
 	color: $brand-light;
