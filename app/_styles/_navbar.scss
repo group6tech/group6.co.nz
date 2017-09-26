@@ -22,7 +22,7 @@
   top: $spacer;
 }
 
-.navbar-toggleable-sm .navbar-nav {
+.navbar-expand-lg .navbar-nav {
   @include media-breakpoint-up(sm) {
     width: 100%;
 
@@ -30,7 +30,7 @@
   }
 }
 
-.navbar-inverse {
+.navbar-dark {
   .navbar-nav {
     .nav-link {
       color: $white;

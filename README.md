@@ -25,7 +25,7 @@ Now [Bundler](http://bundler.io/)...
 
 `gem install bundler`
 
-Also [ImageMagick](http://www.imagemagick.org/).
+Also [ImageMagick](http://www.imagemagick.org/). Make sure you install **legacy utilities**.
 
 And the Gems from the project directory...
 

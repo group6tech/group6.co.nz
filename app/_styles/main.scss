@@ -7,6 +7,8 @@
 // Core variables and mixins
 // ----------------------------------------------------------------------------
 
+@import 'bootstrap/scss/functions';
+
 @import 'variables';
 @import 'bootstrap/scss/variables';
 
@@ -18,7 +20,7 @@
 // Reset and dependencies
 // ----------------------------------------------------------------------------
 
-@import 'bootstrap/scss/normalize';
+@import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/print';
 
 
@@ -59,6 +61,7 @@
 // Utility classes
 // ----------------------------------------------------------------------------
 
+@import 'bootstrap/scss/utilities';
 @import 'utilities';
 @import 'modernizr/object-fit';
 
