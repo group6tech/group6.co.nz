@@ -277,7 +277,7 @@ module.exports = function(grunt) {
       options: {
         base: '<%= config.dest %>',
         clone: '.gh-pages',
-        repo: 'git@github.com:group6tech/group6tech.github.io.git',
+        repo: 'https://github.com/group6tech/group6tech.github.io.git',
         branch: 'master'
       },
       src: ['**']
