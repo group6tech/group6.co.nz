@@ -59,7 +59,7 @@ module.exports = function(grunt) {
               '<%= config.src %>'
             ],
             routes: {
-              '/bower_components': './bower_components'
+              '/node_modules': './node_modules'
             }
           }
         }
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
     //
     sass: {
       options: {
-        loadPath: ['bower_components']
+        loadPath: ['node_modules']
       },
       server: {
         files: [{
