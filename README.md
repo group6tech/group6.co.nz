@@ -12,9 +12,7 @@ Then we need [Grunt](http://gruntjs.com/)...
 
 `npm install -g grunt-cli`
 
-And [Bower](http://bower.io/)...
-
-`npm install -g bower`
+And [Yarn](https://yarnpkg.com/en/...
 
 We also need Ruby. There's [RubyInstall](http://rubyinstaller.org/) for Windows,
 and [RVM](http://rvm.io/) for OS X.
@@ -38,9 +36,9 @@ If Windows, make sure you run it from the **Developer Command Prompt for VS2015*
 
 `npm install`
 
-And the Bower modules
+And the Yarn modules
 
-`bower install`
+`yarn install`
 
 
 Development
