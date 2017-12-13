@@ -276,9 +276,9 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: '<%= config.dest %>',
-        clone: '.gh-pages',
-        repo: 'https://github.com/group6tech/group6tech.github.io.git',
-        branch: 'master'
+        clone: '.azure',
+        repo: 'https://github.com/group6tech/group6.co.nz',
+        branch: 'azure'
       },
       src: ['**']
     },
