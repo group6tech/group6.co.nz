@@ -277,7 +277,7 @@ module.exports = function(grunt) {
       options: {
         base: '<%= config.dest %>',
         clone: '.azure',
-        repo: 'https://github.com/group6tech/group6.co.nz',
+        repo: 'git@github.com:group6tech/group6.co.nz.git',
         branch: 'azure'
       },
       src: ['**']
