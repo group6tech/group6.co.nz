@@ -122,7 +122,6 @@ module.exports = function(grunt) {
           cwd: '<%= config.src %>',
           src: [
             '*.{ico,json,png,txt,xml}',
-            'CNAME',
             'images/**'
           ],
           dest: '<%= config.dest %>'
