@@ -6,7 +6,7 @@ metaDesc: "Our clients - built with Group 6 Technologies."
 
 <div class="client-list">
 
-	{% assign client_pages = (site.pages | sort:'displayOrder' | where: "category", "client") %}
+	{% assign client_pages = site.pages | sort:'displayOrder' | where: "category", "client" %}
 	{% for page in client_pages reversed %}
 		<div class="card {% if page.article %}card-hero card-img-{{ page.cardImageSide }}{% endif %} client-{{ page.title | slugify }}">
 			<div class="card-inner">

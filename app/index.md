@@ -52,7 +52,7 @@ headerIncludes:
 
     <div class="row">
       {% assign clientNo = 1 %}
-      {% assign client_pages = (site.pages | sort:'displayOrder' | where: "category", "client") %}
+      {% assign client_pages = site.pages | sort:'displayOrder' | where: "category", "client" %}
     	{% for page in client_pages reversed %}
         {% if clientNo <= 4 and page.article %}
           <div class="col-sm-6 col-lg-3">
