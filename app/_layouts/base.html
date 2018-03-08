@@ -82,6 +82,8 @@
     <!-- build:css({app,.tmp}) /styles/main.css -->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
+
+    {% include googleanalytics.html %}
   </head>
   <body class="{{ layout.bodyClass }} {{ page.bodyClass }}">
     <!--[if lt IE 10]>
@@ -97,7 +99,6 @@
     {% include footer.html %}
 
     {% include scripts.html %}
-    {% include googleanalytics.html %}
 
   </body>
 </html>
