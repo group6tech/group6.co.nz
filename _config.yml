@@ -10,13 +10,19 @@
 exclude: ['images', 'scripts']
 
 
+# Plugins
+# ------------------------------------------------------------------------------
+
+plugins:
+  - jekyll-sitemap
+
 
 # Site
 # ------------------------------------------------------------------------------
 
 name: Group 6 Technologies
 description: End to end television, post production, and broadcast facility solutions
-
+url: "https://www.group6.co.nz"
 
 
 # Page Defaults
