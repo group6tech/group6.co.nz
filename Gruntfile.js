@@ -114,6 +114,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: '<%= config.jekyll %>',
           src: [
+            'sitemap.xml',
             'rss/**'
           ],
           dest: '<%= config.dest %>'
