@@ -11,5 +11,5 @@ This allows you to add non-DIVA network shares, and remote FTP servers, as drive
 
 Be it a network share on a production or IT server, within your network, or a FTP server to upload review videos, accessing them on your desktop is now just a drive mount away.
 
-The [DIVA Help Center](http://help.group6.co.nz/fusion/drives.htm#addexternal) has instructions for adding an external drive, and we've even got a [tutorial video](https://www.youtube.com/watch?v=6_CXPi8bO_c) to walk you through the steps.
+The [DIVA Help Center](https://help.group6.co.nz/fusion/drives.htm#addexternal) has instructions for adding an external drive, and we've even got a [tutorial video](https://www.youtube.com/watch?v=6_CXPi8bO_c) to walk you through the steps.
 Since OS X and Windows doesn't have native desktop FTP support, we've also got some recommendations for using FTP on [Windows](https://www.youtube.com/watch?v=1xN0Ma6wZSo) and [OS X](https://www.youtube.com/watch?v=rncVHus8iSo).
