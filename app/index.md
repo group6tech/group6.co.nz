@@ -10,11 +10,6 @@ headerIncludes:
 ---
 
 <div class="container">
-  <section class="intro">
-    <p class="lead">Group 6 is your technology partner for television, broadcast and post production system design and integration. We look after everyone from single seat editing installations to national broadcasters.</p>
-    <p class="lead">Our services include upgrades, designed layouts, electrical and network fit-outs, post and broadcast system design, training, support and maintenance.</p>
-  </section>
-
   <a class="card card-hero card-img-right diva" href="/diva/" itemscope itemtype="http://schema.org/Product">
     <div class="card-inner">
       <div class="card-img">
@@ -27,21 +22,6 @@ headerIncludes:
           <p class="card-text">Simplify setup, share files, and get cutting with a click.</p>
         </div>
         <div class="btn" itemprop="url">Learn about DIVA</div>
-      </div>
-    </div>
-  </a>
-
-  <a class="card card-hero card-img-left services" href="/services/">
-    <div class="card-inner">
-      <div class="card-img">
-        {% img_srcset /images/content/index/cables.jpg, Rack installation, 100-100-90-50-60 %}
-      </div>
-      <div class="card-block">
-        <h2 class="card-title">From Post to Broadcast</h2>
-        <div class="card-text">
-          <p class="card-text">We develop, streamline, integrate, and upgrade state-of-the-art post production and broadcast facilities.</p>
-        </div>
-        <div class="btn">Tailor a solution to your needs</div>
       </div>
     </div>
   </a>
