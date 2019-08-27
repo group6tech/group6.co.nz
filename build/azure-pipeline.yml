@@ -1,0 +1,59 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseRubyVersion@0
+  displayName: 'Install Ruby'
+  inputs:
+    versionSpec: '>= 2.5'
+
+- task: YarnInstaller@3
+  displayName: 'Install Yarn'
+  inputs:
+    versionSpec: '1.x'
+
+- script: |
+    gem install bundler
+    bundle install --retry=3 --jobs=4
+  displayName: 'Install bundles'
+
+- task: Yarn@3
+  displayName: 'Install Yarn packages'
+  inputs:
+    arguments: 'install'
+
+- task: Grunt@0
+  displayName: 'Grunt dist'
+  inputs:
+    gruntFile: 'Gruntfile.js'
+    targets: 'dist'
+    gruntCli: 'node_modules/grunt-cli/bin/grunt'
+
+- task: AzureWebApp@1
+  displayName: 'Deploy to Azure'
+  inputs:
+    azureSubscription: 'DIVA(5bae1c70-2bf8-4586-8c2f-6a42a7442713)'
+    appType: 'webApp'
+    appName: 'g6-site'
+    deployToSlotOrASE: true
+    resourceGroupName: 'DIVA-Focus'
+    slotName: 'staging'
+    package: 'dist/'
+    deploymentMethod: 'auto'
+
+- task: AzureAppServiceManage@0
+  displayName: 'Swap slot to production'
+  inputs:
+    azureSubscription: 'DIVA(5bae1c70-2bf8-4586-8c2f-6a42a7442713)'
+    Action: 'Swap Slots'
+    WebAppName: 'g6-site'
+    ResourceGroupName: 'DIVA-Focus'
+    SourceSlot: 'staging'

@@ -10,6 +10,9 @@ module.exports = function(grunt) {
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 
+  // Sharp task
+  require('./build/tasks/sharp')(grunt);
+
   // Project Configuration
   // ---------------------------------------------------------------------------
 
@@ -170,47 +173,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Generate responsive images
-    //
-    responsive_images: {
-      options: {
-        engine: 'im',
-        newFilesOnly: true
-      },
-      content: {
-        options: {
-          sizes: [{
-            name: 'pvw',
-            filter: 'Gaussian',
-            quality: 25,
-            width: 100,
-          }, {
-            name: 'sm',
-            quality: 75,
-            width: 480,
-          }, {
-            name: 'md',
-            quality: 80,
-            width: 656,
-          }, {
-            name: 'lg',
-            quality: 80,
-            width: 768,
-          }, {
-            name: 'xl',
-            quality: 80,
-            width: 1200,
-          }]
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= config.src %>/images/content',
-          src: '**/*.{jpg,png}',
-          dest: '<%= config.temp %>/images/content'
-        }]
-      }
-    },
-
     // Check js files for issues
     //
     jshint: {
@@ -288,9 +250,29 @@ module.exports = function(grunt) {
     concurrent: {
       build: [
         'jekyll:server',
-        'responsive_images',
+        'sharp',
         'sass:server'
       ]
+    },
+
+    sharp: {
+      default: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/images/content',
+          src: '**/*.{jpg,png}',
+          dest: '<%= config.temp %>/images/content'
+        }],
+        options: {
+          tasks: [
+            { resize: { width: 100 }, jpeg: { quality: 80 }, blur: 3, rename: '{base}-pvw.{ext}'},
+            { resize: { width: 480 }, jpeg: { quality: 75 }, rename: '{base}-sm.{ext}'},
+            { resize: { width: 656 }, jpeg: { quality: 80 }, rename: '{base}-md.{ext}'},
+            { resize: { width: 768 }, jpeg: { quality: 80 }, rename: '{base}-lg.{ext}'},
+            { resize: { width: 1200 }, jpeg: { quality: 80 }, rename: '{base}-xl.{ext}'}
+          ]
+        }
+      }
     }
   });
 
