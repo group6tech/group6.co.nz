@@ -233,18 +233,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Deploy the site to GitHub
-    //
-    'gh-pages': {
-      options: {
-        base: '<%= config.dest %>',
-        clone: '.azure',
-        repo: 'git@github.com:group6tech/group6.co.nz.git',
-        branch: 'azure'
-      },
-      src: ['**']
-    },
-
     // Tasks which can run at the same time
     //
     concurrent: {
@@ -314,13 +302,6 @@ module.exports = function(grunt) {
     'usemin',
     'htmlmin',
     'copy:dist'
-  ]);
-
-  // Deploy
-  //
-  grunt.registerTask('deploy', [
-    'dist',
-    'gh-pages'
   ]);
 
   // Default
