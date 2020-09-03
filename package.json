@@ -33,7 +33,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.5.0",
-    "lazysizes": "^4.0.1",
+    "lazysizes": "^5.2.1",
     "magnific-popup": "^1.1.0",
     "popper.js": "^1.12.9"
   }
