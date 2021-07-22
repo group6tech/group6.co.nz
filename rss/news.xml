@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Group 6 Technologies News</title>
+    <description>News and press releases for Group 6 Technologies</description>
+    <link>https://www.group6.co.nz</link>
+    <atom:link href="https://www.group6.co.nz/rss/diva.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Announcing DIVA v4 with a new client and Mojave support</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/news/diva-client-4.png&quot; alt=&quot;DIVA Client v4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today we are releasing DIVA v4, with a new cross platform client and full support for macOS 10.14 Mojave.&lt;/p&gt;
+
+&lt;p&gt;After a long gestation and many months of private testing, we’re proud to introduce our new cross platform client.&lt;/p&gt;
+
+&lt;p&gt;Our new tooling allows for a consistent experience across platforms, and means we can introduce new features on a faster basis.&lt;/p&gt;
+
+&lt;p&gt;The new client has a minimum requirement of macOS 10.13.6 on the Apple side, and Windows 10 1803.
+If you need to run macOS 10.14 Mojave then you will also have to be running DIVAFS for full Avid Media Composer support.
+The older client is still available for older platforms, though it will not be receiving any further updates.&lt;/p&gt;
+
+&lt;p&gt;We’ll be rolling out the update over the next week or so, but please contact us if you’re keen for the new client.&lt;/p&gt;
+
+&lt;p&gt;Please also see the updated help documentation over at &lt;a href=&quot;https://help.group6.co.nz&quot;&gt;help.group6.co.nz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/diva/2019/08/07/4.0.0.html&quot;&gt;Full release notes&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Aug 2019 13:54:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2019/08/07/diva4.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2019/08/07/diva4.html</guid>
+      </item>
+    
+      <item>
+        <title>Announcing DIVA v3 with bin locking</title>
+        <description>&lt;p&gt;Today we are releasing DIVA v3, with full Avid NEXIS compatible bin locking.&lt;/p&gt;
+
+&lt;p&gt;Each of the three main drive types (Basic, Media, and Projects) have a new DIVAFS enabled version, which makes them appear as NEXIS drives in the Media Composer hardware window.&lt;/p&gt;
+
+&lt;p&gt;Along with this change there are other improvements:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;All projects are immediately shared&lt;/li&gt;
+  &lt;li&gt;No more Unprotected folder&lt;/li&gt;
+  &lt;li&gt;Drives appear with their correct name in Media Composer on Windows (they won’t all be “Media” any more)&lt;/li&gt;
+  &lt;li&gt;DAVE is no longer required on macOS clients&lt;/li&gt;
+  &lt;li&gt;AMA media on Basic drives will work cross platform, and won’t have to be mounted on the same drive letter all the time in Windows&lt;/li&gt;
+  &lt;li&gt;No moving media to one user to be able to delete it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please also see the updated help documentation over at &lt;a href=&quot;https://help.group6.co.nz&quot;&gt;help.group6.co.nz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/diva/2018/08/28/3.0.0.html&quot;&gt;Full release notes&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Aug 2018 09:42:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2018/08/28/diva3.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2018/08/28/diva3.html</guid>
+      </item>
+    
+      <item>
+        <title>Come and say hi on our new forum</title>
+        <description>&lt;p&gt;Say hello to &lt;a href=&quot;https://forums.group6.co.nz/&quot;&gt;forums.group6.co.nz&lt;/a&gt;, our new Discourse fourm. Over there we’ll have release news for DIVA, channels for bug reports and feature requests, and general #postchat.
+We’ll see how it gets used over the next while and adapt as we go.&lt;/p&gt;
+
+&lt;p&gt;You’ll find the link in the footer of the website, and the footer of the &lt;a href=&quot;https://www.group6.co.nz/diva/#subscribe&quot;&gt;DIVA release emails&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.discourse.org/&quot;&gt;Discourse&lt;/a&gt; is a open source forum platform, built to bring civilzied discussion for your community.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 May 2018 09:23:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2018/05/03/discourse-forum.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2018/05/03/discourse-forum.html</guid>
+      </item>
+    
+      <item>
+        <title>Cloud backup for Avid Projects with B2</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.backblaze.com/&quot; target=&quot;_new&quot;&gt;&lt;img src=&quot;/images/logos/backblaze.svg&quot; alt=&quot;Backblaze&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/news/backup-graphs.jpg&quot; alt=&quot;Backup graphs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/diva/2017/12/13/2.16.0.html&quot;&gt;DIVA 2.16.0&lt;/a&gt; is now available, including cloud backup and restore of Avid project files.&lt;/p&gt;
+
+&lt;p&gt;We have partnered with &lt;a href=&quot;https://www.backblaze.com/&quot;&gt;Backblaze&lt;/a&gt;, utitlising their B2 platform to securely and safely backup your Avid bins in the cloud.&lt;/p&gt;
+
+&lt;p&gt;For NZ$20.00 + gst per month (for up to 1TB cloud storage) you can automatically upload the changed bins every 15 minutes, hour, or day - or run a backup of a specific project on demand if you’re about to make major changes.&lt;/p&gt;
+
+&lt;p&gt;Of course what good is a backup if you can’t get your files back?
+Our restore tools will let you restore a single bin, or even an entire drive of projects, from any point in time.&lt;/p&gt;
+
+&lt;p&gt;By default, every bin you create is kept forever, and you can define how many versions to keep.
+There’s even pretty graphs to show how your backups are running.&lt;/p&gt;
+
+&lt;p&gt;See the complete &lt;a href=&quot;https://help.group6.co.nz/v2/admin/#backup&quot;&gt;backup&lt;/a&gt; and &lt;a href=&quot;https://help.group6.co.nz/v2/admin/#restore&quot;&gt;restore&lt;/a&gt; documentation, and reach out to &lt;a href=&quot;mailto:support@group6.co.nz&quot;&gt;support@group6.co.nz&lt;/a&gt; to get started today!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Dec 2017 09:03:00 +1300</pubDate>
+        <link>https://www.group6.co.nz/news/2017/12/13/project-backup.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2017/12/13/project-backup.html</guid>
+      </item>
+    
+      <item>
+        <title>DIVA macOS Sierra support and improved project archiving</title>
+        <description>&lt;p&gt;DIVA 2.15.0 is now available, with support for macOS 10.12 Sierra, improved drive mounting on macOS, and a better project archiving system.&lt;/p&gt;
+
+&lt;p&gt;The updated DIVA Client for macOS now works with 10.12 Sierra, and is faster and more reliable mounting and unmounting drives on the desktop.
+As part of these changes, we’ve incorporated a “legacy” mode for mounting drives.
+This may be usefull if you’re using &lt;a href=&quot;https://help.group6.co.nz/v2/articles/about-client-drives.html&quot;&gt;Network Drives&lt;/a&gt; with custom names.
+&lt;a href=&quot;http://help.group6.co.nz/v2/articles/client-legacy-mode.html&quot;&gt;Instructions&lt;/a&gt; are availble for changing between AppleScript drive mounting and Legacy drive mounting.&lt;/p&gt;
+
+&lt;p&gt;Our new project archiving system makes it much faster to collect an entire copy of all the Avid project files for a specific project - or even a drive of projects.&lt;/p&gt;
+
+&lt;p&gt;Check out the demo for archiving projects below.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4APPJvlk21U?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;As usual, full help documentation is available over at &lt;a href=&quot;https://help.group6.co.nz/&quot;&gt;help.group6.co.nz&lt;/a&gt;, and a full set of &lt;a href=&quot;https://www.group6.co.nz/diva/2017/05/09/2.15.0.html&quot;&gt;release notes&lt;/a&gt; are also available.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 May 2017 09:03:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2017/05/09/diva-sierra-support.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2017/05/09/diva-sierra-support.html</guid>
+      </item>
+    
+      <item>
+        <title>Add Remote Network Shares and FTP Servers to DIVA</title>
+        <description>&lt;p&gt;DIVA v2.13.0, &lt;a href=&quot;/diva/2016/03/07/2.13.0.html&quot;&gt;released today&lt;/a&gt;, adds a new feature we’re calling &lt;strong&gt;External Drives&lt;/strong&gt;.
+This allows you to add non-DIVA network shares, and remote FTP servers, as drives within DIVA, which can be mounted using DIVA Client. They can even be added to favourites, making them even easier for editors to use in their suites.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/news/external-drives.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Be it a network share on a production or IT server, within your network, or a FTP server to upload review videos, accessing them on your desktop is now just a drive mount away.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://help.group6.co.nz/fusion/drives.htm#addexternal&quot;&gt;DIVA Help Center&lt;/a&gt; has instructions for adding an external drive, and we’ve even got a &lt;a href=&quot;https://www.youtube.com/watch?v=6_CXPi8bO_c&quot;&gt;tutorial video&lt;/a&gt; to walk you through the steps.
+Since OS X and Windows doesn’t have native desktop FTP support, we’ve also got some recommendations for using FTP on &lt;a href=&quot;https://www.youtube.com/watch?v=1xN0Ma6wZSo&quot;&gt;Windows&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=rncVHus8iSo&quot;&gt;OS X&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Mar 2016 16:05:00 +1300</pubDate>
+        <link>https://www.group6.co.nz/news/2016/03/07/diva-external-drives.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2016/03/07/diva-external-drives.html</guid>
+      </item>
+    
+      <item>
+        <title>Camera upgrade for Shortland Street</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/content/news/shortland-street-cameras-2016-pvw.jpg&quot; data-srcset=&quot;/images/content/news/shortland-street-cameras-2016-sm.jpg 480w, /images/content/news/shortland-street-cameras-2016-md.jpg 656w, /images/content/news/shortland-street-cameras-2016-lg.jpg 768w, /images/content/news/shortland-street-cameras-2016-xl.jpg 1536w&quot; alt=&quot;New cameras for the Shortland Street&quot; class=&quot;blur-up lazyload&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;South Pacific Pictures have upgraded their camera chains in their Shortland
+Street studios, with three new Panasonic VariCam 35 4K cameras. Two additional
+cameras were also purchased for use in the field.&lt;/p&gt;
+
+&lt;p&gt;Group 6 were contracted to complete the final integration, using MultiDyne
+SilverBack studio transceivers, and the existing fibre camera cables,
+integrating with the studio control rooms systems Group 6 upgraded in 2011.&lt;/p&gt;
+
+&lt;p&gt;The PCR rack recieved a major overhaul, connecting the new base stations with
+the existing vision mixer, coms, tally, and video distribution systems.
+Group 6 also completed custom integration of the video return system, between
+the new camera backs and existing zoom demands, with new Canon lenses.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Feb 2016 11:08:00 +1300</pubDate>
+        <link>https://www.group6.co.nz/news/2016/02/10/camera-upgrade-for-shortland-street.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2016/02/10/camera-upgrade-for-shortland-street.html</guid>
+      </item>
+    
+      <item>
+        <title>Meet Group 6&amp;#58; Josh</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/content/company/josh-reardon-pvw.jpg&quot; data-srcset=&quot;/images/content/company/josh-reardon-sm.jpg 480w, /images/content/company/josh-reardon-md.jpg 656w, /images/content/company/josh-reardon-lg.jpg 768w, /images/content/company/josh-reardon-xl.jpg 1536w&quot; alt=&quot;Josh Reardon&quot; class=&quot;blur-up lazyload&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We’re delighted to introduce Josh Reardon, our new technical support engineer.&lt;/p&gt;
+
+&lt;p&gt;A graduate from South Seas Film &amp;amp; Television school in 2013 specialising in Post Production, he has since been working with Imagination Television in a DIT and post support role on the TVNZ show My Kitchen Rules New Zealand.&lt;/p&gt;
+
+&lt;p&gt;Josh will be providing front-line support for the DIVA Media System, while building and configuring new systems.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Nov 2014 12:50:00 +1300</pubDate>
+        <link>https://www.group6.co.nz/news/2014/11/11/meet-group6-josh.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2014/11/11/meet-group6-josh.html</guid>
+      </item>
+    
+      <item>
+        <title>DIVA Drive sets simplify setup for new projects</title>
+        <description>&lt;p&gt;Often when setting up for a new project you need one of everything: a media, project, and file drive, and you’ll create them using the name of your new project, and append the drive type, e.g. MyProject-Media, MyProject-Projects, etc. Then you’ve got to add all the users to each drive, and maybe create a favourite for all this.&lt;/p&gt;
+
+&lt;p&gt;Introducing Drive Sets, which allows you to complete all this from a single interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/news/diva-drive-sets.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just by clicking &lt;strong&gt;New Drive Set&lt;/strong&gt; from the Drives manager you can now set a base name, choose what drives you want to create, check to add them to a favourite, and assign all your user permissions in one simple interface.&lt;/p&gt;
+
+&lt;p&gt;We’ve suggested some defaults for the drive suffix but this can be overridden all in the same interface.&lt;/p&gt;
+
+&lt;p&gt;Hit &lt;strong&gt;Create Drive Set&lt;/strong&gt; and all the hard work is done for you, and all your new drives will be ready to mount in moments!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Jun 2014 10:28:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2014/06/28/diva-drive-sets.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2014/06/28/diva-drive-sets.html</guid>
+      </item>
+    
+      <item>
+        <title>Imagination Television move to a new home</title>
+        <description>&lt;p&gt;Long time Group 6 client &lt;a href=&quot;http://www.imaginationtv.co.nz/&quot;&gt;Imagination Television&lt;/a&gt; have moved to a new home.&lt;/p&gt;
+
+&lt;p&gt;Imagination Television have merged their pre and post production offices at a new location. Group 6 were responsible for the entire IT and Post migration, including a new IT production server, and an expansion to 144GB of Imaginations multiple Node DIVA installation.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 May 2014 15:13:00 +1200</pubDate>
+        <link>https://www.group6.co.nz/news/2014/05/17/imagination-move-home.html</link>
+        <guid isPermaLink="true">https://www.group6.co.nz/news/2014/05/17/imagination-move-home.html</guid>
+      </item>
+    
+  </channel>
+</rss>
