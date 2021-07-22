@@ -126,7 +126,8 @@ module.exports = function(grunt) {
           cwd: '<%= config.src %>',
           src: [
             '*.{ico,json,png,txt,xml}',
-            'images/**'
+            'images/**',
+            'CNAME'
           ],
           dest: '<%= config.dest %>'
         }, {
@@ -261,6 +262,13 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
@@ -314,4 +322,9 @@ module.exports = function(grunt) {
     'useminPrepare',
     'cssmin'
   ]);
+
+  grunt.registerTask('deploy', [
+    'dist',
+    'gh-pages'
+  ])
 };
