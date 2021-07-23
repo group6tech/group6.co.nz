@@ -76,25 +76,17 @@
           href="{{ site.url }}/rss/news.xml">
 
     <!-- build:css /styles/vendor.css -->
-    <link rel="stylesheet" href="/node_modules/magnific-popup/dist/magnific-popup.css">
     <!-- endbuild -->
 
     <!-- build:css({app,.tmp}) /styles/main.css -->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
 
-    {% include googleanalytics.html %}
   </head>
   <body class="{{ layout.bodyClass }} {{ page.bodyClass }}">
-    <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
     {% include header.html %}
 
-    <div class="content-wrapper">
-      {{ content }}
-    </div>
+    {{ content }}
 
     {% include footer.html %}
 
